@@ -1,1 +1,12 @@
-Hi
+Multiplayer Racing Game where Harvard-Westlake is the track
+
+Starting line is on the straight leading from the quad towards the security guard kiosk. 
+Then leads into the parking lot with the spikes and the dip, goes through the narrow passage through the main parking lot
+and up back towards the security kiosk. Then turn right into the long steep fire road up towards the chuch.
+Behind the church is another steep road that goes into the teacher parking lot, then from there go towards weiler hall
+will add in a ramp from weiler hall up to the library, then from library into rugby through the spire then from rugby
+through the whole quad back to the starting line.
+https://earth.google.com/web/@34.14078367,-118.41211247,219.44422753a,387.60673541d,35y,-172.34709049h,51.78464119t,0r/data=CgRCAggBOgMKATBCAggASg0I____________ARAA
+
+Racing karts can be all the same, but the drivers will be different HW teachers.
+Each teacher will have a different ability, and while they are racing the racers can pick up certain powerups
