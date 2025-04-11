@@ -25,6 +25,8 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Players can choose from different Harvard-Westlake teachers as drivers
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
+- Track has a variety of obstacles and hazards
+- Drifting mechanism
 
 ## Campus Overview
 
@@ -33,7 +35,6 @@ The race track follows a circuit around the Harvard-Westlake campus:
 
 <!-- Image 2: Aerial view showing St. Saviour's Chapel, Mudd Library, Rugby Theatre, and the main field -->
 ![Harvard-Westlake Campus Aerial View 2](./hw2.png)
-
 
 ## Initial Image
 ![Generated Image for Idea](./generated1.png)
