@@ -4,7 +4,7 @@
 
 A multiplayer racing game set on the Harvard-Westlake campus. Players race go-karts around a track that follows the actual layout of the school grounds, featuring iconic locations and challenging terrain.
 
-## Track Layout
+## Track Layout Example
 
 The race track follows a circuit around the Harvard-Westlake campus:
 
@@ -23,8 +23,14 @@ The race track follows a circuit around the Harvard-Westlake campus:
 
 - All racing karts have identical performance specifications
 - Players can choose from different Harvard-Westlake teachers as drivers
-- Each teacher character has unique special abilities
-- Racers can collect various powerups throughout the track
+    - Each teacher character has 2 unique special abilities:
+        - 1st: based on the subject they teach (general)
+        - 2nd: based on their personality (specific)  
+- Racers can collect various powerups throughout the track, but there's a random chance for it to be a debuff and it hurts the player
+- There are multiple maps you can go through instead of just one
+    - ex. All-roof path, all-stairs path, cafeteria route, etc
+- Feature for with/without "railings" where there are railings on the edges of the paths to make it easier for new players
+
 
 ## Campus Overview
 
