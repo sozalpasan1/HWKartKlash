@@ -26,6 +26,11 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
 
+Aviv's Ideas:
+* Ability for people to choose different routes throught the school
+* Ability for people to choose environemnt specifications (day, night, students on campus, empty campus, rain, sunshine)
+* Honor Board feature where u are placed in front of a panel of perfects if u run into a student with your kart. 
+
 ## Campus Overview
 
 <!-- Image 1: Aerial view of Harvard-Westlake campus showing Rugby Theatre, athletic fields, and swimming pool -->
