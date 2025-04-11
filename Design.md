@@ -23,6 +23,9 @@ The race track follows a circuit around the Harvard-Westlake campus:
 
 - All racing karts have identical performance specifications
 - Players can choose from different Harvard-Westlake teachers as drivers
+    - Mr. Nealis
+        - Cart: Ford F450 SUPER DUTY
+        - Ability: Press 'k' to enter autopilot (cart will drive optimal path) and for 20 seconds equip an automatic hunting rifle
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
 
