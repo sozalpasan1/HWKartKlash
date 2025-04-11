@@ -1,4 +1,4 @@
-# Harvard-Westlake Racing Game
+# HW KartKlash
 
 ## Game Concept
 
