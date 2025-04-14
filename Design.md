@@ -25,6 +25,9 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Players can choose from different Harvard-Westlake teachers as drivers
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
+- Random events can affect the race; a fire drill can force a detour through the field, rain can make roads more slippery, a crowd on the quad cause of a food truck can cause slowdowns
+- Location-based minigames - going through the math department you might need to solve a problem/logic puzzle, answer a history question when going by the history department, etc.
+- Less important features: Kart customization, Wolverscreens around campus show current race standings, time elapsed, other race stats
 
 ## Campus Overview
 
