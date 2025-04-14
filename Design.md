@@ -2,22 +2,24 @@
 
 ## Game Concept
 
-A multiplayer racing game set on the Harvard-Westlake campus. Players race go-karts around a track that follows the actual layout of the school grounds, featuring iconic locations and challenging terrain.
+A multiplayer racing game set on the Harvard-Westlake campus. Players race shopping carts around a track that follows the actual layout of the school grounds, featuring iconic locations and challenging terrain.
 
 ## Track Layout
 
 The race track follows a circuit around the Harvard-Westlake campus:
 
-- **Starting Line**: Begins on the straight path leading from the quad toward the security guard kiosk
-- **First Section**: Leads into the parking lot with spikes and a challenging dip
-- **Second Section**: Navigates through a narrow passage in the main parking lot
-- **Third Section**: Curves back up toward the security kiosk
-- **Fourth Section**: Right turn onto the steep fire road leading up to St. Saviour's Chapel
-- **Fifth Section**: Behind the chapel is another steep descent into the teacher parking lot
-- **Sixth Section**: Route continues toward Weiler Hall
-- **Seventh Section**: Features a ramp from Weiler Hall up to Mudd Library
-- **Eighth Section**: Path from library through the spire to Rugby Theatre
-- **Final Section**: Through the quad back to the starting line
+- Begins on the straight path leading from the quad toward the security guard kiosk
+- Leads into the parking lot with spikes and a challenging dip
+- Navigates through a narrow passage in the main parking lot
+- Curves back up toward the security kiosk
+- Right turn onto the steep fire road leading up to St. Saviour's Chapel
+- Behind the chapel is another steep descent into the teacher parking lot
+- Route continues toward Weiler Hall
+- Winds around the track once or twice
+- Goes up through Chalmers (reminicient of Luigi's haunted mansion)
+- Features a ramp from Weiler Hall up to Mudd Library
+- Path from library through the spire to Rugby Theatre
+- Through the quad back to the starting line
 
 ## Game Features
 
@@ -25,6 +27,8 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Players can choose from different Harvard-Westlake teachers as drivers
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
+- The campus is fully photoreal ~~(A lesser man would say something about NeRFs or lidar scanning but that would be technical)~~
+- The game is controller compatible and has split-screen multiplayer (multiplayer on the same computer)
 
 ## Campus Overview
 
@@ -33,8 +37,3 @@ The race track follows a circuit around the Harvard-Westlake campus:
 
 <!-- Image 2: Aerial view showing St. Saviour's Chapel, Mudd Library, Rugby Theatre, and the main field -->
 ![Harvard-Westlake Campus Aerial View 2](./hw2.png)
-
-
-## Initial Image
-![Generated Image for Idea](./generated1.png)
-![Generated Image for Idea](./generated2.png)
