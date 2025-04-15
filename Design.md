@@ -26,6 +26,11 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
 
+
+- Add weather, modifications to the map
+- Random obstacles can affect the race; backpacks, students, tables, etc. Preciado could force you to navigate a more narrow path or make the race harder in some way.
+- Less important features: Kart customization, Wolverscreens around campus show current race standings, time elapsed, other race stats
+
 ## Campus Overview
 
 <!-- Image 1: Aerial view of Harvard-Westlake campus showing Rugby Theatre, athletic fields, and swimming pool -->
