@@ -26,6 +26,13 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
 
+# Special Features
+- "Late Pass" - temporary immunity from obstacles
+- "Perfect Score" - brief speed boost
+- "Extra Credit" - bonus points for trick moves
+- "Hall Pass" - ability to take shortcuts through buildings
+- "Dean's List" - temporary invincibility
+
 ## Campus Overview
 
 <!-- Image 1: Aerial view of Harvard-Westlake campus showing Rugby Theatre, athletic fields, and swimming pool -->
