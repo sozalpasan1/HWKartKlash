@@ -6,8 +6,7 @@ A multiplayer racing game set on the Harvard-Westlake campus. Players race go-ka
 
 ## Track Layout
 
-The race track follows a circuit around the Harvard-Westlake campus:
-
+Track 1:
 - **Starting Line**: Begins on the straight path leading from the quad toward the security guard kiosk
 - **First Section**: Leads into the parking lot with spikes and a challenging dip
 - **Second Section**: Navigates through a narrow passage in the main parking lot
@@ -19,12 +18,27 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - **Eighth Section**: Path from library through the spire to Rugby Theatre
 - **Final Section**: Through the quad back to the starting line
 
+
+Track 2:
+- **Starting Line**: Begins at the pool
+- **First Section**: Leads into the track and loops around it
+- **Second Section**: Exits near Taper gym stairs
+- **Third Section**: Passes through Munger up to the sophomore quad
+- **Fourth Section**:  Heads down to the main quad, then right into the back entrance of Chaulmers
+- **Fifth Section**: Travels through chaulmers and down to the cafeteria
+- **Sixth Section**: Goes down stairs to North entrance
+- **Seventh Section**: Leaves out North entrance and reenters campus main entrance by pool
+- **Final Section**: Through Taper to the pool
+
 ## Game Features
 
 - All racing karts have identical performance specifications
 - Players can choose from different Harvard-Westlake teachers as drivers
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
+- Karts are customizable with different vehicles, wheels, and colors
+- Karts can drift to decrease their turn radius
+- Students are roaming in certain areas on the track, acting as obstacles, if you hit them, your car will lose a lot of speed (the student will not be hurt)
 
 ## Campus Overview
 
