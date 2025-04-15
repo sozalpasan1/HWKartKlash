@@ -25,9 +25,30 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Players can choose from different Harvard-Westlake teachers as drivers
     - Mr. Nealis
         - Cart: Ford F450 SUPER DUTY
-        - Ability: Press 'k' to enter autopilot (cart will drive optimal path) and for 20 seconds equip an automatic hunting rifle
-- Each teacher character has unique special abilities
-- Racers can collect various powerups throughout the track
+        - Ability: Press 'k' to enter autopilot (cart will drive optimal path) and for 20 seconds jump in the truck bed and equip an automatic turret. Dealing enough damage to other racers will cause them to spin out for a duration.
+    - Mr. Theiss
+        - Cart: Tesla Cybertruck
+        - Ability: "Crypto-flip" generates a hash on screen and gains a speed boost for a duration of the first number in seconds (hexidecimal)
+    - Mr. Yaron
+        - Cart: Merkava M48 Heavy Tank
+        - Ability: "Mossad Agent" Order an airstrike on an area of the map
+        - Passive: "Cockroach" Very slightly slower overall movement speed, but also very slightly lower durations for all debuffs 
+    - Mr. Commons
+        - Cart: 
+    - Earl (Security Guard)
+        - Cart: Golf cart thing that he drives
+        - Ability: 
+    - Mr. Varney
+        - Cart: 
+        - Ability: "Dance Dance Revolution" All other racers are slightly slowed for a duration while a disco ball obstructs their view
+    - 
+- Each teacher character has unique special abilities, along with unique voice lines potentially sampled from the teachers themselves
+- Racers can collect various powerups avaliable to all racers throughout the track
+    - Classic Mario powerups but with a humorous twist toward harvard westlake
+        - Excused absence: Teleport to the end of the section of the track that the player is currently on
+        - Mandatory Meeting in Rugby: Choose another player to slow for a duration
+        - All School Assembly: Slow all other players for a duration
+- Racers can drift for a teired speed boost based off of drift time
 
 ## Campus Overview
 
