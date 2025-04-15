@@ -26,6 +26,10 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
 
+## Ideas
+- Depending on where you are on the track (e.g. parking lot or library) the type of power-up or item you can get differs (e.g. parking pass throwable or a book)
+- Kart customization with colors or different stats (speed, control. etc.)
+
 ## Campus Overview
 
 <!-- Image 1: Aerial view of Harvard-Westlake campus showing Rugby Theatre, athletic fields, and swimming pool -->
