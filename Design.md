@@ -38,10 +38,11 @@ Track 2:
 - Players can choose from different Harvard-Westlake teachers as drivers
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
+
+#Ideas
 - The campus is fully photoreal ~~(A lesser man would say something about NeRFs or lidar scanning but that would be technical)~~
 - Students are roaming in certain areas on the track. If you hit them, your car will lose a lot of speed, they will turn into ragdolls and bleed, and Mr. Prosciutto will fly down on a cloud and scold you.
-- Karts are customizable with different vehicles, wheels, and colors
-- Customizable karts
+- Karts are customizable with different vehicles, wheels, and colors; different parts give different stats, have pros/continues
     Customizable, but NOT upgradeable
     the only advantage experienced players should have over new players is their experience
     the different karts have different accelerat
@@ -54,6 +55,7 @@ Track 2:
 - Add weather, modifications to the map
 - Random obstacles can affect the race; backpacks, students, tables, etc. Preciado could force you to navigate a more narrow path or make the race harder in some way.
 - Less important features: Kart customization, Wolverscreens around campus show current race standings, time elapsed, other race stats
+- VOICE LINES FOR EACH TEACHER
 ## Campus Overview
 
 <!-- Image 1: Aerial view of Harvard-Westlake campus showing Rugby Theatre, athletic fields, and swimming pool -->
