@@ -25,6 +25,13 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Players can choose from different Harvard-Westlake teachers as drivers
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
+- Customizable karts
+    Customizable, but NOT upgradeable
+    the only advantage experienced players should have over new players is their experience
+    the different karts have different accelerat
+- at the end of each race, if you get first place, your prize is that mr. commons and buddy the wolverine fall into your kart. buddy is beside you and commons is riding in the back. buddy leans over and gives you a hug, and mr. commons says that you're his most favoritest student, and gives you a diploma. you look at the diploma and its the standings of the race
+- some of the carts are actually based on cars you could find at school
+    the golf carts that the security drives, the cars that are always parked on the track, all those light blue subaru crosstreks, that one red/green pickup truck, the garbage trucks, etc
 
 
 - Add weather, modifications to the map
