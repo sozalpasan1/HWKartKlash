@@ -21,19 +21,23 @@ The race track follows a circuit around the Harvard-Westlake campus:
 
 ## Game Features
 - All racing karts have identical performance specifications
-- Players can choose from different Harvard-Westlake teachers as drivers
-    - Each teacher character has 2 unique special abilities:
-        - 1st: based on the subject they teach (general)
-        - 2nd: based on their personality (specific)  
 - Racers can collect various powerups throughout the track
 - There are multiple maps you can go through instead of just one
-    - ex. All-roof path, all-stairs path, cafeteria route, etc
+    - ex. All-roof path, all-stairs path, just track, cafeteria route, etc
 - Feature for with/without "railings" where there are railings on the edges of the paths to make it easier for new players
 - Hidden Shortcuts
 - Moving Obsacles 
     - Lizards, students, etc 
 - In-game currency in order to purhcase skins, upgrades, teachers, etc. 
 - Weather, time of day, seasons 
+
+- Players can choose from different Harvard-Westlake teachers as drivers
+    - Each teacher character has 2 unique special abilities:
+        - 1st: based on the subject they teach (general)
+        - 2nd: based on their personality (specific)
+    - Teachers have unique voice lines potentially sampled from the teachers themselves  
+
+## Teacher Abilities
     - Mr. Nealis
         - Cart: Ford F450 SUPER DUTY
         - Ability: Press 'k' to enter autopilot (cart will drive optimal path) and for 20 seconds jump in the truck bed and equip an automatic turret. Dealing enough damage to other racers will cause them to spin out for a duration.
@@ -49,59 +53,54 @@ The race track follows a circuit around the Harvard-Westlake campus:
         - Ability: "Pursuit of Educational Excellence" Obstruct all other players' views with a student handbook
     - Earl (Security Guard)
         - Cart: HD Motorcycle
+        - Ability: "TONY!!" Tony zooms through the track on a golf cart running over racers
     - Mr. Varney
         - Ability: "TONY!!" Tony zooms through the track on a golf cart running over racers
         - Cart: Subaru Forester
         - Ability: "Dance Dance Revolution" All other racers are slightly slowed for a duration while a disco ball obstructs their view
-    - Pyrough
-        - Cart: Food truck (Vietnamese)
+    - Pairot
+        - Cart: Food truck (Thai)
         - Ability: "No Charge" Disable all other powerups for a duration
     - Preciado
         - Cart: Running
         - Ability: "Sprint" Charges at people and if he hits someone they spin out, but post ability he gets tired and slows for a duration
 
-### Powerups
-- Trigonometry: Release sin curves that push other players back/slow them down
-- Supply & Demand: Allows you to steal a powerup from another player, since you have higher demand
-- Falling Grades: Create pools of "F"s on the floor bahind the player that will slow other players down because depression
-- Additional powerup ideas can be added
+## Developed Map Ideas:
+### Cafeteria Chaos:
+Midway through the race, players burst through the double doors of the Harvard-Westlake cafeteria—only to instantly shrink to the size of a salt shaker. Inside this chaotic micro-course, the familiar lunchroom transforms into a maze of oversized obstacles: towering cartons of milk, sliding meatballs, bouncing apples, and puddles of spilled Gatorade that act like sticky traps. The real danger, however, is Pyrough—the cafeteria worker—who stomps through the kitchen with a giant ladle, trying to squash the tiny racers. Players must weave between food trays and silverware while avoiding Pyrough’s surprise attacks, adding a thrilling and surreal twist to the course.
 
-🔴 Offensive Powerups
-Name	Description
-Pop Quiz	Temporarily blinds nearby racers with a flurry of quiz papers.
-Red Reprimand Slip	Homing attack that targets the racer directly in front. Inspired by detention slips.
-Lunch Rush	Drops spilled cafeteria trays behind you, causing others to slip.
-Dean’s Call	Freezes a random player with a "please come to the Dean’s Office" notice.
-Fire Drill	Triggers a loud bell — all players must pull over briefly unless they have “Permission to Leave Class” powerup.
-
-🔵 Defensive Powerups
-Name	Description
-Permission Slip Shield	Absorbs the next incoming attack. Has a school crest animation.
-Campus Map Warp	Teleports you forward to the next checkpoint, bypassing obstacles.
-Library Silence Bubble	Surrounds your kart in a quiet zone — you can’t be targeted for 5 seconds.
-
-🟢 Utility / Speed Boosts
-Name	Description
-H-W Spirit Boost	Short burst of speed. Kart leaves a trail of red-and-black streamers.
-P.E. Sprint Mode	Your character runs Flintstone-style for 3 seconds, faster than karting.
-Skateboard Shortcut	Temporary switch to a skateboard that can cut corners and fit through tight spaces.
-
-🟣 Trick / Terrain Manipulation
-Name	Description
-Sprinkler Trap	Activates sprinklers on a section of the track, making it slippery.
-Science Lab Spill	Leaves a glowing goo trail — racers who hit it spin out.
-Chapel Echo	Sends a sonic boom from the chapel that disrupts control for racers within earshot.
-
-- Each teacher character has unique special abilities, along with unique voice lines potentially sampled from the teachers themselves
+## Powerups
 - Racers can collect various powerups avaliable to all racers throughout the track
-    - Classic Mario powerups but with a humorous twist toward harvard westlake
-        - Excused absence: Teleport to the end of the section of the track that the player is currently on
-        - Mandatory Meeting in Rugby: Choose another player to slow for a duration
-        - All School Assembly: Slow all other players for a duration
 - Racers can drift for a tiered speed boost based off of drift time
 
-## Cafeteria Chaos Section:
-Midway through the race, players burst through the double doors of the Harvard-Westlake cafeteria—only to instantly shrink to the size of a salt shaker. Inside this chaotic micro-course, the familiar lunchroom transforms into a maze of oversized obstacles: towering cartons of milk, sliding meatballs, bouncing apples, and puddles of spilled Gatorade that act like sticky traps. The real danger, however, is Pyrough—the cafeteria worker—who stomps through the kitchen with a giant ladle, trying to squash the tiny racers. Players must weave between food trays and silverware while avoiding Pyrough’s surprise attacks, adding a thrilling and surreal twist to the course.
+### Powerup Ideas
+🔴 Offensive Powerups
+Pop Quiz	Temporarily blinds nearby racers with a flurry of quiz papers.
+Red Reprimand Slip  Homing attack that targets the racer directly in front. Inspired by detention slips.
+Lunch Rush	Drops spilled cafeteria trays behind you, causing others to slip.
+Dean’s Call Freezes a random player with a "please come to the Dean’s Office" notice.
+Fire Drill  Triggers a loud bell — all players must pull over briefly unless they have “Permission to Leave Class” powerup.
+Trigonometry    Release sin curves that push other players back/slow them down
+Falling Grades  Create pools of "F"s on the floor bahind the player that will slow other players down because depression
+Mandatory Meeting in Rugby  Choose another player to slow for a duration
+All School Assembly Slow all other players for a duration
+
+🔵 Defensive Powerups
+Permission Slip Shield  Absorbs the next incoming attack. Has a school crest animation.
+Campus Map Warp Teleports you forward to the next checkpoint, bypassing obstacles.
+Library Silence Bubble  Surrounds your kart in a quiet zone — you can’t be targeted for 5 seconds.
+
+🟢 Utility / Speed Boosts
+H-W Spirit Boost    Short burst of speed. Kart leaves a trail of red-and-black streamers.
+P.E. Sprint Mode    Your character runs Flintstone-style for 3 seconds, faster than karting.
+Skateboard Shortcut Temporary switch to a skateboard that can cut corners and fit through tight spaces.
+Excused absence Teleport to the end of the section of the track that the player is currently on
+
+🟣 Trick / Terrain Manipulation
+Sprinkler Trap  Activates sprinklers on a section of the track, making it slippery.
+Science Lab Spill   Leaves a glowing goo trail — racers who hit it spin out.
+Chapel Echo Sends a sonic boom from the chapel that disrupts control for racers within earshot.
+Supply & Demand Allows you to steal a powerup from another player, since you have higher demand
 
 ## Campus Overview
 
