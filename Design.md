@@ -55,7 +55,6 @@ The race track follows a circuit around the Harvard-Westlake campus:
         - Cart: HD Motorcycle
         - Ability: "TONY!!" Tony zooms through the track on a golf cart running over racers
     - Mr. Varney
-        - Ability: "TONY!!" Tony zooms through the track on a golf cart running over racers
         - Cart: Subaru Forester
         - Ability: "Dance Dance Revolution" All other racers are slightly slowed for a duration while a disco ball obstructs their view
     - Pairot
