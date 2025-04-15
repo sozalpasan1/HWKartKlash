@@ -34,6 +34,31 @@ The race track follows a circuit around the Harvard-Westlake campus:
     - Lizards, students, etc 
 - In-game currency in order to purhcase skins, upgrades, teachers, etc. 
 - Weather, time of day, seasons 
+    - Mr. Nealis
+        - Cart: Ford F450 SUPER DUTY
+        - Ability: Press 'k' to enter autopilot (cart will drive optimal path) and for 20 seconds jump in the truck bed and equip an automatic turret. Dealing enough damage to other racers will cause them to spin out for a duration.
+    - Mr. Theiss
+        - Cart: Tesla Cybertruck
+        - Ability: "Crypto-flip" generates a hash on screen and gains a speed boost for a duration of the first number in seconds (hexidecimal)
+    - Mr. Yaron
+        - Ability: "Mossad Agent" Order an airstrike on an area of the map
+        - Cart: Merkava M48 Heavy Tank
+        - Passive: "Cockroach" Very slightly slower overall movement speed, but also very slightly lower durations for all debuffs 
+    - Mr. Commons
+        - Cart: FLoating Grad Cap
+        - Ability: "Pursuit of Educational Excellence" Obstruct all other players' views with a student handbook
+    - Earl (Security Guard)
+        - Cart: HD Motorcycle
+    - Mr. Varney
+        - Ability: "TONY!!" Tony zooms through the track on a golf cart running over racers
+        - Cart: Subaru Forester
+        - Ability: "Dance Dance Revolution" All other racers are slightly slowed for a duration while a disco ball obstructs their view
+    - Pyrough
+        - Cart: Food truck (Vietnamese)
+        - Ability: "No Charge" Disable all other powerups for a duration
+    - Preciado
+        - Cart: Running
+        - Ability: "Sprint" Charges at people and if he hits someone they spin out, but post ability he gets tired and slows for a duration
 
 ### Powerups
 - Trigonometry: Release sin curves that push other players back/slow them down
@@ -43,8 +68,8 @@ The race track follows a circuit around the Harvard-Westlake campus:
 
 🔴 Offensive Powerups
 Name	Description
-Red Reprimand Slip	Homing attack that targets the racer directly in front. Inspired by detention slips.
 Pop Quiz	Temporarily blinds nearby racers with a flurry of quiz papers.
+Red Reprimand Slip	Homing attack that targets the racer directly in front. Inspired by detention slips.
 Lunch Rush	Drops spilled cafeteria trays behind you, causing others to slip.
 Dean’s Call	Freezes a random player with a "please come to the Dean’s Office" notice.
 Fire Drill	Triggers a loud bell — all players must pull over briefly unless they have “Permission to Leave Class” powerup.
@@ -66,6 +91,17 @@ Name	Description
 Sprinkler Trap	Activates sprinklers on a section of the track, making it slippery.
 Science Lab Spill	Leaves a glowing goo trail — racers who hit it spin out.
 Chapel Echo	Sends a sonic boom from the chapel that disrupts control for racers within earshot.
+
+- Each teacher character has unique special abilities, along with unique voice lines potentially sampled from the teachers themselves
+- Racers can collect various powerups avaliable to all racers throughout the track
+    - Classic Mario powerups but with a humorous twist toward harvard westlake
+        - Excused absence: Teleport to the end of the section of the track that the player is currently on
+        - Mandatory Meeting in Rugby: Choose another player to slow for a duration
+        - All School Assembly: Slow all other players for a duration
+- Racers can drift for a tiered speed boost based off of drift time
+
+## Cafeteria Chaos Section:
+Midway through the race, players burst through the double doors of the Harvard-Westlake cafeteria—only to instantly shrink to the size of a salt shaker. Inside this chaotic micro-course, the familiar lunchroom transforms into a maze of oversized obstacles: towering cartons of milk, sliding meatballs, bouncing apples, and puddles of spilled Gatorade that act like sticky traps. The real danger, however, is Pyrough—the cafeteria worker—who stomps through the kitchen with a giant ladle, trying to squash the tiny racers. Players must weave between food trays and silverware while avoiding Pyrough’s surprise attacks, adding a thrilling and surreal twist to the course.
 
 ## Campus Overview
 
