@@ -26,6 +26,9 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
 
+## Cafeteria Chaos Section:
+Midway through the race, players burst through the double doors of the Harvard-Westlake cafeteria—only to instantly shrink to the size of a salt shaker. Inside this chaotic micro-course, the familiar lunchroom transforms into a maze of oversized obstacles: towering cartons of milk, sliding meatballs, bouncing apples, and puddles of spilled Gatorade that act like sticky traps. The real danger, however, is Pyrough—the cafeteria worker—who stomps through the kitchen with a giant ladle, trying to squash the tiny racers. Players must weave between food trays and silverware while avoiding Pyrough’s surprise attacks, adding a thrilling and surreal twist to the course.
+
 ## Campus Overview
 
 <!-- Image 1: Aerial view of Harvard-Westlake campus showing Rugby Theatre, athletic fields, and swimming pool -->
