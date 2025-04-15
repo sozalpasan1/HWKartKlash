@@ -51,11 +51,16 @@ Track 2:
     the golf carts that the security drives, the cars that are always parked on the track, all those light blue subaru crosstreks, that one red/green pickup truck, the garbage trucks, etc
 - Minimap
 - Depending on where you are on the track (e.g. parking lot or library) the type of power-up or item you can get differs (e.g. parking pass throwable or a book)
-
 - Add weather, modifications to the map
 - Random obstacles can affect the race; backpacks, students, tables, etc. Preciado could force you to navigate a more narrow path or make the race harder in some way.
 - Less important features: Kart customization, Wolverscreens around campus show current race standings, time elapsed, other race stats
 - VOICE LINES FOR EACH TEACHER
+
+Minor Changes:
+1. some of the carts are actually based on cars you could find at school
+    the golf carts that the security drives, the cars that are always parked on the track, all those light blue subaru crosstreks, that one red/green pickup truck, etc
+
+2. leaderboard for fastest ever times for each map
 ## Campus Overview
 
 <!-- Image 1: Aerial view of Harvard-Westlake campus showing Rugby Theatre, athletic fields, and swimming pool -->
