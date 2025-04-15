@@ -28,7 +28,7 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
 - The campus is fully photoreal ~~(A lesser man would say something about NeRFs or lidar scanning but that would be technical)~~
-- The game is controller compatible and has split-screen multiplayer (multiplayer on the same computer)
+- The game has split-screen multiplayer (multiplayer on the same computer) and is controlled by wasd and v for break and arrow keys and p for break
 
 ## Campus Overview
 
