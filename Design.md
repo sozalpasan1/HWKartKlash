@@ -30,14 +30,16 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - There are multiple maps you can go through instead of just one
     - ex. All-roof path, all-stairs path, cafeteria route, etc
 - Feature for with/without "railings" where there are railings on the edges of the paths to make it easier for new players
-- hidden shortcuts
-- moving obsacles 
-    - lizards, students, etc
+- Hidden Shortcuts
+- Moving Obsacles 
+    - Lizards, students, etc
 
 ### Powerups
-- Trigonometry: release waves of sin curves that pushes other players back
-- Supply & Demand: allows you to steal a powerup from another player, since you have higher demand
-- Falling grades: create pools of "F"s on the floor that will slow other players down bc depression
+- Trigonometry: Release sin curves that push other players back/slow them down
+- Supply & Demand: Allows you to steal a powerup from another player, since you have higher demand
+- Falling Grades: Create pools of "F"s on the floor bahind the player that will slow other players down because depression
+- Additional powerup ideas can be added
+
 ## Campus Overview
 
 <!-- Image 1: Aerial view of Harvard-Westlake campus showing Rugby Theatre, athletic fields, and swimming pool -->
