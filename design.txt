@@ -12,8 +12,3 @@ through the whole quad back to the starting line.
 
 Racing karts can be all the same, but the drivers will be different HW teachers.
 Each teacher will have a different ability, and while they are racing the racers can pick up certain powerups
-
-Aviv's Ideas:
-* Ability for people to choose different routes throught the school
-* Ability for people to choose environemnt specifications (day, night, students on campus, empty campus, rain, sunshine)
-* Honor Board feature where u are placed in front of a panel of perfects if u run into a student with your kart. 
