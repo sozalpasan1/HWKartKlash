@@ -26,12 +26,18 @@ The race track follows a circuit around the Harvard-Westlake campus:
     - Each teacher character has 2 unique special abilities:
         - 1st: based on the subject they teach (general)
         - 2nd: based on their personality (specific)  
-- Racers can collect various powerups throughout the track, but there's a random chance for it to be a debuff and it hurts the player
+- Racers can collect various powerups throughout the track
 - There are multiple maps you can go through instead of just one
     - ex. All-roof path, all-stairs path, cafeteria route, etc
 - Feature for with/without "railings" where there are railings on the edges of the paths to make it easier for new players
+- hidden shortcuts
+- moving obsacles 
+    - lizards, students, etc
 
-
+### Powerups
+- Trigonometry: release waves of sin curves that pushes other players back
+- Supply & Demand: allows you to steal a powerup from another player, since you have higher demand
+- Falling grades: create pools of "F"s on the floor that will slow other players down bc depression
 ## Campus Overview
 
 <!-- Image 1: Aerial view of Harvard-Westlake campus showing Rugby Theatre, athletic fields, and swimming pool -->
