@@ -35,6 +35,7 @@ The race track follows a circuit around the Harvard-Westlake campus:
         - Passive: "Cockroach" Very slightly slower overall movement speed, but also very slightly lower durations for all debuffs 
     - Mr. Commons
         - Cart: 
+        - 
     - Earl (Security Guard)
         - Cart: Golf cart thing that he drives
         - Ability: 
@@ -48,7 +49,7 @@ The race track follows a circuit around the Harvard-Westlake campus:
         - Excused absence: Teleport to the end of the section of the track that the player is currently on
         - Mandatory Meeting in Rugby: Choose another player to slow for a duration
         - All School Assembly: Slow all other players for a duration
-- Racers can drift for a teired speed boost based off of drift time
+- Racers can drift for a tiered speed boost based off of drift time
 
 ## Campus Overview
 
