@@ -25,6 +25,16 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Players can choose from different Harvard-Westlake teachers as drivers
 - Each teacher character has unique special abilities
 - Racers can collect various powerups throughout the track
+- *minor feature 1*: Players can view stats, like laptimes, in a menu.
+- *minor feature 2*: Players can start a time trial, which loads them onto the map without any other players. This will allow people to practice the map and have fun with the game, even when they cannot find other players to join them in game.
+
+### New Feature 1: Proximity Voice Chat
+
+Proximity Chat allows players to hear and talk to players nearby them. This will allow for more engaging gameplay, as passing other players and contention between indiviual rankings will be more exciting. When not in a race, this voice channel will open to all players. Volume should also scale with distance, with farther players being quieter than closer players. Because this is based on distance, you should also be able to vaguely overhear seperate areas of the track, leading to funny out of context moments.
+
+### New Feature 2: Drive to Survive Gamemode
+
+Instead of a conventional race where players compete to cross a finish line or complete a certain amount of laps, this gamemode has players try to kick other players off the track. This could be done via shoving them off high spots, using specific power ups, or via other means. This gamemode would be less repetitive than laps on a single track, and would make for more interesting gameplay.
 
 ## Campus Overview
 
