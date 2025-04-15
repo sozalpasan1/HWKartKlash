@@ -28,7 +28,7 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Hidden Shortcuts
 - Moving Obsacles 
     - Lizards, students, etc 
-- In-game currency in order to purhcase skins, upgrades, teachers, etc. 
+- In-game currency as rewards for placing high in races in order to purhcase skins, upgrades, teachers, etc. 
 - Weather, time of day, seasons 
 
 - Players can choose from different Harvard-Westlake teachers as drivers
