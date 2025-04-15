@@ -27,6 +27,8 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - Racers can collect various powerups throughout the track
 - Track has a variety of obstacles and hazards
 - Drifting mechanism
+- Kart customization options (different stats for wheels, body, etc)
+- Minimap
 
 ## Campus Overview
 
