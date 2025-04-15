@@ -34,15 +34,21 @@ The race track follows a circuit around the Harvard-Westlake campus:
         - Ability: "Mossad Agent" Order an airstrike on an area of the map
         - Passive: "Cockroach" Very slightly slower overall movement speed, but also very slightly lower durations for all debuffs 
     - Mr. Commons
-        - Cart: 
-        - 
+        - Cart: FLoating Grad Cap
+        - Ability: "Pursuit of Educational Excellence" Obstruct all other players' views with a student handbook
     - Earl (Security Guard)
-        - Cart: Golf cart thing that he drives
-        - Ability: 
+        - Cart: HD Motorcycle
+        - Ability: "TONY!!" Tony zooms through the track on a golf cart running over racers
     - Mr. Varney
-        - Cart: 
+        - Cart: Subaru Forester
         - Ability: "Dance Dance Revolution" All other racers are slightly slowed for a duration while a disco ball obstructs their view
-    - 
+    - Pyrough
+        - Cart: Food truck (Vietnamese)
+        - Ability: "No Charge" Disable all other powerups for a duration
+    - Preciado
+        - Cart: Running
+        - Ability: "Sprint" Charges at people and if he hits someone they spin out, but post ability he gets tired and slows for a duration
+
 - Each teacher character has unique special abilities, along with unique voice lines potentially sampled from the teachers themselves
 - Racers can collect various powerups avaliable to all racers throughout the track
     - Classic Mario powerups but with a humorous twist toward harvard westlake
