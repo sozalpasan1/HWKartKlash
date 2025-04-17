@@ -58,7 +58,7 @@ The race track follows a circuit around the Harvard-Westlake campus:
         - Cart: Subaru Forester
         - Ability: "Dance Dance Revolution" All other racers are slightly slowed for a duration while a disco ball obstructs their view
     - Pairot
-        - Cart: Food truck (Thai)
+        - Cart: Food truck (Thai) or vietnamese
         - Ability: "No Charge" Disable all other powerups for a duration
     - Preciado
         - Cart: Running
@@ -66,7 +66,12 @@ The race track follows a circuit around the Harvard-Westlake campus:
 
 ## Developed Map Ideas:
 ### Cafeteria Chaos:
-Midway through the race, players burst through the double doors of the Harvard-Westlake cafeteria—only to instantly shrink to the size of a salt shaker. Inside this chaotic micro-course, the familiar lunchroom transforms into a maze of oversized obstacles: towering cartons of milk, sliding meatballs, bouncing apples, and puddles of spilled Gatorade that act like sticky traps. The real danger, however, is Pyrough—the cafeteria worker—who stomps through the kitchen with a giant ladle, trying to squash the tiny racers. Players must weave between food trays and silverware while avoiding Pyrough’s surprise attacks, adding a thrilling and surreal twist to the course.
+
+- Once the players enter the quad the final section, they must go through the cafeteria. 
+- players burst through the double doors of the Harvard-Westlake cafeteria—only to instantly shrink to the size of a salt shaker.
+- the cafeteria transforms into a maze of oversized obstacles: towering cartons of milk, sliding meatballs, bouncing apples, and puddles of spilled Gatorade that act like sticky traps.
+- all while pyro is chasing you with a giant ladel, stomping on the ground. if this ladel makes contact with a cart, it sends the cart spinning out to the side.
+- players enter through the cafeteria entrance and circle around the middle counter, and then they exit through the checkout station and must get checked out
 
 ## Powerups
 - Racers can collect various powerups avaliable to all racers throughout the track
@@ -74,18 +79,19 @@ Midway through the race, players burst through the double doors of the Harvard-W
 
 ### Powerup Ideas
 🔴 Offensive Powerups
-Pop Quiz	Temporarily blinds nearby racers with a flurry of quiz papers.
-Red Reprimand Slip  Homing attack that targets the racer directly in front. Inspired by detention slips.
-Lunch Rush	Drops spilled cafeteria trays behind you, causing others to slip.
-Dean’s Call Freezes a random player with a "please come to the Dean’s Office" notice.
-Fire Drill  Triggers a loud bell — all players must pull over briefly unless they have “Permission to Leave Class” powerup.
-Trigonometry    Release sin curves that push other players back/slow them down
-Falling Grades  Create pools of "F"s on the floor bahind the player that will slow other players down because depression
-Mandatory Meeting in Rugby  Choose another player to slow for a duration
-All School Assembly Slow all other players for a duration
+- Pop Quiz:	Temporarily blinds nearby racers with a flurry of quiz papers.
+- Red Reprimand Slip:  Homing attack that targets the racer directly in front. Inspired by detention slips.
+- Lunch Rush:	Drops spilled cafeteria trays behind you, causing others to slip.
+- Dean’s Call: Freezes a random player with a "please come to the Dean’s Office" notice.
+- Fire Drill:  Triggers a loud bell — all players must pull over briefly unless they have “Permission to Leave Class” powerup.
+- Trigonometry:    Release sin curves that push other players back/slow them down
+- Falling Grades:  Create pools of "F"s on the floor bahind the player that will slow other players down because depression
+- Mandatory Meeting in Rugby:  Choose another player to slow for a duration
+- All School Assembly: Slow all other players for a duration
 
 🔵 Defensive Powerups
-Permission Slip Shield  Absorbs the next incoming attack. Has a school crest animation.
+Permission Slip Shield  
+    Absorbs the next incoming attack. Has a school crest animation.
 Campus Map Warp Teleports you forward to the next checkpoint, bypassing obstacles.
 Library Silence Bubble  Surrounds your kart in a quiet zone — you can’t be targeted for 5 seconds.
 
