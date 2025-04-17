@@ -40,8 +40,8 @@ Track 2:
 - Racers can collect various powerups throughout the track
 
 #Ideas
-- The campus is fully photoreal ~~(A lesser man would say something about NeRFs or lidar scanning but that would be technical)~~
-- Students are roaming in certain areas on the track. If you hit them, your car will lose a lot of speed, they will turn into ragdolls and bleed, and Mr. Prosciutto will fly down on a cloud and scold you.
+- Campus is animated (mario kart-style)
+- Students are roaming in certain areas on the track. If you hit them, your car will lose a lot of speed, they will turn into ragdolls and bleed, and Mr. Preciado will fly down on a cloud and scold you. Other obstacles - backpacks, tables.
 - Karts are customizable with different vehicles, wheels, and colors; different parts give different stats, have pros/continues
     Customizable, but NOT upgradeable
     the only advantage experienced players should have over new players is their experience
@@ -49,11 +49,10 @@ Track 2:
 - at the end of each race, if you get first place, your prize is that mr. commons and buddy the wolverine fall into your kart. buddy is beside you and commons is riding in the back. buddy leans over and gives you a hug, and mr. commons says that you're his most favoritest student, and gives you a diploma. you look at the diploma and its the standings of the race
 - some of the carts are actually based on cars you could find at school
     the golf carts that the security drives, the cars that are always parked on the track, all those light blue subaru crosstreks, that one red/green pickup truck, the garbage trucks, etc
-- Minimap
+- Minimap in bottom left
 - Depending on where you are on the track (e.g. parking lot or library) the type of power-up or item you can get differs (e.g. parking pass throwable or a book)
-- Add weather, modifications to the map
-- Random obstacles can affect the race; backpacks, students, tables, etc. Preciado could force you to navigate a more narrow path or make the race harder in some way.
-- Less important features: Kart customization, Wolverscreens around campus show current race standings, time elapsed, other race stats
+- Customize weather for each race, weather changes race conditions (rain increases chance of slipping off the track)
+- Wolverscreens around campus show current race standings, time elapsed, other race stats
 - VOICE LINES FOR EACH TEACHER
 
 Minor Changes:
