@@ -1,0 +1,16 @@
+Major Changes:
+1. Customizable karts
+    Customizable, but NOT upgradeable
+    the only advantage experienced players should have over new players is their experience
+    the different karts have different accelerat
+2. Story Mode!
+    theres like a series of races with dialogue and a main enemy and stuff. or like a plot.
+    they get harder and harder and maybe theres even some added features in certain levels.
+    like a boss that shoots things at you, or dynamically adds holes to the map that you can fall through
+
+
+Minor Changes:
+1. some of the carts are actually based on cars you could find at school
+    the golf carts that the security drives, the cars that are always parked on the track, all those light blue subaru crosstreks, that one red/green pickup truck, etc
+
+2. leaderboard for fastest ever times for each map
