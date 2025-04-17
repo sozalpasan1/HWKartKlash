@@ -52,10 +52,15 @@ Track 2:
     - the different karts have different acceleration, handling, top speed, weight/mass (less affected by obstacles, and lets you slam into other cars)
 - Minimap in bottom left
 - Depending on where you are on the track (e.g. parking lot or library) the type of power-up or item you can get differs (e.g. parking pass throwable or a book)
-- Customize weather for each race, weather changes race conditions (rain increases chance of slipping off the track)
-- Wolverscreens around campus show current race standings, time elapsed, other race stats
-- VOICE LINES FOR EACH TEACHER
-- leaderboard for fastest ever times for each map
+- Customize weather for each race, weather changes race conditions (rain increases chance of slipping off the track). The effects of weather also vary by vehicle type. Weather could be:
+    - rain
+    - heat wave (increases traction and handling off all vehicles)
+    - snow (snow can blind you for a couple seconds, patches of snow on the ground slow you down)
+    - Fog decreases visibility by a lot
+    - Hail could just be a weather option for hard mode that decreases the health of your kart. You can dodge the hail to decrease the chance of losing health. 
+- Wolverscreens around campus show current race standings, time elapsed, other race stats. Designed in the same format as actual Wolverscreens.
+- VOICE LINES FOR EACH TEACHER (TBD)
+- leaderboard for fastest ever times for each map, you can check it in between games by clicking on map details. Map details also shows a preview of the map.
 
 ## Campus Overview
 
