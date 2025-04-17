@@ -47,16 +47,27 @@ Track 2:
 - Karts are customizable with different vehicles, wheels, and colors; different parts give different stats (e.g. speed, handling, acceleraion, etc.), have pros/cons
     - Customizable in appearance, but NOT upgradeable
     - the only advantage experienced players should have over new players is their experience
-- At the end of each race, if you get first place, your prize is that mr. commons and buddy the wolverine fall into your kart. Buddy is beside you and commons is riding in the back. buddy leans over and gives you a hug, and mr. commons says that you're his most favoritest student, and gives you a diploma. you look at the diploma and its the final standings of the race.
+- at the end of each race, if you get first place, your prize is that mr. commons and buddy the wolverine fall into your kart. buddy is beside you and commons is riding in the back. buddy leans over and gives you a hug, and mr. commons says that you're his most favoritest student, and gives you a diploma. you look at the diploma and its the standings of the race
+    - as they fall, the camera pans up and then quickly down so you watch them fall. they bounce a bit on the seats when they land. when buddy hugs you, its as if he's hugging the camera. the diploma looks like a real diploma, but you press a button to actually go into it and then it shows the standings
 - some of the carts are actually based on cars you could find at school
     - the golf carts that the security drives, the cars that are always parked on the track, all those light blue subaru crosstreks, that one red/green pickup truck, the garbage trucks, etc
     - the different karts have different acceleration, handling, top speed, weight/mass (less affected by obstacles, and lets you slam into other cars)
 - Minimap in bottom left
+    - like mario kart, where theres a map of the track and a dot that represents the character
 - Depending on where you are on the track (e.g. parking lot or library) the type of power-up or item you can get differs (e.g. parking pass throwable or a book)
-- Customize weather for each race, weather changes race conditions (rain increases chance of slipping off the track)
-- Wolverscreens around campus show current race standings, time elapsed, other race stats
-- VOICE LINES FOR EACH TEACHER
-- leaderboard for fastest ever times for each map
+    - parking lot could have a parking pass (maybe it would let you drive into the other cars in the lot with no punishment?) or a stray wheel powerup that you could throw at other players
+    - library could have a book that gives you knowledge (maybe of where the other players are or what's inside each power-up box or something else)
+    - chalmer's could have a math book that would let you calculate your trajectory at all times. like when you're reversing in a car and it shows you your path?
+    - seaver would have powerups related to languages. idk
+- Customize weather for each race, weather changes race conditions (rain increases chance of slipping off the track). The effects of weather also vary by vehicle type. Weather could be:
+    - rain
+    - heat wave (increases traction and handling off all vehicles)
+    - snow (snow can blind you for a couple seconds, patches of snow on the ground slow you down)
+    - Fog decreases visibility by a lot
+    - Hail could just be a weather option for hard mode that decreases the health of your kart. You can dodge the hail to decrease the chance of losing health. 
+- Wolverscreens around campus show current race standings, time elapsed, other race stats. Designed in the same format as actual Wolverscreens.
+- VOICE LINES FOR EACH TEACHER (TBD)
+- leaderboard for fastest ever times for each map, you can check it in between games by clicking on map details. Map details also shows a preview of the map.
 
 ## Campus Overview
 
