@@ -9,16 +9,16 @@ A multiplayer racing game set on the Harvard-Westlake campus. Players race go-ka
 The race track follows a circuit around the Harvard-Westlake campus:
 (./HW KK map draft 1.png)
 
-- **Starting Line**: Begins on the straight path leading from the quad toward the security guard kiosk
+- **Starting Line**: Begins at the stop light on coldwaterheading south-bound, then once the light changes the players turn left into the parking lot
 - **First Section**: Leads into the parking lot with spikes and a challenging dip
-- **Second Section**: Navigates through a narrow passage in the main parking lot
+- **Second Section**: Navigates through a narrow passage going towards the hamilton parking lot and then through to the senior, there are cars blokcing the loading zone so you must go around then towards security kiosk
 - **Third Section**: Curves back up toward the security kiosk
-- **Fourth Section**: Right turn onto the steep fire road leading up to St. Saviour's Chapel
-- **Fifth Section**: Behind the chapel is another steep descent into the teacher parking lot
-- **Sixth Section**: Route continues toward Weiler Hall
-- **Seventh Section**: Features a ramp from Weiler Hall up to Mudd Library
-- **Eighth Section**: Path from library through the spire to Rugby Theatre
-- **Final Section**: Through the quad back to the starting line
+- **Fourth Section**: traverse up towards the steep fire road leading up to St. Saviour's Chapel
+- **Fifth Section**: Behind the chapel is another steep descent(making an artificial ramp) into the teacher parking lot. or there is an alternate route up near the admissions buliding where there is a ramp that launches you up into the air and you land onto the exit of the faculty lot. 
+- **Sixth Section**: Route continues toward Weiler Hall and to around the track with obstacles
+- **Seventh Section**: drives up the bleachers leading to lower quad, then to upper quad then to the cafeteria 
+- **Eighth Section**: Exit the cafeteria and goes through the main pathway to the taper gym, and through the taper gym
+- **Final Section**: exits the taper gym and goes up the handicap ramp and restarts the lap at the entry of the parking lot.
 
 ## Game Features
 - All racing karts have identical performance specifications
