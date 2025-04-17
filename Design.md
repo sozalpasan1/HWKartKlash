@@ -64,6 +64,10 @@ The race track follows a circuit around the Harvard-Westlake campus:
     - Preciado
         - Cart: Running
         - Ability: Hold 'k' to "Sprint" Speeds up his run by 10% and if he hits someone they spin out, but post ability he gets tired and slows for a duration. The Sprint can last up to 5 seconds
+    - Mr. X  
+        - Cart: Eco-friendly smart car
+        - Ability 'k' renewable energy.  Recharges 
+        your energy boost for your EV car.  Puts a blinking 'turtle' mode on everyone close for 2.5 seconds 
 
 ## Developed Map Ideas:
 ### Cafeteria Chaos:
