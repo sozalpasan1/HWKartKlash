@@ -77,13 +77,8 @@ Midway through the race, players burst through the double doors of the Harvard-W
 🔴 Offensive Powerups
 Pop Quiz	Temporarily blinds nearby racers with a flurry of quiz papers.
 Red Reprimand Slip  Homing attack that targets the racer directly in front. Inspired by detention slips.
-Lunch Rush	Drops spilled cafeteria trays behind you, causing others to slip.
-Dean’s Call Freezes a random player with a "please come to the Dean’s Office" notice.
 Fire Drill  Triggers a loud bell — all players must pull over briefly unless they have “Permission to Leave Class” powerup.
-Trigonometry    Release sin curves that push other players back/slow them down
-Falling Grades  Create pools of "F"s on the floor bahind the player that will slow other players down because depression
 Mandatory Meeting in Rugby  Choose another player to slow for a duration
-All School Assembly Slow all other players for a duration
 
 🔵 Defensive Powerups
 Permission Slip Shield  Absorbs the next incoming attack. Has a school crest animation.
@@ -92,15 +87,11 @@ Library Silence Bubble  Surrounds your kart in a quiet zone — you can’t be t
 
 🟢 Utility / Speed Boosts
 H-W Spirit Boost    Short burst of speed. Kart leaves a trail of red-and-black streamers.
-P.E. Sprint Mode    Your character runs Flintstone-style for 3 seconds, faster than karting.
-Skateboard Shortcut Temporary switch to a skateboard that can cut corners and fit through tight spaces.
 Excused absence Teleport to the end of the section of the track that the player is currently on
 
 🟣 Trick / Terrain Manipulation
 Sprinkler Trap  Activates sprinklers on a section of the track, making it slippery.
 Science Lab Spill   Leaves a glowing goo trail — racers who hit it spin out.
-Chapel Echo Sends a sonic boom from the chapel that disrupts control for racers within earshot.
-Supply & Demand Allows you to steal a powerup from another player, since you have higher demand
 
 ## Campus Overview
 
