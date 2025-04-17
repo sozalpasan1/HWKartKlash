@@ -41,14 +41,15 @@ Track 2:
 
 #Ideas
 - Campus is animated (mario kart-style)
-- Students are roaming in certain areas on the track. If you hit them, your car will lose a lot of speed, they will turn into ragdolls and bleed, and Mr. Preciado will fly down on a cloud and scold you. Other obstacles - backpacks, tables
+- Students are roaming in certain areas on the track. If you hit them, your car will lose a lot of speed, they will turn into ragdolls and bleed, and Mr. Preciado will fly down on a cloud and scold you. Other obstacles - backpacks, tables cause you to lose speed to a lesser extent. 
+- Hard mode: obstacles cause you to lose health, and if you lose too much health your kart blows up and you don't finish the race. Bigger vehicles have more health.
 - Karts are customizable with different vehicles, wheels, and colors; different parts give different stats, have pros/continues
     - Customizable, but NOT upgradeable
     - the only advantage experienced players should have over new players is their experience
 - at the end of each race, if you get first place, your prize is that mr. commons and buddy the wolverine fall into your kart. buddy is beside you and commons is riding in the back. buddy leans over and gives you a hug, and mr. commons says that you're his most favoritest student, and gives you a diploma. you look at the diploma and its the standings of the race
 - some of the carts are actually based on cars you could find at school
     - the golf carts that the security drives, the cars that are always parked on the track, all those light blue subaru crosstreks, that one red/green pickup truck, the garbage trucks, etc
-    - the different karts have different acceleration, handling, top speed, weight/mass
+    - the different karts have different acceleration, handling, top speed, weight/mass (less affected by obstacles, and lets you slam into other cars)
 - Minimap in bottom left
 - Depending on where you are on the track (e.g. parking lot or library) the type of power-up or item you can get differs (e.g. parking pass throwable or a book)
 - Customize weather for each race, weather changes race conditions (rain increases chance of slipping off the track)
