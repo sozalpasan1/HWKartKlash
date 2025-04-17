@@ -2,7 +2,7 @@
 
 ## Game Concept
 
-A multiplayer racing game set on the Harvard-Westlake campus. Players race go-karts around a track that follows the actual layout of the school grounds, featuring iconic locations and challenging terrain.
+A multiplayer racing game set on the Harvard-Westlake campus. Players race go karts around a track that follows the actual layout of the school grounds, featuring iconic locations and challenging terrain.
 
 ## Track Layout Example
 
@@ -20,6 +20,17 @@ The race track follows a circuit around the Harvard-Westlake campus:
 - **Eighth Section**: Exit the cafeteria and goes through the main pathway to the taper gym, and through the taper gym
 - **Final Section**: exits the taper gym and goes up the handicap ramp and restarts the lap at the entry of the parking lot.
 
+Track 2:
+- **Starting Line**: Begins at the pool
+- **First Section**: Leads into the track and loops around it
+- **Second Section**: Exits near Taper gym stairs
+- **Third Section**: Passes through Munger up to the sophomore quad
+- **Fourth Section**:  Heads down to the main quad, then right into the back entrance of Chaulmers
+- **Fifth Section**: Travels through chaulmers and down to the cafeteria
+- **Sixth Section**: Goes down stairs to North entrance
+- **Seventh Section**: Leaves out North entrance and reenters campus main entrance by pool
+- **Final Section**: Through Taper to the pool
+
 ## Game Features
 - All racing karts have identical performance specifications
 - Racers can collect various powerups throughout the track
@@ -31,6 +42,36 @@ The race track follows a circuit around the Harvard-Westlake campus:
     - Lizards, students, etc 
 - In-game currency as rewards for placing high in races in order to purhcase skins, upgrades, teachers, etc. 
 - Weather, time of day, seasons 
+
+#Ideas
+- Campus is animated (mario kart-style)
+    Not photo-real campus, use existing models or assets to create 3D map
+- Students are roaming in certain areas on the track. The 1-3 students are placed randomly on the track walking back and forth in a line at a steady pace. If you hit them, your car will lose a lot of speed, they will turn into ragdolls and bleed, and Mr. Preciado will fly down on a cloud and scold you. Other obstacles - backpacks, tables cause you to lose speed to a lesser extent.
+    Hard Mode: Your vehicle has a set amount of health (e.g. a garbage truck would have more health than a prius; bigger vehicles have more health). The vehicle takes damage every time they hit obstacles. If the player lose all their health, their vehicle blows up and they are permanantly out of the race.
+- Karts are customizable with different vehicles, wheels, and colors; different parts give different stats (e.g. speed, handling, acceleraion, etc.), have pros/cons
+    - Customizable in appearance, but NOT upgradeable
+    - the only advantage experienced players should have over new players is their experience
+- at the end of each race, if you get first place, your prize is that mr. commons and buddy the wolverine fall into your kart. buddy is beside you and commons is riding in the back. buddy leans over and gives you a hug, and mr. commons says that you're his most favoritest student, and gives you a diploma. you look at the diploma and its the standings of the race
+    - as they fall, the camera pans up and then quickly down so you watch them fall. they bounce a bit on the seats when they land. when buddy hugs you, its as if he's hugging the camera. the diploma looks like a real diploma, but you press a button to actually go into it and then it shows the standings
+- some of the carts are actually based on cars you could find at school
+    - the golf carts that the security drives, the cars that are always parked on the track, all those light blue subaru crosstreks, that one red/green pickup truck, the garbage trucks, etc
+    - the different karts have different acceleration, handling, top speed, weight/mass (less affected by obstacles, and lets you slam into other cars)
+- Minimap in bottom left
+    - like mario kart, where theres a map of the track and a dot that represents the character
+- Depending on where you are on the track (e.g. parking lot or library) the type of power-up or item you can get differs (e.g. parking pass throwable or a book)
+    - parking lot could have a parking pass (maybe it would let you drive into the other cars in the lot with no punishment?) or a stray wheel powerup that you could throw at other players
+    - library could have a book that gives you knowledge (maybe of where the other players are or what's inside each power-up box or something else)
+    - chalmer's could have a math book that would let you calculate your trajectory at all times. like when you're reversing in a car and it shows you your path?
+    - seaver would have powerups related to languages. idk
+- Customize weather for each race, weather changes race conditions (rain increases chance of slipping off the track). The effects of weather also vary by vehicle type. Weather could be:
+    - rain
+    - heat wave (increases traction and handling off all vehicles)
+    - snow (snow can blind you for a couple seconds, patches of snow on the ground slow you down)
+    - Fog decreases visibility by a lot
+    - Hail could just be a weather option for hard mode that decreases the health of your kart. You can dodge the hail to decrease the chance of losing health. 
+- Wolverscreens around campus show current race standings, time elapsed, other race stats. Designed in the same format as actual Wolverscreens.
+- VOICE LINES FOR EACH TEACHER (TBD)
+- leaderboard for fastest ever times for each map, you can check it in between games by clicking on map details. Map details also shows a preview of the map.
 
 - Players can choose from different Harvard-Westlake teachers as drivers
     - Each teacher character has 2 unique special abilities:
@@ -116,7 +157,6 @@ Science Lab Spill   Leaves a glowing goo trail — racers who hit it spin out.
 
 <!-- Image 2: Aerial view showing St. Saviour's Chapel, Mudd Library, Rugby Theatre, and the main field -->
 ![Harvard-Westlake Campus Aerial View 2](./hw2.png)
-
 
 ## Initial Image
 ![Generated Image for Idea](./generated1.png)
