@@ -7,6 +7,7 @@ A multiplayer racing game set on the Harvard-Westlake campus. Players race go-ka
 ## Track Layout Example
 
 The race track follows a circuit around the Harvard-Westlake campus:
+(./HW KK map draft 1.png)
 
 - **Starting Line**: Begins on the straight path leading from the quad toward the security guard kiosk
 - **First Section**: Leads into the parking lot with spikes and a challenging dip
