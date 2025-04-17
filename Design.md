@@ -42,7 +42,7 @@ Track 2:
 #Ideas
 - Campus is animated (mario kart-style)
     Not photo-real campus, use existing models or assets to create 3D map
-- Students are roaming in certain areas on the track. If you hit them, your car will lose a lot of speed, they will turn into ragdolls and bleed, and Mr. Preciado will fly down on a cloud and scold you. Other obstacles - backpacks, tables cause you to lose speed to a lesser extent.
+- Students are roaming in certain areas on the track. The 1-3 students are placed randomly on the track walking back and forth in a line at a steady pace. If you hit them, your car will lose a lot of speed, they will turn into ragdolls and bleed, and Mr. Preciado will fly down on a cloud and scold you. Other obstacles - backpacks, tables cause you to lose speed to a lesser extent.
     Hard Mode: Your vehicle has a set amount of health (e.g. a garbage truck would have more health than a prius; bigger vehicles have more health). The vehicle takes damage every time they hit obstacles. If the player lose all their health, their vehicle blows up and they are permanantly out of the race.
 - Karts are customizable with different vehicles, wheels, and colors; different parts give different stats (e.g. speed, handling, acceleraion, etc.), have pros/cons
     - Customizable in appearance, but NOT upgradeable
