@@ -38,31 +38,32 @@ The race track follows a circuit around the Harvard-Westlake campus:
     - Teachers have unique voice lines potentially sampled from the teachers themselves  
 
 ## Teacher Abilities
+    - *Everything is subject to playtesting and balancing
     - Mr. Nealis
         - Cart: Ford F450 SUPER DUTY
-        - Ability: Press 'k' to enter autopilot (cart will drive optimal path) and for 20 seconds jump in the truck bed and equip an automatic turret. Dealing enough damage to other racers will cause them to spin out for a duration.
+        - Ability: Press 'k' to enter autopilot (cart will drive optimal path) and for 10 seconds jump in the truck bed and equip an automatic turret. Dealing enough damage (landing bullets for ~3 seconds) to other racers will cause them to spin out for a duration.
     - Mr. Theiss
         - Cart: Tesla Cybertruck
-        - Ability: "Crypto-flip" generates a hash on screen and gains a speed boost for a duration of the first number in seconds (hexidecimal)
+        - Ability: Press 'k' to activate a "Crypto-flip" which generates a sha1 hash from the race time passed at that moment on screen and gains a speed boost for a duration of the first number in seconds (hexidecimal)
     - Mr. Yaron
-        - Ability: "Mossad Agent" Order an airstrike on an area of the map
+        - Ability: Press 'k' to activate "Mossad Agent" Order an airstrike on an area of the map (The user has 5 seconds to select the airstrike location, during which time the car drives in autopilot)
         - Cart: Merkava M48 Heavy Tank
-        - Passive: "Cockroach" Very slightly slower overall movement speed, but also very slightly lower durations for all debuffs 
+        - Passive: "Cockroach" 2% slower overall movement speed, but also 15% lower durations for all debuffs 
     - Mr. Commons
         - Cart: FLoating Grad Cap
-        - Ability: "Pursuit of Educational Excellence" Obstruct all other players' views with a student handbook
+        - Ability: Press 'k' to activate "Pursuit of Educational Excellence"- Obstruct all other players' views with a student handbook for 5 seconds
     - Earl (Security Guard)
-        - Cart: HD Motorcycle
-        - Ability: "TONY!!" Tony zooms through the track on a golf cart running over racers
+        - Cart: Harley Davidson Motorcycle
+        - Ability: Press 'k' to activate "TONY!!" Tony zooms across the track just in front of the user on a golf cart running over racers
     - Mr. Varney
         - Cart: Subaru Forester
-        - Ability: "Dance Dance Revolution" All other racers are slightly slowed for a duration while a disco ball obstructs their view
+        - Ability: Press 'k' to activate "Dance Dance Revolution"- All other racers are slightly slowed (5%) for a duration while a disco ball obstructs their view for 3 seconds
     - Pairot
         - Cart: Food truck (Thai)
-        - Ability: "No Charge" Disable all other powerups for a duration
+        - Ability: Press 'k' to activate "No Charge"- Disable the use of powerups and abilities for 7 seconds
     - Preciado
         - Cart: Running
-        - Ability: "Sprint" Charges at people and if he hits someone they spin out, but post ability he gets tired and slows for a duration
+        - Ability: Hold 'k' to "Sprint" Speeds up his run by 10% and if he hits someone they spin out, but post ability he gets tired and slows for a duration. The Sprint can last up to 5 seconds
 
 ## Developed Map Ideas:
 ### Cafeteria Chaos:
