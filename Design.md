@@ -7,14 +7,14 @@ A multiplayer racing game set on the Harvard-Westlake campus. Players race go ka
 ## Track Layout Example
 
 The race track follows a circuit around the Harvard-Westlake campus:
-(./HW KK map draft 1.png)
+![Race Track](./HWKKMapDraft1.png)
 
-- **Starting Line**: Begins at the stop light on coldwaterheading south-bound, then once the light changes the players turn left into the parking lot
+- **Starting Line**: Begins at the stop light on coldwater heading southbound, then once the light changes the players turn left into the parking lot
 - **First Section**: Leads into the parking lot with spikes and a challenging dip
 - **Second Section**: Navigates through a narrow passage going towards the hamilton parking lot and then through to the senior, there are cars blokcing the loading zone so you must go around then towards security kiosk
 - **Third Section**: Curves back up toward the security kiosk
 - **Fourth Section**: traverse up towards the steep fire road leading up to St. Saviour's Chapel
-- **Fifth Section**: Behind the chapel is another steep descent(making an artificial ramp) into the teacher parking lot. or there is an alternate route up near the admissions buliding where there is a ramp that launches you up into the air and you land onto the exit of the faculty lot. 
+- **Fifth Section**: Behind the chapel is another steep descent (making an artificial ramp) into the teacher parking lot. or there is an alternate route up near the admissions buliding where there is a ramp that launches you up into the air and you land onto the exit of the faculty lot. 
 - **Sixth Section**: Route continues toward Weiler Hall and to around the track with obstacles
 - **Seventh Section**: drives up the bleachers leading to lower quad, then to upper quad then to the cafeteria 
 - **Eighth Section**: Exit the cafeteria and goes through the main pathway to the taper gym, and through the taper gym
@@ -63,7 +63,7 @@ Track 2:
 - Depending on where you are on the track (e.g. parking lot or library) the type of power-up or item you can get differs (e.g. parking pass throwable or a book)
     - parking lot could have a parking pass (maybe it would let you drive into the other cars in the lot with no punishment?) or a stray wheel powerup that you could throw at other players
     - library could have a book that gives you knowledge (maybe of where the other players are or what's inside each power-up box or something else)
-    - chalmer's could have a math book that would let you calculate your trajectory at all times. like when you're reversing in a car and it shows you your path?
+    - chalmers could have a math book that would let you calculate your trajectory at all times. like when you're reversing in a car and it shows you your path?
     - seaver would have powerups related to languages. idk
 - Customize weather for each race, weather changes race conditions (rain increases chance of slipping off the track). The effects of weather also vary by vehicle type. Weather could be:
     - rain
@@ -110,8 +110,7 @@ Track 2:
         - Ability: Hold 'k' to "Sprint" Speeds up his run by 10% and if he hits someone they spin out, but post ability he gets tired and slows for a duration. The Sprint can last up to 5 seconds
     - Mr. X  
         - Cart: Eco-friendly smart car
-        - Ability 'k' renewable energy.  Recharges 
-        your energy boost for your EV car.  Puts a blinking 'turtle' mode on everyone close for 2.5 seconds 
+        - Ability 'k' renewable energy.  Recharges your energy boost for your EV car.  Puts a blinking 'turtle' mode on everyone close for 2.5 seconds 
 
 ## Developed Map Ideas:
 ### Cafeteria Chaos:
@@ -119,7 +118,7 @@ Track 2:
 - Once the players enter the quad the final section, they must go through the cafeteria. 
 - players burst through the double doors of the Harvard-Westlake cafeteria—only to instantly shrink to the size of a salt shaker.
 - the cafeteria transforms into a maze of oversized obstacles: towering cartons of milk, sliding meatballs, bouncing apples, and puddles of spilled Gatorade that act like sticky traps.
-- all while pyro is chasing you with a giant ladel, stomping on the ground. if this ladel makes contact with a cart, it sends the cart spinning out to the side.
+- all while pairot is chasing you with a giant ladel, stomping on the ground. if this ladel makes contact with a cart, it sends the cart spinning out to the side.
 - players enter through the cafeteria entrance and circle around the middle counter, and then they exit through the checkout station and must get checked out
 
 ## Powerups
@@ -139,8 +138,7 @@ Track 2:
 - All School Assembly: Slow all other players for a duration
 
 🔵 Defensive Powerups
-Permission Slip Shield  
-    Absorbs the next incoming attack. Has a school crest animation.
+Permission Slip Shield  Absorbs the next incoming attack. Has a school crest animation.
 Campus Map Warp Teleports you forward to the next checkpoint, bypassing obstacles.
 Library Silence Bubble  Surrounds your kart in a quiet zone — you can’t be targeted for 5 seconds.
 
