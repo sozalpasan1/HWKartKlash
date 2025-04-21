@@ -42,10 +42,8 @@ Track 2:
     - Lizards, students, etc 
 - In-game currency as rewards for placing high in races in order to purhcase skins, upgrades, teachers, etc. 
 - Weather, time of day, seasons 
-- *minor feature 1*: Players can view stats, like laptimes, in a menu.
-- *minor feature 2*: Players can start a time trial, which loads them onto the map without any other players. This will allow people to practice the map and have fun with the game, even when they cannot find other players to join them in game.
-- *minor feature 2*: Players can start a time trial, which loads them onto the map without any other players. This will allow people to practice the map and have fun with the game, even when they cannot find other players to join them in game.
-- *minor feature 1*: Players can view stats, like laptimes, in a menu.
+- Players can view stats, like laptimes, in a menu.
+- Players can start a time trial, which loads them onto the map without any other players. This will allow people to practice the map and have fun with the game, even when they cannot find other players to join them in game.
 
 #Ideas
 - Campus is animated (mario kart-style)
@@ -158,8 +156,6 @@ Science Lab Spill   Leaves a glowing goo trail — racers who hit it spin out.
 
 Proximity Chat allows players to hear and talk to players nearby them. This will allow for more engaging gameplay, as passing other players and contention between indiviual rankings will be more exciting. When not in a race, this voice channel will open to all players. Volume should also scale with distance, with farther players being quieter than closer players. Because this is based on distance, you should also be able to vaguely overhear seperate areas of the track, leading to funny out of context moments.
 
-Proximity Chat allows players to hear and talk to players nearby them. This will allow for more engaging gameplay, as passing other players and contention between indiviual rankings will be more exciting. When not in a race, this voice channel will open to all players. Volume should also scale with distance, with farther players being quieter than closer players. Because this is based on distance, you should also be able to vaguely overhear seperate areas of the track, leading to funny out of context moments.
-### New Feature 1: Proximity Voice Chat
 ## Campus Overview
 
 <!-- Image 1: Aerial view of Harvard-Westlake campus showing Rugby Theatre, athletic fields, and swimming pool -->
