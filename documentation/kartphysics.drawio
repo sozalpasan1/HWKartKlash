@@ -1,0 +1,247 @@
+<mxfile host="app.diagrams.net" modified="2025-04-28T10:00:00.000Z" agent="Mozilla/5.0" version="15.8.3" etag="kart-physics-flow" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Kart Physics Implementation">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Main KartController Class -->
+        <mxCell id="KartController" value="KartController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="460" y="40" width="240" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="KartController_vars" value="+ physics: KartPhysics&#xa;+ input: KartInput&#xa;+ engine: KartEngine&#xa;+ wheels: KartWheel[]&#xa;+ centerOfMass: Transform&#xa;- kartRigidbody: Rigidbody&#xa;- currentSpeed: float&#xa;- turnAngle: float&#xa;- isDrifting: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartController" vertex="1">
+          <mxGeometry y="26" width="240" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="KartController_methods" value="+ Awake(): void&#xa;+ Start(): void&#xa;+ Update(): void&#xa;+ FixedUpdate(): void&#xa;+ ApplyDrive(float): void&#xa;+ ApplySteering(float): void&#xa;+ ApplyBrake(float): void&#xa;+ CheckForDrift(): void&#xa;+ UpdateSpeedometer(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartController" vertex="1">
+          <mxGeometry y="170" width="240" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- KartPhysics Class -->
+        <mxCell id="KartPhysics" value="KartPhysics" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="20" y="320" width="250" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="KartPhysics_vars" value="+ forwardAcceleration: float = 8f&#xa;+ reverseAcceleration: float = 4f&#xa;+ maxSpeed: float = 30f&#xa;+ maxReverseSpeed: float = 10f&#xa;+ turnStrength: float = 180f&#xa;+ gripFactor: float = 0.95f&#xa;+ driftFactor: float = 0.7f&#xa;+ airDragMultiplier: float = 0.1f&#xa;+ groundDragMultiplier: float = 3f&#xa;+ gravity: float = 20f&#xa;+ groundLayer: LayerMask&#xa;- rb: Rigidbody&#xa;- isGrounded: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartPhysics" vertex="1">
+          <mxGeometry y="26" width="250" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="KartPhysics_methods" value="+ Initialize(): void&#xa;+ ApplyForces(float, float, float): void&#xa;+ CalculateGroundNormal(): void&#xa;+ CalculateFriction(): void&#xa;+ CalculateTraction(): float&#xa;+ ApplyGravity(): void&#xa;+ ApplyDrag(): void&#xa;+ IsGrounded(): bool&#xa;+ AdjustForTerrain(TerrainType): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartPhysics" vertex="1">
+          <mxGeometry y="220" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- KartInput Class -->
+        <mxCell id="KartInput" value="KartInput" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="290" y="320" width="220" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="KartInput_vars" value="- throttleInput: float&#xa;- steeringInput: float&#xa;- brakeInput: float&#xa;- driftButtonPressed: bool&#xa;- boostButtonPressed: bool&#xa;&#xa;// Input System references&#xa;- throttleAction: InputAction&#xa;- steeringAction: InputAction&#xa;- brakeAction: InputAction&#xa;- driftAction: InputAction&#xa;- boostAction: InputAction" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartInput" vertex="1">
+          <mxGeometry y="26" width="220" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="KartInput_methods" value="+ Awake(): void&#xa;+ OnEnable(): void&#xa;+ OnDisable(): void&#xa;+ ProcessInput(): void&#xa;+ GetThrottle(): float&#xa;+ GetSteering(): float&#xa;+ GetBrake(): float&#xa;+ IsDrifting(): bool&#xa;+ IsBoosting(): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartInput" vertex="1">
+          <mxGeometry y="190" width="220" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- KartEngine Class -->
+        <mxCell id="KartEngine" value="KartEngine" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="530" y="320" width="250" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="KartEngine_vars" value="+ maxPower: float = 150f&#xa;+ minRPM: float = 1000f&#xa;+ maxRPM: float = 7000f&#xa;+ redlineRPM: float = 6500f&#xa;+ engineBraking: float = 300f&#xa;+ powerCurve: AnimationCurve&#xa;+ torqueCurve: AnimationCurve&#xa;+ gearRatio: float = 3.5f&#xa;+ differentialRatio: float = 4.1f&#xa;&#xa;- currentRPM: float&#xa;- currentPower: float&#xa;- currentTorque: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartEngine" vertex="1">
+          <mxGeometry y="26" width="250" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="KartEngine_methods" value="+ Initialize(): void&#xa;+ UpdateRPM(float): void&#xa;+ CalculatePower(float): float&#xa;+ CalculateTorque(float): float&#xa;+ SimulateEngineSound(AudioSource): void&#xa;+ ApplyEngineBraking(): void&#xa;+ GetPowerToWheels(float): float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartEngine" vertex="1">
+          <mxGeometry y="200" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- KartStats Class -->
+        <mxCell id="KartStats" value="KartStats" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="800" y="320" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="KartStats_vars" value="+ topSpeed: float = 30f&#xa;+ acceleration: float = 7f&#xa;+ handling: float = 6f&#xa;+ weight: float = 400f&#xa;+ traction: float = 8f&#xa;+ driftEfficiency: float = 5f&#xa;+ boostPower: float = 5f" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartStats" vertex="1">
+          <mxGeometry y="26" width="250" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="KartStats_methods" value="+ Initialize(KartType): void&#xa;+ ApplyUpgrade(UpgradeType, float): void&#xa;+ GetModifiedStats(TerrainType): KartStats&#xa;+ DebugLogStats(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartStats" vertex="1">
+          <mxGeometry y="140" width="250" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- KartWheel Class -->
+        <mxCell id="KartWheel" value="KartWheel" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="250" y="590" width="250" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="KartWheel_vars" value="+ wheelTransform: Transform&#xa;+ suspensionTransform: Transform&#xa;+ suspension: KartSuspension&#xa;+ radius: float = 0.4f&#xa;+ mass: float = 15f&#xa;+ grip: float = 1f&#xa;+ brakeTorque: float = 4000f&#xa;+ isPowered: bool = false&#xa;+ isSteering: bool = false&#xa;&#xa;- currentRpm: float&#xa;- worldVelocity: Vector3&#xa;- isGrounded: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartWheel" vertex="1">
+          <mxGeometry y="26" width="250" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="KartWheel_methods" value="+ Initialize(): void&#xa;+ UpdatePosition(float): void&#xa;+ ApplyTorque(float): void&#xa;+ ApplyBraking(float): void&#xa;+ ApplySteering(float): void&#xa;+ UpdateVisuals(): void&#xa;+ CalculateSlip(): float&#xa;+ GetGripFactor(): float&#xa;+ CalculateForwardForce(): Vector3&#xa;+ CalculateLateralForce(): Vector3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartWheel" vertex="1">
+          <mxGeometry y="210" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- KartSuspension Class -->
+        <mxCell id="KartSuspension" value="KartSuspension" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="600" y="590" width="280" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="KartSuspension_vars" value="+ restLength: float = 0.5f&#xa;+ minLength: float = 0.2f&#xa;+ maxLength: float = 0.7f&#xa;+ springStiffness: float = 30000f&#xa;+ damperStiffness: float = 4000f&#xa;&#xa;- currentLength: float&#xa;- previousLength: float&#xa;- springForce: float&#xa;- damperForce: float&#xa;- suspensionForce: Vector3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartSuspension" vertex="1">
+          <mxGeometry y="26" width="280" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="KartSuspension_methods" value="+ Initialize(): void&#xa;+ CalculateSpringForce(): float&#xa;+ CalculateDamperForce(): float&#xa;+ CalculateSuspensionForce(): Vector3&#xa;+ CheckGroundContact(out RaycastHit): bool&#xa;+ GetCurrentLength(): float&#xa;+ UpdateSuspensionForce(RaycastHit): void&#xa;+ ApplySuspensionForce(Rigidbody): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="KartSuspension" vertex="1">
+          <mxGeometry y="180" width="280" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Flow Diagram Connections -->
+        <!-- KartController to Components -->
+        <mxCell id="edge_controller_physics" value="" style="endArrow=diamondThin;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="KartPhysics" target="KartController">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="560" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="145" y="280" />
+              <mxPoint x="520" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_controller_input" value="" style="endArrow=diamondThin;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="2" parent="1" source="KartInput" target="KartController">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="560" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="280" />
+              <mxPoint x="580" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_controller_engine" value="" style="endArrow=diamondThin;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="3" parent="1" source="KartEngine" target="KartController">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="560" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="655" y="280" />
+              <mxPoint x="640" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_controller_stats" value="" style="endArrow=diamondThin;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="4" parent="1" source="KartStats">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="660" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="925" y="280" />
+              <mxPoint x="660" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Component to Wheels/Suspension connections -->
+        <mxCell id="edge_controller_wheel" value="" style="endArrow=diamondThin;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="5" parent="1" source="KartController" target="KartWheel">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="560" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="560" />
+              <mxPoint x="375" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_wheel_suspension" value="" style="endArrow=diamondThin;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="6" parent="1" source="KartSuspension_vars" target="KartWheel_vars">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="570" as="sourcePoint" />
+            <mxPoint x="560" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Physics System Flow -->
+        <mxCell id="flow_title" value="Physics System Flow" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="7" parent="1">
+          <mxGeometry x="20" y="110" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow_step1" value="1. KartController.Update()" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="8" parent="1">
+          <mxGeometry x="20" y="140" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_step2" value="2. KartController.FixedUpdate()" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="9" parent="1">
+          <mxGeometry x="20" y="175" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_step3" value="3. Collect input from KartInput" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="10" parent="1">
+          <mxGeometry x="20" y="210" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_step4" value="4. Calculate engine forces" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="11" parent="1">
+          <mxGeometry x="20" y="245" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_step5" value="5. Apply forces through KartPhysics" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="12" parent="1">
+          <mxGeometry x="220" y="140" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_step6" value="6. Update wheels and suspension" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="13" parent="1">
+          <mxGeometry x="220" y="175" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_step7" value="7. Update visual elements" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="14" parent="1">
+          <mxGeometry x="220" y="210" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Flowchart arrows -->
+        <mxCell id="flow_arrow1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="15" parent="1" source="flow_step1" target="flow_step2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_arrow2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="16" parent="1" source="flow_step2" target="flow_step3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_arrow3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="17" parent="1" source="flow_step3" target="flow_step4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_arrow4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="18" parent="1" source="flow_step4" target="flow_step5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="280" />
+              <mxPoint x="320" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_arrow5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="19" parent="1" source="flow_step5" target="flow_step6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_arrow6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="20" parent="1" source="flow_step6" target="flow_step7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Title -->
+        <mxCell id="diagram_title" value="Kart Physics Implementation - UML Class Diagram" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1" vertex="21" parent="1">
+          <mxGeometry x="380" y="10" width="410" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend_title" value="Legend:" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="22" parent="1">
+          <mxGeometry x="900" y="110" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_controller" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="23" parent="1">
+          <mxGeometry x="900" y="140" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_controller_text" value="Main Controller" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="24" parent="1">
+          <mxGeometry x="930" y="135" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_component" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="25" parent="1">
+          <mxGeometry x="900" y="170" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_component_text" value="Primary Components" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="26" parent="1">
+          <mxGeometry x="930" y="165" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_subcomponent" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="27" parent="1">
+          <mxGeometry x="900" y="200" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_subcomponent_text" value="Wheel Components" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="28" parent="1">
+          <mxGeometry x="930" y="195" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_diamond" value="" style="endArrow=diamondThin;endFill=1;endSize=12;html=1;rounded=0;" edge="29" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="900" y="240" as="sourcePoint" />
+            <mxPoint x="930" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend_diamond_text" value="Composition" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="30" parent="1">
+          <mxGeometry x="940" y="225" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_open_diamond" value="" style="endArrow=diamondThin;endFill=0;endSize=12;html=1;rounded=0;" edge="31" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="900" y="270" as="sourcePoint" />
+            <mxPoint x="930" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend_open_diamond_text" value="Aggregation" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="32" parent="1">
+          <mxGeometry x="940" y="255" width="90" height="30" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
