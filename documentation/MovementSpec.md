@@ -16,7 +16,8 @@
 - **Braking Deceleration**: Rapid deceleration when braking (-20mph per second)
 
 ### Turning Mechanics
-- **Base Turn Speed**: 45 degrees per second
+- **Base Turn Speed**: ~45 degrees per second. But depends on handling
+- **Focus Power**: However, as with all movements, this is increased by x1.5 if you're using the focus power
 - **Turn Responsiveness**: 0.2 second delay between input and maximum turn angle
 - **Stability Control**: Auto-adjusts kart stability when turning at high speeds
 
@@ -26,7 +27,7 @@
   - If the T key and only one other key are being pressed, the effect of the other key happens 1.5 times more powerfully.
   - For example, if only W and T are being pressed, then the kart accelerates 1.5 times faster. If only D and T are being pressed, it turns 1.5 times more powerfully.
   - This adds an extra layer to gameplay, and another thing for the player to focus on as they play
-  
+
 ## Kart Physics System
 
 ### Physics Model Type
@@ -67,11 +68,15 @@
 #### Keyboard Default Controls
 - **W**: Accelerate
 - **S**: Brake/Reverse
-- **A/D**: Turn Left/Right
+- **A/D**: Turn Left/
+- **J**: Jump
 - **Shift**: Use Collected Powerup
 - **E**: Activate Teacher Special Ability
 - **F**: Fire powerup or special ability (after activation)
+- **P**: Activate powerup
 - **T**: Focused power key
+- **V**: Push to talk in voice chat
+- **M**: Mutes voice chat in multiplayer
 - **Tab**: View Minimap with players as dots
 - **Esc**: Pause Menu
 ### Visual Control Feedback
@@ -104,3 +109,6 @@
 
 ### Minimap
 - Press tab to see minimap with each player as a dot on it
+
+### Multiplayer
+- Voice chat is available at all times based upon pressing V, regardless of distance to other cars
