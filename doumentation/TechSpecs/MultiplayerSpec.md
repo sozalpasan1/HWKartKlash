@@ -9,40 +9,11 @@ This document outlines the technical specifications for implementing multiplayer
 ### Game Engine
 - **Unity 2022.3 LTS** or newer
 
-#### Primary Solution: Photon PUN 2
-- **Package**: Photon Unity Networking 2 (PUN 2)
-- **Version**: 2.43 or newer
-- **Purpose**: Main networking framework for player synchronization, room management, and matchmaking
-
-#### Secondary Solution
+#### Multiplayer Networking:
 - **Unity Netcode for GameObjects**
   - **Version**: 1.5.1 or newer
   - **Purpose**: For specific Unity-optimized networking features
 
-#### Voice Communication
-- **Photon Voice 2**
-  - **Version**: 2.50 or newer
-  - **Purpose**: Implementation of proximity voice chat
-
-## Architecture Overview
-
-```
-┌─────────────────────────────────────┐
-│           Client Application         │
-├─────────────┬──────────┬─────────────┤
-│  Game Logic │ UI Layer │ Input Layer │
-├─────────────┴──────────┴─────────────┤
-│         Networking Manager           │
-├───────────────────┬─────────────────┤
-│   Photon Client   │   Voice Client  │
-└───────────────────┴─────────────────┘
-            ▲                ▲
-            │                │
-            ▼                ▼
-┌───────────────────┬─────────────────┐
-│   Photon Cloud    │  Voice Servers  │
-└───────────────────┴─────────────────┘
-```
 
 ## Feature Specifications
 
