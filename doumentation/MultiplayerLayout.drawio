@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.15">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1102" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--0" value="LobbyManager" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="100" y="140" width="360" height="360" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--1" value="Variables&#xa;* `playerID`: Unique identifier for each player&#xa;  * `playerName`: Display name of the player&#xa;  * `selectedCharacter`: Currently selected teacher character&#xa;  * `position`: Current position in world space&#xa;  * `rotation`: Current rotation in world space&#xa;  * `velocity`: Current velocity vector&#xa;  * `currentLap`: Player&#39;s current lap number&#xa;  * `currentPowerup`: Currently held powerup ID&#xa;  * `positionInterpolationSpeed`: Speed to smooth position updates&#xa;  * `rotationInterpolationSpeed`: Speed to smooth rotation updates&#xa;  * `isLocal`: Whether this is the local player instance" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
+          <mxGeometry y="26" width="360" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
+          <mxGeometry y="200" width="360" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="OlkJvnlpji2KM6CuksFg-7" value="Methods&#xa;* `Initialize()`: Setup player networking components&#xa;  * `SyncPosition()`: Update position data across the network&#xa;  * `SyncRotation()`: Update rotation data across the network&#xa;  * `SyncCheckpoint()`: Synchronize checkpoint crossing events&#xa;  * `ApplyPowerup()`: Activate and synchronize powerup effects&#xa;  * `UseAbility()`: Trigger character-specific abilities&#xa;  * `UpdateRacePosition()`: Update player&#39;s position in the race&#xa;  * `OnPlayerDisconnected()`: Handle player disconnection events&#xa;  * `RequestOwnership()`: Take control of this player object" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--0">
+          <mxGeometry y="210" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--13" value="PlayerNetworking&#xa;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="550" y="540" width="360" height="348" as="geometry">
+            <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--14" value="Variables&#xa;* `availableRooms`: List of currently active game rooms&#xa;  * `roomFilters`: Filters for room searches (map, player count, etc.)&#xa;  * `customRoomProperties`: Properties for room creation&#xa;  * `refreshInterval`: How often to refresh room listings&#xa;  * `maxVisibleRooms`: Maximum number of rooms to display in UI&#xa;  * `defaultRoomSettings`: Default settings for created rooms&#xa;  * `mapOptions`: Available maps for selection&#xa;  * `playerCountOptions`: Available player count settings&#xa;  * `lastRefreshTime`: Timestamp of last room list refresh" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
+          <mxGeometry y="26" width="360" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--15" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--13" vertex="1">
+          <mxGeometry y="180" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="OlkJvnlpji2KM6CuksFg-8" value="Methods&#xa; * `RefreshRoomList()`: Update the list of available rooms&#xa;  * `CreateRoom()`: Create a new room with specified settings&#xa;  * `JoinSelectedRoom()`: Join a room selected from the list&#xa;  * `FilterRooms()`: Apply filters to room listings&#xa;  * `UpdateRoomProperties()`: Modify settings of current room&#xa;  * `LeaveCurrentRoom()`: Exit the current room and return to lobby&#xa;  * `OnRoomListUpdated()`: Handle updated room list from server&#xa;  * `DisplayRoomDetails()`: Show detailed information for a room&#xa;  * `IsRoomFull()`: Check if a specific room has reached capacity&#xa;  * `GetRoomPing()`: Get estimated connection quality to a room&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--13">
+          <mxGeometry y="188" width="360" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--17" value="NetworkManager" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="527" y="70" width="360" height="360" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--18" value="Variables&#xa;* `playerID`: Unique identifier for each player&#xa;  * `playerName`: Display name of the player&#xa;  * `selectedCharacter`: Currently selected teacher character&#xa;  * `position`: Current position in world space&#xa;  * `rotation`: Current rotation in world space&#xa;  * `velocity`: Current velocity vector&#xa;  * `currentLap`: Player&#39;s current lap number&#xa;  * `currentPowerup`: Currently held powerup ID&#xa;  * `positionInterpolationSpeed`: Speed to smooth position updates&#xa;  * `rotationInterpolationSpeed`: Speed to smooth rotation updates&#xa;  * `isLocal`: Whether this is the local player instance" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
+          <mxGeometry y="26" width="360" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="zkfFHV4jXpPFQw0GAbJ--23" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
+          <mxGeometry y="200" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="OlkJvnlpji2KM6CuksFg-4" value="Methods&#xa;* `Initialize()`: Setup player networking components&#xa;  * `SyncPosition()`: Update position data across the network&#xa;  * `SyncRotation()`: Update rotation data across the network&#xa;  * `SyncCheckpoint()`: Synchronize checkpoint crossing events&#xa;  * `ApplyPowerup()`: Activate and synchronize powerup effects&#xa;  * `UseAbility()`: Trigger character-specific abilities&#xa;  * `UpdateRacePosition()`: Update player&#39;s position in the race&#xa;  * `OnPlayerDisconnected()`: Handle player disconnection events&#xa;  * `RequestOwnership()`: Take control of this player object" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry y="208" width="360" height="152" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
