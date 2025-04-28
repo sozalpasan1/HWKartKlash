@@ -1,6 +1,10 @@
 # Multiplayer Spec
 
-![arch](./assets/multiplayer.svg)
+![architecture](./assets/multiplayer.png)
+
+The client should send keyboard inputs to the server (the line), which uses that information to update the state. The client should also update the state locally to ensure continuity for the user. The server should send full state updates back to the client when available. Below is a full multiplayer architecture example.
+
+![example](./assets/multiplayer.svg)
 
 ```d2
 title: HW KartKlash – Full-Stack Architecture
