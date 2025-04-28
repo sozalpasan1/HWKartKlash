@@ -27,13 +27,13 @@ This document outlines the technical specifications for implementing multiplayer
   * `gameVersion`: Current version of the game for compatibility checking
   * `roomName`: Default room name format for created rooms
   * `roomProperties`: Dictionary for storing custom room settings
-  * `connectionState`: Current connection status to Photon servers
+  * `connectionState`: Current connection status to servers
   * `autoReconnect`: Flag for automatic reconnection attempts
 
 * **Methods Expected**:
-  * `Initialize()`: Setup the Photon client configuration
-  * `Connect()`: Connect to Photon network servers
-  * `Disconnect()`: Properly disconnect from Photon services
+  * `Initialize()`: Setup the client configuration
+  * `Connect()`: Connect to network servers
+  * `Disconnect()`: Properly disconnect from services
   * `CreateRoom()`: Create a new room with specified settings
   * `JoinRoom()`: Join an existing room by name
   * `JoinRandomRoom()`: Join any available room
