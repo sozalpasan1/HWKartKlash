@@ -1,0 +1,48 @@
+<mxfile>
+    <diagram id="multiplayer_system" name="Multiplayer System">
+        <mxGraphModel>
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- Core Manager -->
+                <mxCell id="2" value="MultiplayerManager&#xa;(NetworkManager)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="40" width="160" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Network Controllers -->
+                <mxCell id="3" value="NetworkKartController&#xa;(NetworkBehaviour)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Player State -->
+                <mxCell id="4" value="PlayerState&#xa;NetworkVariables" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Race Manager -->
+                <mxCell id="5" value="RaceManager&#xa;(NetworkBehaviour)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="280" width="160" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Connections -->
+                <mxCell id="6" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="7" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="2" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="8" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="9" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="4" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+                </mxCell>
+
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
