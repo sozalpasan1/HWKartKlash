@@ -1,9 +1,11 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.15">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.15">
   <diagram name="Page-1" id="STDr1Y2wVP1EUc82jMBQ">
     <mxGraphModel dx="2139" dy="1985" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        
+        <!-- Jacob's Documentation Content -->
         <mxCell id="GnrDHG70eU0a4UuBjebs-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-1" target="GnrDHG70eU0a4UuBjebs-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -81,6 +83,101 @@
         </mxCell>
         <mxCell id="GnrDHG70eU0a4UuBjebs-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.345;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-1" target="GnrDHG70eU0a4UuBjebs-21">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Milo's Kart Physics and Controls Content -->
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-32" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="100" y="700" width="560" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-23" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry y="70" width="560" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.629;exitY=0.975;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(transparent,#66B2FF);strokeColor=light-dark(#000000,#0000CC);exitPerimeter=0;" edge="1" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-7" target="d4R0EBCkEg1dRWe-Izaa-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="428" y="200" />
+              <mxPoint x="540" y="200" />
+              <mxPoint x="540" y="430" />
+              <mxPoint x="265" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-25" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Kart Information Supplier&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#0000CC);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry x="20" y="450" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-28" value="" style="group" vertex="1" connectable="0" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry x="20" y="450" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-26" value="" style="group;strokeColor=light-dark(#000000,#0000CC);container=0;" vertex="1" connectable="0" parent="d4R0EBCkEg1dRWe-Izaa-28">
+          <mxGeometry width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-24" value="This will supply the kart&#39;s position, velocity, lap placement, etc. to methods that need it.&lt;div&gt;Acts as a way for all other methods to access Kart variables&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#0000CC);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-28">
+          <mxGeometry y="30" width="490" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-6" value="" style="group;strokeColor=light-dark(transparent,#FF0000);container=0;" vertex="1" connectable="0" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry x="340" y="110" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-16" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Kart Physics Engine&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFF00);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry x="20" y="220" width="460" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=light-dark(#000000,#FF8000);strokeColor=light-dark(#000000,#FF8000);" edge="1" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-2" target="d4R0EBCkEg1dRWe-Izaa-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(#000000,#FFFF00);strokeColor=light-dark(#000000,#FFFF00);" edge="1" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-20" target="d4R0EBCkEg1dRWe-Izaa-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="410" />
+              <mxPoint x="510" y="410" />
+              <mxPoint x="510" y="90" />
+              <mxPoint x="410" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-20" value="Primarily makes use of Unity&#39;s built in physics engine. Kart is declared as an object that then sends updates to the physics engine based on outside input which are declared separately.&lt;br&gt;&lt;br&gt;Collisions are primarily handled by Unity, so advanced logic is not needed.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The engine then spits out a new position for the kart.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFF00);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry x="20" y="270" width="460" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-2" value="WASD controls, kart choice, settings, etc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF8000);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry x="20" y="140" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-3" value="User Inputs" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF8000);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry x="20" y="110" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-29" value="" style="group" vertex="1" connectable="0" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry x="340" y="110" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-7" value="Position, rotation, velocity of current kart" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF0000);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-29">
+          <mxGeometry y="30" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-8" value="Kart Positioning" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF0000);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-29">
+          <mxGeometry width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-30" value="" style="group" vertex="1" connectable="0" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry x="180" y="110" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-10" value="Powerups, jumps, wall collisions, debuffs, etc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#00CC00);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-30">
+          <mxGeometry y="30" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-11" value="Map Updates" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#00CC00);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-30">
+          <mxGeometry width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-31" value="&lt;b&gt;&lt;font style=&quot;font-size: 42px;&quot;&gt;Kart Physics and Controls&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+          <mxGeometry width="560" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FF0000);" edge="1" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-7" target="d4R0EBCkEg1dRWe-Izaa-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(#000000,#00CC00);strokeColor=light-dark(#000000,#00CC00);" edge="1" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-10" target="d4R0EBCkEg1dRWe-Izaa-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Connection between Jacob's and Milo's diagrams -->
+        <mxCell id="connection-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-25" target="d4R0EBCkEg1dRWe-Izaa-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10" y="650" />
+              <mxPoint x="380" y="650" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
