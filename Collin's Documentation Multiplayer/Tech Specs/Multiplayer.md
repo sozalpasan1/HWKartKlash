@@ -12,7 +12,7 @@ Essential multiplayer implementation for kart racing using Unity's Netcode for G
 ## Installation and Setup Guide
 
 ### Installation Steps
-1. Open Unity Package Manager (Window > Package Manager)
+1. Open Unity Package Manager (Window > Package Manager) com.unity.netcode.gameobjects
 2. Click the '+' button > Add package by name
 3. Enter "com.unity.netcode.gameobjects"
 4. Install the latest verified version
@@ -32,7 +32,9 @@ Essential multiplayer implementation for kart racing using Unity's Netcode for G
    - NetworkTransform: Sync position/rotation
    - NetworkAnimator: Sync animations
    - NetworkVariable<T>: Sync custom data
-
+<!-- 4. Install cinemachine
+5. Install probuilder
+6. Install the new Unity Input System -->
 ### Common Implementation Pattern
 1. Create Network Prefabs
    ```csharp
