@@ -8,6 +8,11 @@
   - **Version**: 1.5.1 or newer
   - **Purpose**: For specific Unity-optimized networking features
 
+### Netcode Installation Steps
+1. Open Unity Package Manager (Window > Package Manager) com.unity.netcode.gameobjects
+2. Click the '+' button > Add package by name
+3. Enter "com.unity.netcode.gameobjects"
+4. Install the latest verified version
 
 ## Feature Specifications
 
@@ -40,41 +45,8 @@
   * GameStateManager: For synchronizing game state across network
   * PlayerManager: For player registration and management
 
-### 2. Player Synchronization System
 
-#### PlayerNetworking
-* **Variables Expected**:
-  * `playerID`: Unique identifier for each player
-  * `playerName`: Display name of the player
-  * `selectedCharacter`: Currently selected teacher character
-  * `position`: Current position in world space
-  * `rotation`: Current rotation in world space
-  * `velocity`: Current velocity vector
-  * `currentLap`: Player's current lap number
-  * `currentPowerup`: Currently held powerup ID
-  * `positionInterpolationSpeed`: Speed to smooth position updates
-  * `rotationInterpolationSpeed`: Speed to smooth rotation updates
-  * `isLocal`: Whether this is the local player instance
-
-* **Methods Expected**:
-  * `Initialize()`: Setup player networking components
-  * `SyncPosition()`: Update position data across the network
-  * `SyncRotation()`: Update rotation data across the network
-  * `SyncCheckpoint()`: Synchronize checkpoint crossing events
-  * `ApplyPowerup()`: Activate and synchronize powerup effects
-  * `UseAbility()`: Trigger character-specific abilities
-  * `UpdateRacePosition()`: Update player's position in the race
-  * `OnPlayerDisconnected()`: Handle player disconnection events
-  * `RequestOwnership()`: Take control of this player object
-
-* **Related Objects**:
-  * KartController: For controlling kart physics and input
-  * PowerupManager: For powerup activation and effects
-  * TeacherAbilityManager: For character-specific abilities
-  * RaceManager: For race progression tracking
-
-
-### 3. Room and Matchmaking System (All this is lower priority, should get 1 room working first)
+### 2. Room and Matchmaking System (All this is lower priority, should get 1 room working first)
 
 #### LobbyManager
 * **Variables Expected**:
@@ -101,4 +73,18 @@
   * `GetRoomPing()`: Get estimated connection quality to a room
 
 
+### Basic Implementation Steps
+1. Network Manager Setup
+   - Create an empty GameObject in the scene
+   - Add NetworkManager component
+   - Configure Transport (Default: Unity Transport)
 
+2. Network Object Setup
+   - Add NetworkObject component to GameObjects that need networking
+   - Add NetworkBehaviour scripts for custom network logic
+   - Configure object spawning preferences in NetworkManager
+
+3. Basic Network Components
+   - NetworkTransform: Sync position/rotation
+   - NetworkAnimator: Sync animations
+   - NetworkVariable<T>: Sync custom data
