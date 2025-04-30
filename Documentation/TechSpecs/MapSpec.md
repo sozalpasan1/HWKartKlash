@@ -1,5 +1,3 @@
-<!-- HW Kart Klash 2025 – Map layer (P1 scope) -->
-
 ### Initialization
 | Method | Returns | Notes |
 |--------|---------|-------|
