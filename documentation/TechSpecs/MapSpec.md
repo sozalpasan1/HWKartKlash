@@ -23,34 +23,44 @@ Track 2:
 - **Seventh Section**: Leaves out North entrance and re-enters campus main entrance by pool
 - **Final Section**: Through Taper to the pool
 
+**Map Manager**
+Methods:
+LoadMap(): Loads the map and calls InitializeTrack() to set it up. (P1)
+UnloadMap(): Unloads the map and clears any active data. (P1)
 
-**Lap Tracking (Finish Line) (P1)**
-IncrementLap(player): Increases the player's lap count upon completing a lap.
-HasFinishedRace(player): Determines if the player has completed the required number of laps.
+**Lap Tracker (Finish Line) (P1)**
+Variables:
+int requiredLaps: Number of laps required to finish the race. (P1)
+Transform finishLine: Transform for the finish line. (P1)
+Methods:
+IncrementLap(player): Increases the player's lap count upon completing a lap. (P1)
+HasFinishedRace(player): Determines if the player has completed the required number of laps. (P1)
 
-**Checkpoints (P1)**
-ActivateCheckpoint(): Marks the checkpoint as active when a player passes through.
-IsNextCheckpoint(player): Validates if this checkpoint is the next in sequence for the player.
-
-**Respawn/Relocation (P1)**
-- Respawn Trigger / Fall Detection (P1)
-- Respawn Behavior (P1)
-TriggerRespawn(player): Initiates the respawn process for the player.
-GetLastCheckpoint(player): Retrieves the last checkpoint the player passed for accurate respawn positioning.
+**CheckpointManager (P1)**
+Variables:
+int currentCheckpoint: Index of the checkpoint in the sequence. (P1)
+Transform respawnPoint: Where to respawn the player if needed. (P1)
+Methods:
+void ActivateCheckpoint(): Marks the checkpoint as active when a player passes through. (P1)
+bool IsNextCheckpoint(Player player): Validates if this checkpoint is the next in sequence for the player. (P1)
+void TriggerRespawn(Player player): Initiates the respawn process for the player. (P1)
+Checkpoint GetLastCheckpoint(Player player): Retrieves the last checkpoint the player passed for accurate respawn positioning. (P1)
 
 **Collision (P1)**
-OnCollisionEnter(collider): Responds to collision events.
-IsOffTrack(collider): Determines if the collision indicates the player is off the track.
+Variables:
+LayerMask trackLayer: Layer mask for identifying track boundaries and off-track zones. (P1)
+Methods:
+void OnCollision(playerb): Responds to collision events. (P1)
 
 **Track (P1)**
-- Borders/Barriers (P1)
-- Shortcuts (P2)
-- Off-Road Areas (P2)
-- Road Textures (P2)
-- Boost Pads / Ramps (P2)
-InitializeTrack(): Sets up the track layout and components.
-GetCheckpointList(): Retrieves the list of checkpoints in order.
+Variables:
+List<Borders> borders: List of borders in the track. (P1)
+List<Transform> boostPads: List of boost pads scattered across the track. (P2)
+List<Transform> ramps: List of ramps scattered across the track. (P2)
+List<Transform> shortcuts: List of shortcuts available on the track. (P2)
+List<Transform> offRoadAreas: Areas where players can go off-road. (P2)
+Material roadTexture: The material for the track's road surface. (P2)
+Methods:
+void InitializeTrack(): Sets up the track layout and components. (P1)
 
-**Player Position Tracking (P1)**
-UpdatePositions(): Recalculates player positions based on progress.
-GetPlayerPosition(player): Retrieves the current position of a specific player.
+Diagram: https://drive.google.com/file/d/1eij0RIVDhh0Q2D6kohjmu4Fu7kH42HHa/view?usp=sharing
