@@ -23,6 +23,8 @@ Track 2:
 - **Seventh Section**: Leaves out North entrance and re-enters campus main entrance by pool
 - **Final Section**: Through Taper to the pool
 
+Need map when you start the race and unload when the race is finished.
+
 **Map Manager**
 Methods:
 LoadMap(): Loads the map and calls InitializeTrack() to set it up. (P1)
