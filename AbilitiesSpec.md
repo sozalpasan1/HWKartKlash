@@ -1,4 +1,4 @@
-TeacherAbility ScriptableObject Class
+TeacherAbility ScriptableObject Class (important, not vital)
 - Variables:
     - AbilityMap (String name, String ability)
     - int [] cooldownTimes
@@ -9,7 +9,7 @@ TeacherAbility ScriptableObject Class
 - Interacts with:
     - Sound class
     - Potentially cart class (each teacher has a different cart)
-Powerup ScriptableObject Class
+Powerup ScriptableObject Class (important, not vital)
 - Variables:
     - String powerupName
     - Sprite icon
@@ -18,7 +18,7 @@ Powerup ScriptableObject Class
         - activates specific ability
 - Interacts with:
     - Powerup Manager class
-PowerupManager Class
+PowerupManager Class (important, not vital)
 - Variables:
     - Powerup powerup
     - KeyCode activationKey- what key is pressed to activate
