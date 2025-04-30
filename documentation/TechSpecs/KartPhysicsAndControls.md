@@ -34,6 +34,101 @@ There will be an interface for powerups to temporarily modify kart variables suc
 
 ---
 
+# Kart Controls and technical details
+
+## Player Movement System
+
+```Note, all values given for each input are not final```
+
+### Speed Management
+- **Maximum Speed**: Depends on which car player is using. Between ~80mph and ~100mph
+- **Rate of Acceleration**: Also depends on which car player is using
+  - Should be somewhere between 20mph per second and 40mph per second
+- **Deceleration**: Natural deceleration at all times (loses ~5% of current velocity per second)
+    - Different karts can be more or less aerodynamic
+- **Braking Deceleration**: Rapid deceleration when braking (-20mph per second)
+
+### Turning Mechanics
+- **Base Turn Speed**: ~45 degrees per second. But depends on handling
+- **Focus Power**: However, as with all movements, this is increased by x1.5 if you're using the focus power
+- **Turn Responsiveness**: 0.2 second delay between input and maximum turn angle
+- **Stability Control**: Auto-adjusts kart stability when turning at high speeds
+
+## Kart Physics System
+
+### Physics Model Type
+- **Simplified Arcade Physics**: Modified realistic physics model with focus on fun over simulation
+- **Physics Update Rate**: 60 physics updates per second for consistent behavior across different hardware
+
+### Surface Interaction
+- **Surface Materials Database**:
+  - Stone: Base speed (1.0)
+  - Grass: Reduced speed (0.7)
+  - Metal: Reduced speed (0.9)
+- **Weather Effects on Physics**:
+  - Rain: Reduced handling due to wet ground (-15%)
+  - Heat: Increased handling due to better tire grip (+10%)
+  - Snow: Speed reduction (-20%)
+
+### Collision Response System
+- **Kart Collisions**: (utilizes Unity's built in engine
+  - Varied response based on collision velocity and angle (general karts physics)
+  - Speed reduction on impact (based on collision angle)
+  - Recovery assistance system to help flipped karts
+
+## User Controls
+
+### Core Control Scheme
+
+#### Keyboard Default Controls
+- **W**: Accelerate
+- **S**: Brake/Reverse
+- **A/D**: Turn Left/
+- **Space**: Jump
+- **Shift**: Use Collected Powerup
+- **E**: Activate Teacher Special Ability
+- **F**: Fire powerup or special ability (after activation)
+- **P**: Activate powerup
+- **V**: Push to talk in voice chat
+- **M**: Mutes voice chat in multiplayer
+- **Tab**: View Minimap with players as dots
+- **Esc**: Pause Menu
+### Visual Control Feedback
+- **Speed Display**: Speedometer in corner showing current speed
+- **Teacher Ability Cooldown**: Visual timer for special ability availability
+
+### Special Controls
+
+#### Teacher Special Abilities
+- **Activation**: Press shift when ability is available
+- **Cooldown System**: Each ability has a specific cooldown period before reuse
+- **Targeting Controls** (for powerups/abilities that require aiming):
+  - Aim will sweep around in a circle
+  - Press f to fire the ability in the current aim direction
+
+### User Interface Controls
+- **Menu Navigation**: Arrow keys/WASD
+- **Selection**: Enter
+- **Back/Cancel**: Esc
+
+## Relation to other core components
+
+### Weather
+- Weather affects friction, speed, and in hard mode, affects damage
+- As described above
+
+### Varying kart options
+- Affects top speed, handling, aerodynamics, acceleration
+- As described above
+
+### Minimap
+- Press tab to see minimap with each player as a dot on it
+
+### Multiplayer
+- Voice chat is available at all times based upon pressing V, regardless of distance to other cars
+
+---
+
 # Code Implementation Preview
 
 ## 1. Overview
