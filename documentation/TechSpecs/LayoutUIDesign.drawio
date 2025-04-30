@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.15">
   <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
-    <mxGraphModel dx="718" dy="916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+    <mxGraphModel dx="446" dy="568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -34,7 +34,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="w2AeNHsPmSZSX3Qvx-ul-57" value="note: the words next to the arrows outside the boxes are the&lt;div&gt;buttons that the player clicks to get to the boxes. the boxes&lt;/div&gt;&lt;div&gt;represent the different screens/menus available in the game.&lt;/div&gt;" style="text;fontStyle=0;html=1;strokeColor=none;gradientColor=none;fillColor=none;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="720" y="40" width="330" height="56" as="geometry" />
+          <mxGeometry x="800" y="34" width="330" height="56" as="geometry" />
         </mxCell>
         <mxCell id="w2AeNHsPmSZSX3Qvx-ul-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w2AeNHsPmSZSX3Qvx-ul-58" target="w2AeNHsPmSZSX3Qvx-ul-63">
           <mxGeometry relative="1" as="geometry">
@@ -147,13 +147,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="w2AeNHsPmSZSX3Qvx-ul-105" value="general option menu options:&lt;div&gt;&lt;ul&gt;&lt;li&gt;music volume&lt;/li&gt;&lt;li&gt;narration toggle&lt;/li&gt;&lt;li&gt;railings toggle&lt;/li&gt;&lt;li&gt;auto alignment toggle&lt;/li&gt;&lt;li&gt;on-screen mini map toggle&lt;/li&gt;&lt;li&gt;controls diagram?&lt;/li&gt;&lt;li&gt;accessibility features?&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="720" y="118" width="200" height="150" as="geometry" />
+          <mxGeometry x="800" y="118" width="200" height="150" as="geometry" />
         </mxCell>
         <mxCell id="w2AeNHsPmSZSX3Qvx-ul-106" value="gameplay buttons:&lt;div&gt;&lt;ul&gt;&lt;li&gt;pause game&lt;/li&gt;&lt;li&gt;&quot;use powerup&quot; button&lt;/li&gt;&lt;li&gt;&quot;use teacher ability&quot; button&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="720" y="400" width="210" height="100" as="geometry" />
+          <mxGeometry x="800" y="400" width="210" height="100" as="geometry" />
         </mxCell>
         <mxCell id="w2AeNHsPmSZSX3Qvx-ul-107" value="game-specific option menu options:&lt;div&gt;&lt;ul&gt;&lt;li&gt;map selection&lt;/li&gt;&lt;li&gt;character selection&lt;/li&gt;&lt;li&gt;set race count&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="720" y="280" width="210" height="100" as="geometry" />
+          <mxGeometry x="800" y="280" width="210" height="100" as="geometry" />
         </mxCell>
         <mxCell id="w2AeNHsPmSZSX3Qvx-ul-76" value="back" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="540" y="100" width="50" height="30" as="geometry" />
