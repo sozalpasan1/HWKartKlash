@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" modified="2025-04-30T08:40:00.000Z" agent="ChatGPT-o3" etag="HW-Kart-Klash-P1-Map">
+  <diagram id="HW-KK-Map" name="Page-1">
+    <mxGraphModel dx="1433" dy="765" grid="1" gridSize="10" guides="1" tooltips="1"
+                  connect="1" arrows="1" fold="1" page="1" pageScale="1"
+                  pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <!-- Layer root -->
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Initialization -->
+        <mxCell id="2" value="&lt;b&gt;Initialization&lt;/b&gt;&lt;br/&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td&gt;load()&lt;/td&gt;&lt;td&gt;void&lt;/td&gt;&lt;td&gt;loads 3-D map file &amp; all features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;unload()&lt;/td&gt;&lt;td&gt;void&lt;/td&gt;&lt;td&gt;de-loads 3-D map file&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E0FF;strokeColor=#9B87FF;"
+                vertex="1" parent="1">
+          <mxGeometry x="420" y="40" width="260" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Power Up -->
+        <mxCell id="3" value="&lt;b&gt;Power Up&lt;/b&gt;&lt;br/&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td&gt;Location&lt;/td&gt;&lt;td&gt;Position&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;GetLocation()&lt;/td&gt;&lt;td&gt;Position&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFEFD9;strokeColor=#FFC688;"
+                vertex="1" parent="1">
+          <mxGeometry x="180" y="90" width="220" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Position struct -->
+        <mxCell id="4" value="&lt;b&gt;Position&lt;/b&gt;&lt;br/&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td&gt;double&lt;/td&gt;&lt;td&gt;x&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;double&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF8DC;strokeColor=#FFD86C;"
+                vertex="1" parent="1">
+          <mxGeometry x="100" y="230" width="180" height="110" as="geometry"/>
+        </mxCell>
+
+        <!-- CheckPoint -->
+        <mxCell id="5" value="&lt;b&gt;CheckPoint&lt;/b&gt;&lt;br/&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td&gt;Location&lt;/td&gt;&lt;td&gt;Position&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Respawn location&lt;/td&gt;&lt;td&gt;Position&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Checkpoint number&lt;/td&gt;&lt;td&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;hasBeenActivated(playerID)&lt;/td&gt;&lt;td&gt;bool&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;playersPassed&lt;/td&gt;&lt;td&gt;int[]&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9F1FF;strokeColor=#93CBFF;"
+                vertex="1" parent="1">
+          <mxGeometry x="100" y="360" width="220" height="240" as="geometry"/>
+        </mxCell>
+
+        <!-- Map Features -->
+        <mxCell id="6" value="&lt;b&gt;Map Features&lt;/b&gt;&lt;br/&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td&gt;Checkpoint List&lt;/td&gt;&lt;td&gt;Position[]&lt;/td&gt;&lt;td&gt;stores positions of all checkpoints&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Powerup list&lt;/td&gt;&lt;td&gt;PowerUp[]&lt;/td&gt;&lt;td&gt;stores all power-ups&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Finish position&lt;/td&gt;&lt;td&gt;Position&lt;/td&gt;&lt;td&gt;position of the finish&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Start position&lt;/td&gt;&lt;td&gt;Position&lt;/td&gt;&lt;td&gt;position of the start&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Kill boundary&lt;/td&gt;&lt;td&gt;double[8]&lt;/td&gt;&lt;td&gt;3-D box corners&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE5E0;strokeColor=#FF9E8F;"
+                vertex="1" parent="1">
+          <mxGeometry x="420" y="360" width="280" height="240" as="geometry"/>
+        </mxCell>
+
+        <!-- Respawn Service -->
+        <mxCell id="7" value="&lt;b&gt;Respawn Service&lt;/b&gt;&lt;br/&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td&gt;Respawn()&lt;/td&gt;&lt;td&gt;void&lt;/td&gt;&lt;td&gt;Returns player to closest respawn&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;determineRespawnPosition()&lt;/td&gt;&lt;td&gt;Position&lt;/td&gt;&lt;td&gt;pos of last checkpoint passed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;fruitLocation&lt;/td&gt;&lt;td&gt;int tuple&lt;/td&gt;&lt;td&gt;&nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;layoutType&lt;/td&gt;&lt;td&gt;static enum&lt;/td&gt;&lt;td&gt;pellet&nbsp;|&nbsp;wall&nbsp;|&nbsp;clear&nbsp;|&nbsp;powerup&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+                style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DFFFEA;strokeColor=#8CF2B4;"
+                vertex="1" parent="1">
+          <mxGeometry x="760" y="120" width="280" height="220" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="20" style="endArrow=block;html=1;strokeColor=#666666;" edge="1" parent="1" source="6" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="21" style="endArrow=block;html=1;strokeColor=#666666;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="22" style="endArrow=block;html=1;strokeColor=#666666;" edge="1" parent="1" source="2" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="23" style="endArrow=block;html=1;strokeColor=#666666;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
