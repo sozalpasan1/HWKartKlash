@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.15">
+  <diagram name="Page-1" id="NdAwT_l8XhG4y-RWzyTU">
+    <mxGraphModel dx="1097" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-1" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;b&gt;Proximity Chat&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="110" width="310" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="omQsrvYdXaUVsE3N5qJ_-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-6" value="User Microphone&lt;br&gt;and Audio Settings" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-8" value="Audio Compressor+Mixer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="240" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-15" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="60" y="310" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-13" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Player Audio Mixer&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="omQsrvYdXaUVsE3N5qJ_-15">
+          <mxGeometry width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-14" value="Remixes audio from all players based on distance away from everyone else, and turns it into one audio stream." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="omQsrvYdXaUVsE3N5qJ_-15">
+          <mxGeometry y="30" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="omQsrvYdXaUVsE3N5qJ_-4" target="omQsrvYdXaUVsE3N5qJ_-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-4" value="Player&amp;nbsp;&lt;div&gt;Microphone&lt;br&gt;Input&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="130" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="omQsrvYdXaUVsE3N5qJ_-12" target="omQsrvYdXaUVsE3N5qJ_-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-12" value="Magic Multiplayer Box&lt;br&gt;(to be implemented at a later date)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="omQsrvYdXaUVsE3N5qJ_-8" target="omQsrvYdXaUVsE3N5qJ_-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-17" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b style=&quot;&quot;&gt;General Audio Mixer&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="430" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="omQsrvYdXaUVsE3N5qJ_-14" target="omQsrvYdXaUVsE3N5qJ_-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="omQsrvYdXaUVsE3N5qJ_-19" value="Mixes game audio from prox chat, music, sound effects, etc." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="460" width="280" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
