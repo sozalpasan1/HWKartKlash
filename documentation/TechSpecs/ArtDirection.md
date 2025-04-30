@@ -85,11 +85,3 @@ This document outlines possible art directions for a kart racing game themed aro
 - **Cons**: Requires custom shaders or post-processing  
 - **Typical Use**: Mario Kart, anime-styled visuals  
 ![toon](./pic2.jpg)
-
----
-
-## 📌 How to Insert Reference Pictures
-To embed reference images into this Markdown file:
-1. Place your image file in the same directory as this README.
-2. Replace `[pic]` with the image link like this:  
-   `![description](your-image-filename.png)`
