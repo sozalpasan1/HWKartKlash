@@ -36,7 +36,7 @@ This document outlines art directions for HW Kart Klash, a kart racing game them
 
 ### Secondary option, if the first one isn't integratable in time:
 
-**Low Poly** – *Easy to Moderate*  
+**Low Poly**
    - Simple geometry, flat colors  
    - Minimal shading; highly stylized
 
