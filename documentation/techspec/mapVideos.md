@@ -1,4 +1,3 @@
-hi
 This a pretty good playlist
 https://www.youtube.com/watch?v=u6wW5ZIIrpc&list=PLyzEwm3kpm_IYMtaxzMN31Cf9fMq3rx7s&index=1
 
