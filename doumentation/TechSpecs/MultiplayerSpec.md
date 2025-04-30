@@ -1,9 +1,3 @@
-# HW KartKlash - MultiplayerSpec.md
-
-## Overview
-
-This document outlines the technical specifications for implementing multiplayer functionality in the HW KartKlash racing game. The game is a multiplayer racing experience set on the Harvard-Westlake campus, featuring custom karts, teacher characters with unique abilities, and various power-ups.
-
 ## Technology Stack
 
 ### Game Engine
@@ -18,14 +12,13 @@ This document outlines the technical specifications for implementing multiplayer
 ## Feature Specifications
 
 ### 1. Network Management System
-**Related Design Elements**: "Multiplayer racing game", "Game Features"
-
 #### NetworkManager
 * **Variables Expected**:
   * `instance`: Reference to the NetworkManager
   * `maxPlayersPerRoom`: Maximum number of players allowed in a race (8)
   * `gameVersion`: Current version of the game for compatibility checking
   * `roomName`: Default room name format for created rooms
+  * Lower Priority:
   * `roomProperties`: Dictionary for storing custom room settings
   * `connectionState`: Current connection status to servers
   * `autoReconnect`: Flag for automatic reconnection attempts
@@ -36,10 +29,10 @@ This document outlines the technical specifications for implementing multiplayer
   * `Disconnect()`: Properly disconnect from services
   * `CreateRoom()`: Create a new room with specified settings
   * `JoinRoom()`: Join an existing room by name
+  * `LeaveRoom()`: Exit the current room to lobby
+  * Lower Priority:
   * `JoinRandomRoom()`: Join any available room
-  * `LeaveRoom()`: Exit the current room
   * `OnConnectionStatusChanged()`: Event handler for connection state changes
-  * `OnRoomPropertiesUpdated()`: Handle room property changes
   * `GetPing()`: Retrieve current connection latency
 
 * **Related Objects**:
@@ -48,7 +41,6 @@ This document outlines the technical specifications for implementing multiplayer
   * PlayerManager: For player registration and management
 
 ### 2. Player Synchronization System
-**Related Design Elements**: "All racing karts have identical performance specifications", "Racers can collect various powerups throughout the track"
 
 #### PlayerNetworking
 * **Variables Expected**:
@@ -82,8 +74,7 @@ This document outlines the technical specifications for implementing multiplayer
   * RaceManager: For race progression tracking
 
 
-### 3. Room and Matchmaking System (This is lower priority, should get 1 room working first)
-**Related Design Elements**: "Multiplayer racing game"
+### 3. Room and Matchmaking System (All this is lower priority, should get 1 room working first)
 
 #### LobbyManager
 * **Variables Expected**:
@@ -108,12 +99,6 @@ This document outlines the technical specifications for implementing multiplayer
   * `DisplayRoomDetails()`: Show detailed information for a room
   * `IsRoomFull()`: Check if a specific room has reached capacity
   * `GetRoomPing()`: Get estimated connection quality to a room
-
-* **Related Objects**:
-  * NetworkManager: For connection management
-  * UIManager: For displaying room listings and details
-  * GameStateManager: For transitioning between lobby and game
-  * PlayerPrefs: For saving preferred room settings
 
 
 
