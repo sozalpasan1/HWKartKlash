@@ -23,13 +23,14 @@ This document outlines art directions for HW Kart Klash, a kart racing game them
 
 ## 🎨 Color Palette
 *(Will vary depending on chosen style)*  
-![color palette](./colorPalette.png)
+
+![color palette](./assets/colorPalette.png)
 
 ---
 
 ## 🖌️ Art Styles
 
-**Stylized / Cartoonish** – *Moderate to Hard*  
+**Stylized / Cartoonish**  
    - Similar to Mario Kart  
    - Requires more polish, consistent style
 
@@ -38,16 +39,18 @@ This document outlines art directions for HW Kart Klash, a kart racing game them
 **Low Poly** – *Easy to Moderate*  
    - Simple geometry, flat colors  
    - Minimal shading; highly stylized
-   ![low poly](./pic5.jpeg)
+
+![low poly](./assets/pic5.jpeg)
 
 
 ---
 
 ## 💡 Shading Styles
 
-**Standard Shader (PBR)** – *Moderate*  
+**Standard Shader (PBR)**  
 - **Usage**: Realistic lighting and surface materials  
 - **Pros**: Built-in to Unity, no code needed  
 - **Cons**: Heavier performance usage  
-- **Typical Use**: Semi-realistic kart games  
-![standard](./pic4.jpg)
+- **Typical Use**: Semi-realistic kart games 
+
+![standard](./assets/pic4.jpg)
