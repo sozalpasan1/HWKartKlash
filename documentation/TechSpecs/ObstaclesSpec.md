@@ -1,24 +1,16 @@
-# HW KartKlash - ObstacleSpec.md
-
-## Overview
-
-This document outlines the technical specifications for implementing dynamic obstacle systems in the HW KartKlash racing game. The focus is on creating believable, interactive obstacles that enhance gameplay by providing challenges while maintaining the fun, arcade-style racing experience.
-
 ## Feature 1: Student Obstacles
-
-**Related Design Elements**: 
-> "Students are roaming in certain areas on the track. The 1-3 students are placed randomly on the track walking back and forth in a line at a steady pace. If you hit them, your car will lose a lot of speed, they will turn into ragdolls and bleed, and Mr. Preciado will fly down on a cloud and scold you."
 
 ### StudentManager
 
 * **Variables Expected**:
-  * `studentPrefabs`: Array of different student model prefabs for visual variety
   * `studentSpawnPoints`: Array of classroom doors where students can emerge
   * `studentDespawnPoints`: Array of classroom doors where students can enter
   * `maxActiveStudents`: Maximum number of students active at once (global limit)
   * `spawnInterval`: Time between student spawn waves (seconds)
   * `spawnIntervalVariance`: Random variance added to spawn timing (±seconds)
   * `studentCountPerWave`: How many students spawn in each wave
+  * `currentActiveStudents`: List tracking all active student objects
+  * Lower Priority:
   * `ragdollForce`: Physics force applied when hit by a kart
   * `ragdollDuration`: How long students remain in ragdoll state (seconds)
   * `despawnTime`: Time before ragdolled students despawn (seconds)
@@ -28,6 +20,7 @@ This document outlines the technical specifications for implementing dynamic obs
   * `walkAnimationSpeed`: Movement animation speed multiplier
   * `walkPathVariance`: How much students can deviate from their path
   * `isNetworkSynchronized`: Whether student spawning is synced across network
+  * `studentPrefabs`: Array of different student model prefabs for visual variety
 
 * **Methods Expected**:
   * `InitializeStudentSystem()`: Setup obstacle system parameters
@@ -36,19 +29,13 @@ This document outlines the technical specifications for implementing dynamic obs
   * `CalculateSpawnPoints()`: Select appropriate classroom doors for spawning
   * `GenerateWalkPath()`: Create a path from spawn door to destination door
   * `HandleStudentCollision()`: Process kart collision with student
+  * Lower Priority:
   * `TriggerRagdollPhysics()`: Switch student to physics-based ragdoll
   * `SyncStudentPositions()`: Keep student positions synchronized in multiplayer
   * `ScheduleSpawnEvents()`: Create timed spawn events for the race
   * `UpdateStudentPaths()`: Modify student paths if needed (obstacle avoidance)
   * `GetCurrentStudentDensity()`: Calculate current student density in an area
 
-* **Related Objects**:
-  * Student: Individual student behavior and physics
-  * KartController: For interaction with player karts
-  * RaceManager: For syncing with race progression
-  * PreciadoManager: For triggering the Preciado scold effect
-  * NetworkManager: For multiplayer synchronization
-  * AnimationManager: For student walk/ragdoll animations
 
 ### Student
 
@@ -57,10 +44,11 @@ This document outlines the technical specifications for implementing dynamic obs
   * `walkSpeedVariance`: Random variation in movement speed
   * `currentPath`: Waypoints from spawn point to destination
   * `currentPathIndex`: Current position in the path
-  * `animator`: Reference to animation controller
-  * `ragdollComponents`: References to ragdoll physics components
   * `collisionLayer`: Physics layer for collision detection
   * `collisionRadius`: Size of collision detection sphere
+  * Lower Priority:
+  * `animator`: Reference to animation controller
+  * `ragdollComponents`: References to ragdoll physics components
   * `ragdollActiveState`: Whether currently in ragdoll mode
   * `bloodEffectPrefab`: Visual effect for collision
   * `hitSoundEffects`: Array of sound effects for collision
@@ -72,27 +60,24 @@ This document outlines the technical specifications for implementing dynamic obs
 * **Methods Expected**:
   * `Initialize()`: Setup student parameters and path
   * `FollowPath()`: Move student along assigned path
-  * `ActivateRagdoll()`: Enable physics-based ragdoll
-  * `DeactivateRagdoll()`: Disable ragdoll, return to animation
-  * `PlayHitAnimation()`: Trigger appropriate collision animation
-  * `PlayHitSound()`: Play random sound effect from array
-  * `SpawnBloodEffect()`: Instantiate blood particle effect
   * `OnCollisionEnter()`: Detect and process collisions
   * `CalculateImpactForce()`: Determine force direction and magnitude
   * `CheckRecovery()`: Determine if/when student should recover
   * `EnterClassroom()`: Animation and logic for entering destination
   * `GetDistanceToKart()`: Calculate distance to nearest player
   * `OnNetworkUpdate()`: Process network synchronization data
+  * Lower Priority: 
+  * `ActivateRagdoll()`: Enable physics-based ragdoll
+  * `DeactivateRagdoll()`: Disable ragdoll, return to animation
+  * `PlayHitAnimation()`: Trigger appropriate collision animation
+  * `PlayHitSound()`: Play random sound effect from array
+  * `SpawnBloodEffect()`: Instantiate blood particle effect
 
 ## Feature 2: Backpack Obstacles
-
-**Related Design Elements**: 
-> "Other obstacles - backpacks, tables cause you to lose speed to a lesser extent."
 
 ### BackpackManager
 
 * **Variables Expected**:
-  * `backpackPrefabs`: Array of different backpack model prefabs
   * `backpackSpawnPoints`: Predefined positions for static backpacks
   * `dynamicBackpackCount`: Number of randomly placed backpacks
   * `respawnTime`: Time before picked-up backpacks respawn
@@ -100,8 +85,10 @@ This document outlines the technical specifications for implementing dynamic obs
   * `backpackCollisionRadius`: Size of collision detection
   * `speedReductionFactor`: How much backpacks slow karts
   * `speedReductionDuration`: How long slowdown effect lasts
+  * Lower Priority:
   * `collisionSoundEffects`: Sounds played when driving over backpack
   * `currentBackpacks`: List of all active backpack objects
+  * `backpackPrefabs`: Array of different backpack model prefabs
 
 * **Methods Expected**:
   * `InitializeBackpacks()`: Setup backpack obstacle system
@@ -110,6 +97,7 @@ This document outlines the technical specifications for implementing dynamic obs
   * `ApplySpeedReduction()`: Reduce kart speed when hitting backpack
   * `ShuffleBackpacks()`: Periodically change backpack positions
   * `SyncBackpackState()`: Synchronize backpack state in multiplayer
+  * Lower Priority:
   * `PlayCollisionEffect()`: Visual and audio feedback for collision
 
 ### Backpack
@@ -119,17 +107,19 @@ This document outlines the technical specifications for implementing dynamic obs
   * `originalPosition`: Starting position for respawn
   * `originalRotation`: Starting rotation for respawn
   * `colliderComponent`: Reference to collision detection component
+  * `networkID`: Unique identifier for synchronization
+  * Lower Priority:
   * `soundEffect`: Sound played when collided with
   * `visualEffectPrefab`: Effect shown when collided with
-  * `networkID`: Unique identifier for synchronization
 
 * **Methods Expected**:
   * `Initialize()`: Setup backpack parameters
   * `OnCollisionEnter()`: Detect collision with kart
   * `ApplyCollisionEffect()`: Apply speed penalty to kart
+  * `UpdateNetworkState()`: Sync current state across network
+  * Lower Priotity:
   * `TriggerVisualEffect()`: Show collision visual effect
   * `PlayCollisionSound()`: Play appropriate sound effect
-  * `UpdateNetworkState()`: Sync current state across network
 
 
 
