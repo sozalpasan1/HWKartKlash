@@ -1,0 +1,35 @@
+TeacherAbility ScriptableObject Class
+- Variables:
+    - AbilityMap (String name, String ability)
+    - int [] cooldownTimes
+    - KeyCode activationKey- what key is pressed/held to activate ability
+- Methods
+    - void activate (String ability)
+        - performs the specific ability, resets cooldown
+- Interacts with:
+    - Sound class
+    - Potentially cart class (each teacher has a different cart)
+Powerup ScriptableObject Class
+- Variables:
+    - String powerupName
+    - Sprite icon
+- Methods:
+    - void activate
+        - activates specific ability
+- Interacts with:
+    - Powerup Manager class
+PowerupManager Class
+- Variables:
+    - Powerup powerup
+    - KeyCode activationKey- what key is pressed to activate
+    - Powerup[] availablePowerups- powerups available on the map
+- Methods:
+    - void update
+        - calls activate in Powerup class
+    - void spawn
+        - spawns powerups in certain locations across the map
+        - potentially dependent on cart locations
+- Interacts with: 
+    - Powerup class
+    - Class that manages the map- when and where powerups are spawned
+    - Sound class
