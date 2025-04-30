@@ -18,17 +18,17 @@ Upon successful login, we use a `FirebaseService` class to load the player’s d
 - Updates Firebase using `FirebaseService.SaveData("/users/{id}/currency", newBalance)`
 
 ### StatsManager
-- **Variables:** `lapTimes: List<float>`, `bestLap: float`, `averageTime: float`, and many more!
-- **Methods:** `SaveStats()`, `LoadStats()`, `UpdateLap(mapID: String, time: float)`
+- **Variables:** `lapTimes: ArrayList<double>`, `bestLap: double`, `averageTime: double`, and many more!
+- **Methods:** `SaveStats()`, `LoadStats()`, `UpdateLap(mapID: String, time: double)`
 - Stores lap data per map and computes averages.
 
 ### RaceManager
-- **Variables:** `currentStandings: List<PlayerID>`, `placements: List<PlayerID>`
+- **Variables:** `currentStandings: ArrayList<username>`, `placements: ArrayList<username>`
 - **Methods:** `StartRace()`, `EndRace()`, `CalculateStandings()`, `AwardCurrency()`
 - Updates stats and awards currency after each race.
 
 ### StandingsManager
-- **Methods:** `UpdateStandings(newOrder: List<PlayerID>)`, `GetStandings()`
+- **Methods:** `UpdateStandings(newOrder: ArrayList<username>)`, `GetStandings()`
 - Updates race standings in real-time using Firebase or networking.
 
 ### FirebaseService
