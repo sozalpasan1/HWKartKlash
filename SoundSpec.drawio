@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.15">
+  <diagram name="Page-1" id="efa7a0a1-bf9b-a30e-e6df-94a7791c09e9">
+    <mxGraphModel dx="1276" dy="1149" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="27" value="&lt;p style=&quot;margin: 0px; margin-top: 4px; text-align: center; text-decoration: underline;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; margin-left: 8px;&quot;&gt;&lt;b&gt;AudioManager&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;div&gt;Variables:&lt;/div&gt;&lt;div&gt;AudioSource musicSource&lt;/div&gt;&lt;div&gt;AudioSource sfxSource&lt;/div&gt;&lt;div&gt;AudioSource uiSource&lt;/div&gt;&lt;div&gt;int masterVolume&lt;/div&gt;&lt;div&gt;int musicVolume&lt;/div&gt;&lt;div&gt;int sfxVolume&lt;/div&gt;&lt;div&gt;musicMap&lt;/div&gt;&lt;div&gt;sfxMap&lt;/div&gt;&lt;div&gt;uiSoundsMap&lt;/div&gt;&lt;div&gt;Methods:&lt;/div&gt;&lt;div&gt;void PlayMusic (String trackName)&lt;/div&gt;&lt;div&gt;void PlaySFX (String name)&lt;/div&gt;&lt;div&gt;void PlayUI (String name)&lt;/div&gt;&lt;div&gt;     &lt;/div&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#003366;shadow=1;fillColor=#D4E1F5;fontColor=#003366" parent="1" vertex="1">
+          <mxGeometry x="1120" y="315" width="200" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="&lt;p style=&quot;margin: 0px; margin-top: 4px; text-align: center; text-decoration: underline;&quot;&gt;&lt;b&gt;Carts&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Collisions&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Drifting&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Engine Sounds&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Abilites&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#003366;shadow=1;fillColor=#D4E1F5;fontColor=#003366" parent="1" vertex="1">
+          <mxGeometry x="1170" y="140" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-116" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="35" target="27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1230" y="390" as="sourcePoint" />
+            <mxPoint x="1280" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-117" value="&lt;p style=&quot;margin: 0px; margin-top: 4px; text-align: center; text-decoration: underline;&quot;&gt;&lt;b&gt;UI&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Button pressing&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Scrolling&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#003366;shadow=1;fillColor=#D4E1F5;fontColor=#003366" vertex="1" parent="1">
+          <mxGeometry x="1410" y="180" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-118" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2rSUsn365bqUn2WNyGOE-117" target="27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1260" y="340" as="sourcePoint" />
+            <mxPoint x="1250" y="430" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-120" value="&lt;p style=&quot;margin: 0px; margin-top: 4px; text-align: center; text-decoration: underline;&quot;&gt;&lt;b&gt;Powerups&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Pickup&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Using them&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#003366;shadow=1;fillColor=#D4E1F5;fontColor=#003366" vertex="1" parent="1">
+          <mxGeometry x="960" y="170" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-122" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2rSUsn365bqUn2WNyGOE-120" target="27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1110" y="340" as="sourcePoint" />
+            <mxPoint x="1160" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-123" value="&lt;p style=&quot;margin: 0px; margin-top: 4px; text-align: center; text-decoration: underline;&quot;&gt;&lt;b&gt;Map&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Audio of NPCs&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;ambient audio&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#003366;shadow=1;fillColor=#D4E1F5;fontColor=#003366" vertex="1" parent="1">
+          <mxGeometry x="1420" y="300" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2rSUsn365bqUn2WNyGOE-123" target="2rSUsn365bqUn2WNyGOE-123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-125" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.011;entryY=0.035;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="2rSUsn365bqUn2WNyGOE-123" target="27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1420" y="260" as="sourcePoint" />
+            <mxPoint x="1350" y="430" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-127" value="&lt;p style=&quot;margin: 0px; margin-top: 4px; text-align: center; text-decoration: underline;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; margin-left: 8px;&quot;&gt;&lt;b&gt;VoicePlayerController&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;div&gt;Variables:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(31, 31, 31), rgb(210, 210, 210)); color: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));&quot;&gt;int voiceRange&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(31, 31, 31), rgb(210, 210, 210)); color: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));&quot;&gt;boolean isMuted&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(31, 31, 31), rgb(210, 210, 210)); color: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));&quot;&gt;AudioSource VoiceSource&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(31, 31, 31), rgb(210, 210, 210)); color: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));&quot;&gt;intv olume&lt;/span&gt;&lt;/div&gt;&lt;div&gt;boolean isSpeaking&lt;/div&gt;&lt;div&gt;Methods:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(31, 31, 31), rgb(210, 210, 210)); color: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));&quot;&gt;void toggleMute()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;void handleSpeakingState()&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#003366;shadow=1;fillColor=#D4E1F5;fontColor=#003366" vertex="1" parent="1">
+          <mxGeometry x="1130" y="770" width="200" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-128" value="&lt;p style=&quot;margin: 0px; margin-top: 4px; text-align: center; text-decoration: underline;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px; margin-left: 8px;&quot;&gt;&lt;span style=&quot;background-color: rgb(236, 236, 236);&quot;&gt;&lt;b&gt;VoiceChatManager&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;div&gt;Variables:&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;activePlayersMap&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;VoiceNetwork voiceNetwork&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Methods:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(31, 31, 31), rgb(210, 210, 210)); color: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));&quot;&gt;void addPlayer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(31, 31, 31), rgb(210, 210, 210)); color: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));&quot;&gt;void removePlayer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(31, 31, 31), rgb(210, 210, 210)); color: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));&quot;&gt;void checkProximity&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(rgb(31, 31, 31), rgb(210, 210, 210)); color: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));&quot;&gt;     &lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#003366;shadow=1;fillColor=#D4E1F5;fontColor=#003366" vertex="1" parent="1">
+          <mxGeometry x="870" y="690" width="200" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-129" value="&lt;p style=&quot;margin: 0px; margin-top: 4px; text-align: center; text-decoration: underline;&quot;&gt;&lt;b&gt;VoiceNetwork&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Links to some voice network provider&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;Methods:&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;SendVoiceData&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;RecieveVoiceData&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#003366;shadow=1;fillColor=#D4E1F5;fontColor=#003366" vertex="1" parent="1">
+          <mxGeometry x="1420" y="720" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-130" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.007;entryY=0.424;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.011;exitY=0.533;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2rSUsn365bqUn2WNyGOE-128" target="2rSUsn365bqUn2WNyGOE-127">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1020" y="840" as="sourcePoint" />
+            <mxPoint x="1070" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-131" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.998;exitY=0.121;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2rSUsn365bqUn2WNyGOE-128" target="2rSUsn365bqUn2WNyGOE-129">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1190" y="840" as="sourcePoint" />
+            <mxPoint x="1240" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2rSUsn365bqUn2WNyGOE-132" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.002;entryY=0.327;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.011;exitY=0.291;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2rSUsn365bqUn2WNyGOE-127" target="2rSUsn365bqUn2WNyGOE-128">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1190" y="840" as="sourcePoint" />
+            <mxPoint x="1240" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

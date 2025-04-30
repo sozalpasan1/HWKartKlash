@@ -1,0 +1,48 @@
+Audio (important)
+- AudioManager Class
+    - Variables:
+        - AudioSource (part of Unity) musicSource
+        - AudioSource sfxSource
+        - AudioSource uiSource
+        - int masterVolume
+        - int musicVolume
+        - int sfxVolume
+        - musicMap(String, AudioClip(part of Unity))- map of all background songs
+        - sfxMap(String, AudioClip)- map of all gameplay audios
+        - uiSoundsMap(String, AudioClip)- map of all ui audios
+    - Methods:
+        - void PlayMusic (String trackName)
+        - void PlaySFX (String name)
+            - gameplay sounds- engines, skids, collisions, powerup activation, powerup pickup
+        - void PlayUI (String name)
+            - button clicks, menu sounds, etc.
+    - Interacts with:
+        - classes handling UI, carts, powerups, or anything that should trigger a sound
+            - for example- kart class that handles collisions between carts should call playSFX (collision)
+
+Proximity Chat (not essential)
+- VoicePlayerController Class- handles each player's voice 
+    - Variables:
+        - int voiceRange- the distance to activate prox chat
+        - boolean isMuted
+        - AudioSource voiceSource
+        - int volume- how loud the prox chat is
+        - boolean isSpeaking
+    - Methods:
+        - void toggleMute()
+        - void handleSpeakingState()
+- VoiceChatManager Class- controll
+    - Variables:
+        - activePlayersMap (String, VoicePlayerController)
+        - VoiceNetwork voiceNetwork
+    - Methods:
+        - void addPlayer (String name, VoicePlayerController player)
+        - void removePlayer (String name)
+        - void checkProximity ()- checks the distance between players and updates isSpeaking in VoicePlayerController if necessary
+    - Interacts with:  
+        - VoicePlayerController and the VoiceNetwork interface
+- VoiceNetwork Interface
+    - for a voice network provider like Photon or Vivox to be plugged into
+    - Methods:
+        - void SendVoiceData (String reciever, byte[] data)
+        - void RecieveVoiceData (String sender, byte[] data)
