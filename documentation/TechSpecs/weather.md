@@ -16,6 +16,14 @@ Each map has a fixed weather condition that affects kart physics through multipl
 ### WeatherProfile
 Each weather condition has an associated `WeatherProfile` storing multipliers for physics variables.
 
+## Process Flow
+1. **Map Load:** `WeatherManager.InitWeather(mapID)` sets the fixed weather
+2. **Weather Init:** Correct `WeatherEffect` is instantiated
+3. **Pre-Race:** `WeatherManager.ApplyEffects()` updates vehicles
+4. **Race Start:** Vehicles operate under altered physics
+5. **Race Ongoing:** Vehicles continue to update physics based on modified stats
+6. **Race End:** Effects stop, vehicles reset to defaults which means offloading of weather
+
 #### Example (Rain):
 ```json
 {
@@ -24,3 +32,4 @@ Each weather condition has an associated `WeatherProfile` storing multipliers fo
   "speedMultiplier": 1.10,
   "healthDrainPerSecond": 1.0
 }
+
