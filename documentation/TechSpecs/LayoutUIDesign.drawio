@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.15">
   <diagram name="Page-1" id="vsyR0sQd1lQsANW_86_q">
-    <mxGraphModel dx="6170" dy="4120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4113" dy="2747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -619,11 +619,10 @@
         <mxCell id="LeGc9Frrw5g8Nja1Y6hc-132" value="Select/Confirm?" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1168" y="2176" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="LeGc9Frrw5g8Nja1Y6hc-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="LeGc9Frrw5g8Nja1Y6hc-134" target="LeGc9Frrw5g8Nja1Y6hc-21" edge="1">
+        <mxCell id="LeGc9Frrw5g8Nja1Y6hc-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="LeGc9Frrw5g8Nja1Y6hc-134" target="FQYK-fFX9nSj4rs4ZZMD-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="60" y="2266" />
-              <mxPoint x="60" y="744" />
+              <mxPoint x="945" y="2266" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1522,63 +1521,63 @@
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="FQYK-fFX9nSj4rs4ZZMD-107" target="FQYK-fFX9nSj4rs4ZZMD-120">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2830" y="3030" as="targetPoint" />
+            <mxPoint x="3090" y="3000" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="FQYK-fFX9nSj4rs4ZZMD-107">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2600" y="3360" as="targetPoint" />
+            <mxPoint x="2860" y="3330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FQYK-fFX9nSj4rs4ZZMD-107">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="3150" y="3260" as="targetPoint" />
+            <mxPoint x="3410" y="3230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-107" value="Kart Class" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2750" y="3110" width="260" height="350" as="geometry" />
+          <mxGeometry x="3010" y="3080" width="260" height="350" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-108" value="turnRight(boolean focused): Activated by pressing the D&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;key (press and hold)&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;turnLeft(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): Activated by pressing the A key (press and hold)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;accelerate(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the W key (press and hold)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;break(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the S key (press and hold) when speed is greater than 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;reverse(boolean focused):&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the S key (press and hold) when speed is less than or equal to 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;All of these have a boolean for if the t key is making the action focused&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="FQYK-fFX9nSj4rs4ZZMD-107">
           <mxGeometry y="21" width="260" height="329" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-109" value="Ground mode - Normal. You&#39;re just driving on the ground. Your wheels are liocked to the ground. No gravity cuz that makes things complicated&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Air mode - Activates when you jump or use a ramp. Gravity now exists&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Recovery mode: Activates if you flip over. Essentially it just brings you right side up again&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="3150" y="3220" width="200" height="260" as="geometry" />
+          <mxGeometry x="3410" y="3190" width="200" height="260" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-110" value="Different Modes" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3150" y="3220" width="200" height="260" as="geometry" />
+          <mxGeometry x="3410" y="3190" width="200" height="260" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-111" value="Multiplayer" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2970" y="3560" width="200" height="180" as="geometry" />
+          <mxGeometry x="3230" y="3530" width="200" height="180" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-112" value="Voice chat muted by pressing M&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Voice chat has push to talk by pressing V&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Not reliant on distance to other cars&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="FQYK-fFX9nSj4rs4ZZMD-111">
           <mxGeometry y="20" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-113" value="Varying values" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2290" y="2670" width="200" height="180" as="geometry" />
+          <mxGeometry x="2550" y="2640" width="200" height="180" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-114" value="Acceleration, speed, handling, mass, and aerodynamics&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;All of them depend on the kart you&#39;re in&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Acceleration, speed, and handling depend on the weather&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="FQYK-fFX9nSj4rs4ZZMD-113">
           <mxGeometry y="20" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-115" value="Controls" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2580" y="3560" width="200" height="270" as="geometry" />
+          <mxGeometry x="2840" y="3530" width="200" height="270" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-116" value="W: Accelerate&lt;div&gt;A: Turn left&lt;/div&gt;&lt;div&gt;S: Brake/reverse&lt;/div&gt;&lt;div&gt;D: Turn right&lt;/div&gt;&lt;div&gt;J: Jump&lt;/div&gt;&lt;div&gt;Shift: Activate teacher special ability&lt;/div&gt;&lt;div&gt;P: Activate powerup&lt;/div&gt;&lt;div&gt;F: Focus power&lt;/div&gt;&lt;div&gt;V: Voice chat push to talk key&lt;/div&gt;&lt;div&gt;M: Mute voice chat&lt;/div&gt;&lt;div&gt;Tab: View minimap&lt;/div&gt;&lt;div&gt;Esc: Open pause menu&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="FQYK-fFX9nSj4rs4ZZMD-115">
           <mxGeometry y="20" width="200" height="250" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-117" value="Different kart options" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2410" y="3010" width="200" height="180" as="geometry" />
+          <mxGeometry x="2670" y="2980" width="200" height="180" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-118" value="Different karts have different acceleration, speed, handling, mass, and aerodynamics&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="FQYK-fFX9nSj4rs4ZZMD-117">
           <mxGeometry y="20" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-119" value="Weather" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2670" y="2840" width="200" height="180" as="geometry" />
+          <mxGeometry x="2930" y="2810" width="200" height="180" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-120" value="Rai&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;n - Less handling due to wet roads&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;Snow - Lower acceleration and speed&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Heat - Extra Handling due to tire grip&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="FQYK-fFX9nSj4rs4ZZMD-119">
           <mxGeometry y="20" width="200" height="160" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-121" value="Minimap" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2400" y="3250" width="200" height="180" as="geometry" />
+          <mxGeometry x="2660" y="3220" width="200" height="180" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-122" value="Always in corner of the screen&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Has each player as dots&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Press and hold tab to open to whole screen&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="FQYK-fFX9nSj4rs4ZZMD-121">
           <mxGeometry y="20" width="200" height="160" as="geometry" />
@@ -1593,7 +1592,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-126" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="2790" y="3770" width="560" height="550" as="geometry" />
+          <mxGeometry x="3050" y="3740" width="560" height="550" as="geometry" />
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-127" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="FQYK-fFX9nSj4rs4ZZMD-126">
           <mxGeometry y="70" width="560" height="480" as="geometry" />
@@ -1678,13 +1677,13 @@
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="FQYK-fFX9nSj4rs4ZZMD-115" target="FQYK-fFX9nSj4rs4ZZMD-127">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="2680" y="3960" />
+              <mxPoint x="2940" y="3930" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="FQYK-fFX9nSj4rs4ZZMD-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FQYK-fFX9nSj4rs4ZZMD-111">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="3070" y="3770" as="targetPoint" />
+            <mxPoint x="3330" y="3740" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
