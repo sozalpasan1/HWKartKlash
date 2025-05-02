@@ -1,98 +1,94 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.15">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.15">
   <diagram name="Page-1" id="STDr1Y2wVP1EUc82jMBQ">
-    <mxGraphModel dx="2139" dy="1985" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2149" dy="1967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
-        <!-- Jacob's Documentation Content -->
-        <mxCell id="GnrDHG70eU0a4UuBjebs-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-1" target="GnrDHG70eU0a4UuBjebs-25">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="GnrDHG70eU0a4UuBjebs-1" target="GnrDHG70eU0a4UuBjebs-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-1" target="GnrDHG70eU0a4UuBjebs-33">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="GnrDHG70eU0a4UuBjebs-1" target="GnrDHG70eU0a4UuBjebs-33" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-1" target="GnrDHG70eU0a4UuBjebs-36">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="GnrDHG70eU0a4UuBjebs-1" target="GnrDHG70eU0a4UuBjebs-36" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="140" y="-40" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="GnrDHG70eU0a4UuBjebs-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-90" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="GnrDHG70eU0a4UuBjebs-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="460" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-1" value="Kart Class" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-1" value="Kart Class" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="40" width="260" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-4" value="turnRight(boolean focused): Activated by pressing the D&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;key (press and hold)&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;turnLeft(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): Activated by pressing the A key (press and hold)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;accelerate(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the W key (press and hold)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;break(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the S key (press and hold) when speed is greater than 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;reverse(boolean focused):&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the S key (press and hold) when speed is less than or equal to 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;All of these have a boolean for if the t key is making the action focused&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="GnrDHG70eU0a4UuBjebs-1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-4" value="turnRight(boolean focused): Activated by pressing the D&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;key (press and hold)&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;turnLeft(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): Activated by pressing the A key (press and hold)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;accelerate(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the W key (press and hold)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;break(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the S key (press and hold) when speed is greater than 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;reverse(boolean focused):&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the S key (press and hold) when speed is less than or equal to 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;All of these have a boolean for if the t key is making the action focused&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="GnrDHG70eU0a4UuBjebs-1" vertex="1">
           <mxGeometry y="21" width="260" height="329" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-17" value="Ground mode - Normal. You&#39;re just driving on the ground. Your wheels are liocked to the ground. No gravity cuz that makes things complicated&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Air mode - Activates when you jump or use a ramp. Gravity now exists&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Recovery mode: Activates if you flip over. Essentially it just brings you right side up again&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-17" value="Ground mode - Normal. You&#39;re just driving on the ground. Your wheels are liocked to the ground. No gravity cuz that makes things complicated&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Air mode - Activates when you jump or use a ramp. Gravity now exists&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Recovery mode: Activates if you flip over. Essentially it just brings you right side up again&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="460" y="150" width="200" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-19" value="Different Modes" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-19" value="Different Modes" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="150" width="200" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-21" value="Multiplayer" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-21" value="Multiplayer" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="280" y="490" width="200" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-20" value="Voice chat muted by pressing M&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Voice chat has push to talk by pressing V&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Not reliant on distance to other cars&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="GnrDHG70eU0a4UuBjebs-21">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-20" value="Voice chat muted by pressing M&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Voice chat has push to talk by pressing V&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Not reliant on distance to other cars&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="GnrDHG70eU0a4UuBjebs-21" vertex="1">
           <mxGeometry y="20" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-23" value="Varying values" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-23" value="Varying values" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-400" y="-400" width="200" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-22" value="Acceleration, speed, handling, mass, and aerodynamics&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;All of them depend on the kart you&#39;re in&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Acceleration, speed, and handling depend on the weather&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="GnrDHG70eU0a4UuBjebs-23">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-22" value="Acceleration, speed, handling, mass, and aerodynamics&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;All of them depend on the kart you&#39;re in&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Acceleration, speed, and handling depend on the weather&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="GnrDHG70eU0a4UuBjebs-23" vertex="1">
           <mxGeometry y="20" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-25" value="Controls" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-25" value="Controls" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-110" y="490" width="200" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-24" value="W: Accelerate&lt;div&gt;A: Turn left&lt;/div&gt;&lt;div&gt;S: Brake/reverse&lt;/div&gt;&lt;div&gt;D: Turn right&lt;/div&gt;&lt;div&gt;J: Jump&lt;/div&gt;&lt;div&gt;Shift: Activate teacher special ability&lt;/div&gt;&lt;div&gt;P: Activate powerup&lt;/div&gt;&lt;div&gt;F: Focus power&lt;/div&gt;&lt;div&gt;V: Voice chat push to talk key&lt;/div&gt;&lt;div&gt;M: Mute voice chat&lt;/div&gt;&lt;div&gt;Tab: View minimap&lt;/div&gt;&lt;div&gt;Esc: Open pause menu&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="GnrDHG70eU0a4UuBjebs-25">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-24" value="W: Accelerate&lt;div&gt;A: Turn left&lt;/div&gt;&lt;div&gt;S: Brake/reverse&lt;/div&gt;&lt;div&gt;D: Turn right&lt;/div&gt;&lt;div&gt;J: Jump&lt;/div&gt;&lt;div&gt;Shift: Activate teacher special ability&lt;/div&gt;&lt;div&gt;P: Activate powerup&lt;/div&gt;&lt;div&gt;F: Focus power&lt;/div&gt;&lt;div&gt;V: Voice chat push to talk key&lt;/div&gt;&lt;div&gt;M: Mute voice chat&lt;/div&gt;&lt;div&gt;Tab: View minimap&lt;/div&gt;&lt;div&gt;Esc: Open pause menu&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="GnrDHG70eU0a4UuBjebs-25" vertex="1">
           <mxGeometry y="20" width="200" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-33" value="Different kart options" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-33" value="Different kart options" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-280" y="-60" width="200" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-34" value="Different karts have different acceleration, speed, handling, mass, and aerodynamics&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="GnrDHG70eU0a4UuBjebs-33">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-34" value="Different karts have different acceleration, speed, handling, mass, and aerodynamics&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="GnrDHG70eU0a4UuBjebs-33" vertex="1">
           <mxGeometry y="20" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-35" value="Weather" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-35" value="Weather" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-20" y="-230" width="200" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-36" value="Rai&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;n - Less handling due to wet roads&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;Snow - Lower acceleration and speed&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Heat - Extra Handling due to tire grip&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="GnrDHG70eU0a4UuBjebs-35">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-36" value="Rai&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;n - Less handling due to wet roads&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;Snow - Lower acceleration and speed&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Heat - Extra Handling due to tire grip&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="GnrDHG70eU0a4UuBjebs-35" vertex="1">
           <mxGeometry y="20" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-39" value="Minimap" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-39" value="Minimap" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-290" y="180" width="200" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-40" value="Always in corner of the screen&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Has each player as dots&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Press and hold tab to open to whole screen&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="GnrDHG70eU0a4UuBjebs-39">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-40" value="Always in corner of the screen&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Has each player as dots&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Press and hold tab to open to whole screen&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="GnrDHG70eU0a4UuBjebs-39" vertex="1">
           <mxGeometry y="20" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.631;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-33" target="GnrDHG70eU0a4UuBjebs-22">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.631;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="GnrDHG70eU0a4UuBjebs-33" target="GnrDHG70eU0a4UuBjebs-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.981;entryY=0.613;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-35" target="GnrDHG70eU0a4UuBjebs-22">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.981;entryY=0.613;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="GnrDHG70eU0a4UuBjebs-35" target="GnrDHG70eU0a4UuBjebs-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GnrDHG70eU0a4UuBjebs-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.345;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-1" target="GnrDHG70eU0a4UuBjebs-21">
+        <mxCell id="GnrDHG70eU0a4UuBjebs-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.345;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="GnrDHG70eU0a4UuBjebs-1" target="GnrDHG70eU0a4UuBjebs-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <!-- Milo's Kart Physics and Controls Content -->
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-32" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-32" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="100" y="700" width="560" height="550" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-23" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-23" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1">
           <mxGeometry y="70" width="560" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.629;exitY=0.975;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(transparent,#66B2FF);strokeColor=light-dark(#000000,#0000CC);exitPerimeter=0;" edge="1" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-7" target="d4R0EBCkEg1dRWe-Izaa-25">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.629;exitY=0.975;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(transparent,#66B2FF);strokeColor=light-dark(#000000,#0000CC);exitPerimeter=0;" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-7" target="d4R0EBCkEg1dRWe-Izaa-25" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="428" y="200" />
@@ -102,28 +98,28 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-25" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Kart Information Supplier&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#0000CC);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-25" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Kart Information Supplier&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#0000CC);" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1">
           <mxGeometry x="20" y="450" width="490" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-28" value="" style="group" vertex="1" connectable="0" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-28" value="" style="group" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1" connectable="0">
           <mxGeometry x="20" y="450" width="490" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-26" value="" style="group;strokeColor=light-dark(#000000,#0000CC);container=0;" vertex="1" connectable="0" parent="d4R0EBCkEg1dRWe-Izaa-28">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-26" value="" style="group;strokeColor=light-dark(#000000,#0000CC);container=0;" parent="d4R0EBCkEg1dRWe-Izaa-28" vertex="1" connectable="0">
           <mxGeometry width="490" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-24" value="This will supply the kart&#39;s position, velocity, lap placement, etc. to methods that need it.&lt;div&gt;Acts as a way for all other methods to access Kart variables&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#0000CC);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-28">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-24" value="This will supply the kart&#39;s position, velocity, lap placement, etc. to methods that need it.&lt;div&gt;Acts as a way for all other methods to access Kart variables&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#0000CC);" parent="d4R0EBCkEg1dRWe-Izaa-28" vertex="1">
           <mxGeometry y="30" width="490" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-6" value="" style="group;strokeColor=light-dark(transparent,#FF0000);container=0;" vertex="1" connectable="0" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-6" value="" style="group;strokeColor=light-dark(transparent,#FF0000);container=0;" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1" connectable="0">
           <mxGeometry x="340" y="110" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-16" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Kart Physics Engine&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFF00);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-16" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Kart Physics Engine&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFF00);" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1">
           <mxGeometry x="20" y="220" width="460" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=light-dark(#000000,#FF8000);strokeColor=light-dark(#000000,#FF8000);" edge="1" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-2" target="d4R0EBCkEg1dRWe-Izaa-16">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=light-dark(#000000,#FF8000);strokeColor=light-dark(#000000,#FF8000);" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-2" target="d4R0EBCkEg1dRWe-Izaa-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(#000000,#FFFF00);strokeColor=light-dark(#000000,#FFFF00);" edge="1" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-20" target="d4R0EBCkEg1dRWe-Izaa-8">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(#000000,#FFFF00);strokeColor=light-dark(#000000,#FFFF00);" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-20" target="d4R0EBCkEg1dRWe-Izaa-8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="250" y="410" />
@@ -133,50 +129,52 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-20" value="Primarily makes use of Unity&#39;s built in physics engine. Kart is declared as an object that then sends updates to the physics engine based on outside input which are declared separately.&lt;br&gt;&lt;br&gt;Collisions are primarily handled by Unity, so advanced logic is not needed.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The engine then spits out a new position for the kart.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFF00);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-20" value="Primarily makes use of Unity&#39;s built in physics engine. Kart is declared as an object that then sends updates to the physics engine based on outside input which are declared separately.&lt;br&gt;&lt;br&gt;Collisions are primarily handled by Unity, so advanced logic is not needed.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The engine then spits out a new position for the kart.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFF00);" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1">
           <mxGeometry x="20" y="270" width="460" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-2" value="WASD controls, kart choice, settings, etc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF8000);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-2" value="WASD controls, kart choice, settings, etc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF8000);" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1">
           <mxGeometry x="20" y="140" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-3" value="User Inputs" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF8000);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-3" value="User Inputs" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF8000);" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1">
           <mxGeometry x="20" y="110" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-29" value="" style="group" vertex="1" connectable="0" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-29" value="" style="group" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1" connectable="0">
           <mxGeometry x="340" y="110" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-7" value="Position, rotation, velocity of current kart" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF0000);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-29">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-7" value="Position, rotation, velocity of current kart" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF0000);" parent="d4R0EBCkEg1dRWe-Izaa-29" vertex="1">
           <mxGeometry y="30" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-8" value="Kart Positioning" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF0000);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-29">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-8" value="Kart Positioning" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF0000);" parent="d4R0EBCkEg1dRWe-Izaa-29" vertex="1">
           <mxGeometry width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-30" value="" style="group" vertex="1" connectable="0" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-30" value="" style="group" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1" connectable="0">
           <mxGeometry x="180" y="110" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-10" value="Powerups, jumps, wall collisions, debuffs, etc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#00CC00);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-30">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-10" value="Powerups, jumps, wall collisions, debuffs, etc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#00CC00);" parent="d4R0EBCkEg1dRWe-Izaa-30" vertex="1">
           <mxGeometry y="30" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-11" value="Map Updates" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#00CC00);" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-30">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-11" value="Map Updates" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#00CC00);" parent="d4R0EBCkEg1dRWe-Izaa-30" vertex="1">
           <mxGeometry width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-31" value="&lt;b&gt;&lt;font style=&quot;font-size: 42px;&quot;&gt;Kart Physics and Controls&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="d4R0EBCkEg1dRWe-Izaa-32">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-31" value="&lt;b&gt;&lt;font style=&quot;font-size: 42px;&quot;&gt;Kart Physics and Controls&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="d4R0EBCkEg1dRWe-Izaa-32" vertex="1">
           <mxGeometry width="560" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FF0000);" edge="1" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-7" target="d4R0EBCkEg1dRWe-Izaa-16">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FF0000);" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-7" target="d4R0EBCkEg1dRWe-Izaa-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="d4R0EBCkEg1dRWe-Izaa-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(#000000,#00CC00);strokeColor=light-dark(#000000,#00CC00);" edge="1" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-10" target="d4R0EBCkEg1dRWe-Izaa-16">
+        <mxCell id="d4R0EBCkEg1dRWe-Izaa-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(#000000,#00CC00);strokeColor=light-dark(#000000,#00CC00);" parent="d4R0EBCkEg1dRWe-Izaa-32" source="d4R0EBCkEg1dRWe-Izaa-10" target="d4R0EBCkEg1dRWe-Izaa-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        
-        <!-- Connection between Jacob's and Milo's diagrams -->
-        <mxCell id="connection-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-25" target="d4R0EBCkEg1dRWe-Izaa-31">
+        <mxCell id="connection-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="GnrDHG70eU0a4UuBjebs-25" target="d4R0EBCkEg1dRWe-Izaa-23" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-10" y="650" />
-              <mxPoint x="380" y="650" />
+              <mxPoint x="-10" y="890" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YCtg2ybIIwxPEc6kBmjE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="GnrDHG70eU0a4UuBjebs-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
