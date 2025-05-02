@@ -1,0 +1,66 @@
+//weather
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.15">
+  <diagram name="Page-1" id="JiHqzJXWmoTNnNdFuJI9">
+    <mxGraphModel dx="976" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-1" value="Weather Engine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-6" value="Weather States" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="120" width="230" height="156" as="geometry">
+            <mxRectangle x="360" y="290" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-7" value="☀️ Sunny" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-6">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-8" value="🌧️ Rainy" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-6">
+          <mxGeometry y="52" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-9" value="🌨️ Snowy" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-6">
+          <mxGeometry y="78" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-17" value="🌫️ Foggy" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-6">
+          <mxGeometry y="104" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-16" value="🌬️ Windy" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-6">
+          <mxGeometry y="130" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-24" value="Weather Effects" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="110" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-25" value="Visual" style="swimlane;startSize=20;horizontal=0;html=1;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-24">
+          <mxGeometry y="20" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-28" value="Particles&lt;div&gt;Skybox change&lt;/div&gt;&lt;div&gt;Lighting tweak&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-25">
+          <mxGeometry x="20" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-26" value="Audio" style="swimlane;startSize=20;horizontal=0;html=1;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-24">
+          <mxGeometry y="90" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-29" value="Ambient sounds:&amp;nbsp;&lt;div&gt;rain&lt;/div&gt;&lt;div&gt;wind&lt;/div&gt;&lt;div&gt;etc&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-26">
+          <mxGeometry x="20" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-34" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-26">
+          <mxGeometry x="-80" width="80" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-27" value="Gameplay&amp;nbsp;&lt;div&gt;Modifiers&lt;/div&gt;" style="swimlane;startSize=30;horizontal=0;html=1;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-24">
+          <mxGeometry y="170" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-30" value="kart traction&lt;div&gt;visibility&amp;nbsp;&lt;/div&gt;&lt;div&gt;speed&lt;/div&gt;&lt;div&gt;slippage&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="F9cT0rrPTEDPH2lc8hQJ-27">
+          <mxGeometry x="30" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-31" value="Weather Transition System: smooth blending between weather states" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
+          <mxGeometry x="660" y="178" width="150" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="F9cT0rrPTEDPH2lc8hQJ-32" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;" edge="1" target="F9cT0rrPTEDPH2lc8hQJ-31" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="230" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
