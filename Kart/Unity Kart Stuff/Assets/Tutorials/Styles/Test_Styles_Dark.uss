@@ -1,0 +1,115 @@
+#TutorialStepBox1 {
+   font-size: 18px;
+   line-height: 24px;
+   color: #FFFCFC;
+}
+
+.container--card-text {
+   font-size: 18px;
+   line-height: 24px;
+   color: #FFFCFC;
+}
+
+/* #lblDescription .unity-text-element .unity-label .label--tutorial-description {
+   font-size: 18px;
+   line-height: 24px;
+   color: #FFFCFC;
+}
+
+
+#lblPageTitle {
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+}
+*/
+
+#InstructionTitle {
+   font-size: 16px;
+   padding-bottom: 10px;
+   color: #FFFCFC;
+}
+
+#InstructionDescription {
+   font-size: 16px;
+   color: #FFFCFC;
+}
+
+#CodeSample {
+    background-color: rgba(0,0,0,0);
+    border-width: 0;
+    padding: 0px;
+    /*
+    This doesn't work, but the font can be set in the debugger.
+    -unity-font-definition: url("/Assets/SourceFiles/Settings/Fonts/Inter-Variable");
+    */
+
+}
+
+
+
+#NextButtonBase {
+    border-color: #00CC00;
+}
+
+
+/*
+.container--instruction-highlight-green {
+    background-color: rgba(0.0, 0.8, 0.4, 1.0);
+}
+*/
+/*
+.image--instruction-checkmark {
+    background-image: url('/Assets/Tutorials/Media/MoveTool.png');
+}
+*/
+
+
+
+.container--tutorial {
+    border-top-color: rgba(255, 255, 255, 0.05);
+    background-color: #003300;
+    /*  background-color: #2E2E2E;  */
+}
+
+.container {
+    background-color: #353535;
+}
+
+.container--tutorial-actions {
+    border-color: rgba(0,0,0,0.3);
+}
+
+.container--header-large {
+    border-color: rgba(255,255,255,0.1);
+}
+
+.card {
+    background-color: #414141;
+    border-color: #212421;
+}
+
+.card:hover {
+    background-color: #4A4A4A;
+}
+
+.container--instruction {
+    background-color: #002200;
+    /*  background-color: #414141;  */
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+}
+
+.container--welcome-dialog-content {
+    background-color: #2E2E2E;
+}
+
+.container--welcome-dialog-actions {
+    border-color: rgba(0,0,0,0.5);
+}
+
+.icon--tutorial-error-checkmark {
+    background-image: url('Images/Icons/ErrorDark.png');
+}
+
+
+
