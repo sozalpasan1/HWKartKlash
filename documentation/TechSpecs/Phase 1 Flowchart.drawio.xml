@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.2">
+  <diagram name="3D Neighborhood Go-Kart Game - Phase 1" id="HQgH3eb6N01BSYVbyHKn">
+    <mxGraphModel dx="1868" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-1" value="Start Screen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#97D077;" parent="1" vertex="1">
+          <mxGeometry x="-300" y="25" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.004;entryY=0.097;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-D6PTLkuIZTt9AhnNyXs-2" target="Hoh2hHI2jSS9Mox2tBc4-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-2" value="Account Login" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#97D077;" parent="1" vertex="1">
+          <mxGeometry x="-300" y="125" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-3" value="Main Menu" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#97D077;" parent="1" vertex="1">
+          <mxGeometry x="-300" y="278" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-4" value="Lobby Selection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="-300" y="378" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-5" value="Map Loading" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B5739D;" parent="1" vertex="1">
+          <mxGeometry x="-300" y="627" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-D6PTLkuIZTt9AhnNyXs-6" target="Hoh2hHI2jSS9Mox2tBc4-107" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-6" value="Gameplay" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=#FFB570;gradientDirection=north;fillColor=#A680B8;strokeColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="-301" y="899" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-7" value="Game End" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#97D077;" parent="1" vertex="1">
+          <mxGeometry x="-301" y="1434" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-8" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#97D077;strokeColor=#97D077;" parent="1" source="-D6PTLkuIZTt9AhnNyXs-1" target="-D6PTLkuIZTt9AhnNyXs-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-250" y="95" as="sourcePoint" />
+            <mxPoint x="-250" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-9" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#97D077;" parent="1" source="-D6PTLkuIZTt9AhnNyXs-2" target="-D6PTLkuIZTt9AhnNyXs-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-250" y="195" as="sourcePoint" />
+            <mxPoint x="-250" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-10" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#7EA6E0;" parent="1" source="-D6PTLkuIZTt9AhnNyXs-3" target="-D6PTLkuIZTt9AhnNyXs-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-250" y="348" as="sourcePoint" />
+            <mxPoint x="-250" y="378" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#7EA6E0;" parent="1" source="-D6PTLkuIZTt9AhnNyXs-4" target="-D6PTLkuIZTt9AhnNyXs-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-250" y="448" as="sourcePoint" />
+            <mxPoint x="-250" y="478" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-12" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#97D077;" parent="1" source="-D6PTLkuIZTt9AhnNyXs-5" target="-D6PTLkuIZTt9AhnNyXs-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-250" y="697" as="sourcePoint" />
+            <mxPoint x="-250" y="727" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-13" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#97D077;" parent="1" source="-D6PTLkuIZTt9AhnNyXs-6" target="-D6PTLkuIZTt9AhnNyXs-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-251" y="969" as="sourcePoint" />
+            <mxPoint x="-251" y="999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-D6PTLkuIZTt9AhnNyXs-14" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;strokeColor=#97D077;" parent="1" source="-D6PTLkuIZTt9AhnNyXs-7" target="-D6PTLkuIZTt9AhnNyXs-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-360" y="655" as="sourcePoint" />
+            <mxPoint x="-360" y="255" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-400" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-1" value="&lt;span style=&quot;background-color: rgb(151, 208, 119);&quot;&gt;UI&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(181, 115, 157);&quot;&gt;Map Design&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(255, 181, 112);&quot;&gt;Kart&lt;/span&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: rgb(126, 166, 224);&quot;&gt;Multiplayer&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-675" y="10" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-2" value="PlayerAccount" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-87" y="90" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-3" value="+username: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Hoh2hHI2jSS9Mox2tBc4-2" vertex="1">
+          <mxGeometry y="26" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Hoh2hHI2jSS9Mox2tBc4-2" vertex="1">
+          <mxGeometry y="50" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-5" value="+Login()&#xa;+Logout()&#xa;+LoadProfile()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Hoh2hHI2jSS9Mox2tBc4-2" vertex="1">
+          <mxGeometry y="58" width="240" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-8" value="FirebaseService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="268" y="57" width="230" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-9" value="+auth: FirebaseAuth&#xa;+database: FirebaseDatabase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Hoh2hHI2jSS9Mox2tBc4-8" vertex="1">
+          <mxGeometry y="26" width="230" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Hoh2hHI2jSS9Mox2tBc4-8" vertex="1">
+          <mxGeometry y="70" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-11" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;+Login(email: String, pass: String)&lt;br&gt;+Logout()&lt;br&gt;+SaveData(path: String, data)&lt;br&gt;+LoadData(path: String)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Hoh2hHI2jSS9Mox2tBc4-8" vertex="1">
+          <mxGeometry y="78" width="230" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-3" target="Hoh2hHI2jSS9Mox2tBc4-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-18" target="-D6PTLkuIZTt9AhnNyXs-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-18" target="Hoh2hHI2jSS9Mox2tBc4-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-18" target="Hoh2hHI2jSS9Mox2tBc4-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-18" value="&lt;b&gt;Network Manager&lt;br&gt;&lt;/b&gt;&lt;strong style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;267&quot; data-start=&quot;250&quot;&gt;&lt;code data-end=&quot;265&quot; data-start=&quot;252&quot;&gt;StartHost()&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: Starts the game as both the server and the host client.&lt;/span&gt;&lt;br&gt;&lt;strong style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;346&quot; data-start=&quot;327&quot;&gt;&lt;code data-end=&quot;344&quot; data-start=&quot;329&quot;&gt;StartClient()&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: Connects the local player to a running server.&lt;/span&gt;&lt;div&gt;&lt;strong style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;416&quot; data-start=&quot;397&quot;&gt;&lt;code data-end=&quot;414&quot; data-start=&quot;399&quot;&gt;StartServer()&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: Starts the server without a local player.&lt;br&gt;&lt;/span&gt;&lt;strong style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;478&quot; data-start=&quot;462&quot;&gt;&lt;code data-end=&quot;476&quot; data-start=&quot;464&quot;&gt;Shutdown()&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: Gracefully stops all networking activity.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;strong style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;571&quot; data-start=&quot;524&quot;&gt;&lt;code data-end=&quot;569&quot; data-start=&quot;526&quot;&gt;OnClientConnectedCallback(ulong clientId)&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: Triggered when a new player successfully connects to the session.&lt;/span&gt;&lt;strong style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;689&quot; data-start=&quot;641&quot;&gt;&lt;code data-end=&quot;687&quot; data-start=&quot;643&quot;&gt;OnClientDisconnectCallback(ulong clientId)&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: Triggered when a player disconnects or times out.&lt;/span&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="-50" y="285" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-19" value="&lt;h3 class=&quot;&quot; data-end=&quot;3037&quot; data-start=&quot;3008&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;strong data-end=&quot;3037&quot; data-start=&quot;3012&quot;&gt;NetworkPrefabs(&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;The &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;803&quot; data-start=&quot;794&quot;&gt;thing&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt; that actually shows up in the game when a player joins.&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Could be a cube, a kart, a character — anything.)&lt;/span&gt;&lt;/font&gt;&lt;/h3&gt;&lt;ul data-end=&quot;3124&quot; data-start=&quot;3038&quot;&gt;&lt;li class=&quot;&quot; data-end=&quot;3124&quot; data-start=&quot;3038&quot;&gt;&lt;p class=&quot;&quot; data-end=&quot;3124&quot; data-start=&quot;3040&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;strong data-end=&quot;3058&quot; data-start=&quot;3040&quot;&gt;&lt;code data-end=&quot;3056&quot; data-start=&quot;3042&quot;&gt;PlayerPrefab&lt;/code&gt;&lt;/strong&gt;: Reference to the player kart prefab, used when spawning players&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="350" y="235" width="300" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-25" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Player Spawner&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;(&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Watches for new players joining,&amp;nbsp;&lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;561&quot; data-start=&quot;535&quot;&gt;Spawns a player prefab&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; (like a kart or cube) when someone connects,&amp;nbsp;&lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;621&quot; data-start=&quot;609&quot;&gt;Despawns&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; it when they leave)&lt;/span&gt;&lt;br&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;833&quot; data-start=&quot;811&quot;&gt;&lt;code data-end=&quot;831&quot; data-start=&quot;813&quot;&gt;OnNetworkSpawn()&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: Called once this spawner is active on the network. Used to hook up event listeners.&lt;/span&gt;&lt;br&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;968&quot; data-start=&quot;921&quot;&gt;&lt;code data-end=&quot;966&quot; data-start=&quot;923&quot;&gt;OnClientConnectedCallback(ulong clientId)&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: When a player joins, trigger a player spawn.&lt;/span&gt;&lt;br&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;1065&quot; data-start=&quot;1017&quot;&gt;&lt;code data-end=&quot;1063&quot; data-start=&quot;1019&quot;&gt;OnClientDisconnectCallback(ulong clientId)&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: When a player leaves, clean up their player object.&lt;/span&gt;&lt;br&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;1154&quot; data-start=&quot;1121&quot;&gt;&lt;code data-end=&quot;1152&quot; data-start=&quot;1123&quot;&gt;SpawnPlayer(ulong clientId)&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: Instantiates the kart prefab for the joining player and assigns ownership.&lt;/span&gt;&lt;br&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;1268&quot; data-start=&quot;1233&quot;&gt;&lt;code data-end=&quot;1266&quot; data-start=&quot;1235&quot;&gt;DespawnPlayer(ulong clientId)&lt;/code&gt;&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: Destroys the kart object linked to the leaving player.&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="350" y="405" width="520" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.454;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-19" target="Hoh2hHI2jSS9Mox2tBc4-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-91" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-91" target="Hoh2hHI2jSS9Mox2tBc4-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-91" value="Key Classes:&lt;br&gt;- Map3D: Main map management class&lt;br&gt;- Cesium3DTileset: Handles 3D tileset rendering&lt;br&gt;- CesiumIonRasterOverlay: Manages map imagery&lt;br&gt;- CesiumGeoreference: Handles geographic positioning&lt;br&gt;- CesiumSubScene: Manages local map section&lt;br&gt;- PowerUpItem: Represents power-up objects&lt;br&gt;- Obstacle: Represents obstacle objects&lt;br&gt;- Checkpoint: Represents race checkpoints" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontColor=#333333;align=left;verticalAlign=top;fontSize=12;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="560.16" width="280" height="189.69" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-93" value="Key Map3D Methods:&lt;br&gt;&lt;br&gt;- Initialize(latitude, longitude, radius, settings)&lt;br&gt;- &lt;span style=&quot;background-color: rgb(151, 208, 119);&quot;&gt;LoadMapAsync(showLoadingScreen)&lt;/span&gt;&lt;br&gt;- Create3DTileset(apiKey)&lt;br&gt;- CreateNeighborhoodSubScene(name, lat, long, height, radius)&lt;br&gt;- SetupCollisionForTileset()&lt;br&gt;- OptimizeTileset(PerformancePreset preset)&lt;br&gt;- EnableLODSystem()&lt;br&gt;- PlacePowerUps(PowerUpPlacementStrategy strategy)&lt;br&gt;- PlaceObstacles(ObstaclePlacementStrategy strategy)&lt;br&gt;- GenerateCheckpoints(int count)&lt;br&gt;- SetupStartingGrid(int maxPlayers)&lt;br&gt;- GetRandomSpawnPoint()&lt;br&gt;- GetNearestPowerUp(position, maxDistance)&lt;br&gt;- ResetAllPowerUps()&lt;br&gt;- UpdateObstacles(deltaTime)&lt;br&gt;- UnloadMap()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontColor=#333333;align=left;verticalAlign=top;fontSize=12;spacingLeft=5;spacingTop=5;" parent="1" vertex="1">
+          <mxGeometry x="400" y="575" width="300" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.627;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-D6PTLkuIZTt9AhnNyXs-6" target="Hoh2hHI2jSS9Mox2tBc4-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.471;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-98" target="Hoh2hHI2jSS9Mox2tBc4-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-190" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-98" target="Hoh2hHI2jSS9Mox2tBc4-99" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-98" target="Hoh2hHI2jSS9Mox2tBc4-102" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-790" y="940" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-510" y="550" />
+              <mxPoint x="-740" y="550" />
+              <mxPoint x="-740" y="929" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-98" value="&lt;b&gt;GameManager&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-570" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-99" target="-D6PTLkuIZTt9AhnNyXs-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-99" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Configure API Keys&lt;br&gt;Variables: googleMapsApiKey, cesiumIonAccessToken&lt;br&gt;Actions: Set tokens for external API access&lt;br&gt;Dependencies: Google Maps Platform, Cesium ION&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=left;spacingLeft=5;" parent="1" vertex="1">
+          <mxGeometry x="-651" y="622" width="280.74" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-102" target="-D6PTLkuIZTt9AhnNyXs-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140.55000000000018" y="1140" as="targetPoint" />
+            <mxPoint x="-562.0999999999999" y="986" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="-562" y="1140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-102" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Start Race&lt;br&gt;Actions: Triggers countdown UI, enables kart controls&lt;br&gt;Events: Triggers OnRaceStart when countdown completes&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;End Race&lt;br style=&quot;&quot;&gt;Actions: Shows results, disables kart controls&lt;br style=&quot;&quot;&gt;Events: Triggers OnRaceComplete&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;align=left;spacingLeft=5;" parent="1" vertex="1">
+          <mxGeometry x="-720" y="872" width="315.74" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.47;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-107" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30.001700000000483" y="1775" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-107" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="736.7767924528305" y="1195.9057575757574" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-107" target="Hoh2hHI2jSS9Mox2tBc4-112" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-107" value="Kart Class" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="140.54999999999995" y="985" width="387.55" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-108" value="turnRight(boolean focused): Activated by pressing the D&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;key (press and hold)&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;turnLeft(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): Activated by pressing the A key (press and hold)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;accelerate(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the W key (press and hold)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;break(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;boolean focused&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the S key (press and hold) when speed is greater than 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;reverse(boolean focused):&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Activated by pressing the S key (press and hold) when speed is less than or equal to 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;All of these have a boolean for if the t key is making the action focused&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="Hoh2hHI2jSS9Mox2tBc4-107" vertex="1">
+          <mxGeometry y="20.01" width="387.55" height="289.99" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-110" value="Different Modes" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="736.78" y="1085" width="298.11" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-109" value="Ground mode - Normal. You&#39;re just driving on the ground. Your wheels are liocked to the ground. No gravity cuz that makes things complicated&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Air mode - Activates when you jump or use a ramp. Gravity now exists&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Recovery mode: Activates if you flip over. Essentially it just brings you right side up again&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="Hoh2hHI2jSS9Mox2tBc4-110" vertex="1">
+          <mxGeometry y="20" width="298.11" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-111" value="Multiplayer" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="1375" width="300" height="127.28" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-112" value="Voice chat muted by pressing M&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Voice chat has push to talk by pressing V&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Not reliant on distance to other cars&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="Hoh2hHI2jSS9Mox2tBc4-111" vertex="1">
+          <mxGeometry x="-0.94" y="27.28" width="300" height="91.88" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-114" value="" style="group" parent="1" connectable="0" vertex="1">
+          <mxGeometry x="390" y="1730" width="749.83" height="502" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-115" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="Hoh2hHI2jSS9Mox2tBc4-114" vertex="1">
+          <mxGeometry y="63.8909090909091" width="712.9165844628036" height="438.1090909090909" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.629;exitY=0.975;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(transparent,#66B2FF);strokeColor=light-dark(#000000,#0000CC);exitPerimeter=0;" parent="Hoh2hHI2jSS9Mox2tBc4-114" source="Hoh2hHI2jSS9Mox2tBc4-129" target="Hoh2hHI2jSS9Mox2tBc4-117" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="544.8719609822857" y="182.54545454545453" />
+              <mxPoint x="687.4552778748464" y="182.54545454545453" />
+              <mxPoint x="687.4552778748464" y="392.4727272727273" />
+              <mxPoint x="337.36231229043386" y="392.4727272727273" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-117" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Kart Information Supplier&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#0000CC);" parent="Hoh2hHI2jSS9Mox2tBc4-114" vertex="1">
+          <mxGeometry x="25.461306587957274" y="410.72727272727275" width="623.8020114049532" height="27.381818181818183" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-118" value="" style="group" parent="Hoh2hHI2jSS9Mox2tBc4-114" connectable="0" vertex="1">
+          <mxGeometry x="25.461306587957274" y="410.72727272727275" width="623.8020114049532" height="73.01818181818183" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-119" value="" style="group;strokeColor=light-dark(#000000,#0000CC);container=0;" parent="Hoh2hHI2jSS9Mox2tBc4-118" connectable="0" vertex="1">
+          <mxGeometry width="623.8020114049532" height="73.01818181818183" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-120" value="This will supply the kart&#39;s position, velocity, lap placement, etc. to methods that need it.&lt;div&gt;Acts as a way for all other methods to access Kart variables&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#0000CC);" parent="Hoh2hHI2jSS9Mox2tBc4-118" vertex="1">
+          <mxGeometry y="27.381818181818186" width="623.8020114049532" height="45.63636363636365" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-121" value="" style="group;strokeColor=light-dark(transparent,#FF0000);container=0;" parent="Hoh2hHI2jSS9Mox2tBc4-114" connectable="0" vertex="1">
+          <mxGeometry x="432.84221199527366" y="100.4" width="178.2291461157009" height="63.8909090909091" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-122" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Kart Physics Engine&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFF00);" parent="Hoh2hHI2jSS9Mox2tBc4-114" vertex="1">
+          <mxGeometry x="25.461306587957274" y="200.8" width="585.6100515230173" height="45.63636363636363" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-123" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=light-dark(#000000,#FF8000);strokeColor=light-dark(#000000,#FF8000);" parent="Hoh2hHI2jSS9Mox2tBc4-114" source="Hoh2hHI2jSS9Mox2tBc4-126" target="Hoh2hHI2jSS9Mox2tBc4-122" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(#000000,#FFFF00);strokeColor=light-dark(#000000,#FFFF00);" parent="Hoh2hHI2jSS9Mox2tBc4-114" source="Hoh2hHI2jSS9Mox2tBc4-125" target="Hoh2hHI2jSS9Mox2tBc4-130" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="318.2663323494659" y="374.21818181818185" />
+              <mxPoint x="649.2633179929105" y="374.21818181818185" />
+              <mxPoint x="649.2633179929105" y="82.14545454545456" />
+              <mxPoint x="521.9567850531241" y="82.14545454545456" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-125" value="Primarily makes use of Unity&#39;s built in physics engine. Kart is declared as an object that then sends updates to the physics engine based on outside input which are declared separately.&lt;br&gt;&lt;br&gt;Collisions are primarily handled by Unity, so advanced logic is not needed.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The engine then spits out a new position for the kart.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFF00);" parent="Hoh2hHI2jSS9Mox2tBc4-114" vertex="1">
+          <mxGeometry x="25.461306587957274" y="246.43636363636364" width="585.6100515230173" height="100.4" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-126" value="WASD controls, kart choice, settings, etc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF8000);" parent="Hoh2hHI2jSS9Mox2tBc4-114" vertex="1">
+          <mxGeometry x="25.461306587957274" y="127.7818181818182" width="178.2291461157009" height="36.509090909090915" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-127" value="User Inputs" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF8000);" parent="Hoh2hHI2jSS9Mox2tBc4-114" vertex="1">
+          <mxGeometry x="25.461306587957274" y="100.4" width="178.2291461157009" height="27.381818181818183" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-128" value="" style="group" parent="Hoh2hHI2jSS9Mox2tBc4-114" connectable="0" vertex="1">
+          <mxGeometry x="432.84221199527366" y="100.4" width="178.2291461157009" height="63.8909090909091" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-129" value="Position, rotation, velocity of current kart" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF0000);" parent="Hoh2hHI2jSS9Mox2tBc4-128" vertex="1">
+          <mxGeometry y="27.381818181818183" width="178.2291461157009" height="36.509090909090915" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-130" value="Kart Positioning" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FF0000);" parent="Hoh2hHI2jSS9Mox2tBc4-128" vertex="1">
+          <mxGeometry width="178.2291461157009" height="27.381818181818183" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-131" value="" style="group" parent="Hoh2hHI2jSS9Mox2tBc4-114" connectable="0" vertex="1">
+          <mxGeometry x="229.1517592916155" y="100.4" width="178.2291461157009" height="63.8909090909091" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-132" value="Powerups, jumps, wall collisions, debuffs, etc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#00CC00);" parent="Hoh2hHI2jSS9Mox2tBc4-131" vertex="1">
+          <mxGeometry y="27.381818181818183" width="178.2291461157009" height="36.509090909090915" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-133" value="Map Updates" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#00CC00);" parent="Hoh2hHI2jSS9Mox2tBc4-131" vertex="1">
+          <mxGeometry width="178.2291461157009" height="27.381818181818183" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-134" value="&lt;b&gt;&lt;font style=&quot;font-size: 42px;&quot;&gt;Kart Physics and Controls&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="Hoh2hHI2jSS9Mox2tBc4-114" vertex="1">
+          <mxGeometry width="712.9165844628036" height="63.8909090909091" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#FF0000);" parent="Hoh2hHI2jSS9Mox2tBc4-114" source="Hoh2hHI2jSS9Mox2tBc4-129" target="Hoh2hHI2jSS9Mox2tBc4-122" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=light-dark(#000000,#00CC00);strokeColor=light-dark(#000000,#00CC00);" parent="Hoh2hHI2jSS9Mox2tBc4-114" source="Hoh2hHI2jSS9Mox2tBc4-132" target="Hoh2hHI2jSS9Mox2tBc4-122" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="Hoh2hHI2jSS9Mox2tBc4-115" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="35.8900000000001" y="1969" />
+              <mxPoint x="35.8900000000001" y="2180" />
+            </Array>
+            <mxPoint x="38.94500000000039" y="1969.2399999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-111" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="1730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-139" value="&lt;div&gt;&lt;b style=&quot;font-size: medium; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Controls&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;W: Accelerate&lt;div&gt;A: Turn left&lt;/div&gt;&lt;div&gt;S: Brake/reverse&lt;/div&gt;&lt;div&gt;D: Turn right&lt;/div&gt;&lt;div&gt;J: Jump&lt;/div&gt;&lt;div&gt;Shift: Activate teacher special ability&lt;/div&gt;&lt;div&gt;P: Activate powerup&lt;/div&gt;&lt;div&gt;F: Focus power&lt;/div&gt;&lt;div&gt;V: Voice chat push to talk key&lt;/div&gt;&lt;div&gt;M: Mute voice chat&lt;/div&gt;&lt;div&gt;Tab: View minimap&lt;/div&gt;&lt;div&gt;Esc: Open pause menu&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="1775" width="298.11" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Hoh2hHI2jSS9Mox2tBc4-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Hoh2hHI2jSS9Mox2tBc4-112" target="Hoh2hHI2jSS9Mox2tBc4-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="355" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1251" y="1448" />
+              <mxPoint x="1251" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
