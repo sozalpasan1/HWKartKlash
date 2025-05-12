@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.cesium.unity": "1.16.0",
     "com.unity.ai.navigation": "2.0.7",
     "com.unity.collab-proxy": "2.8.1",
     "com.unity.ide.rider": "3.0.35",
@@ -45,5 +46,15 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "Cesium",
+      "url": "https://unity.pkg.cesium.com",
+      "scopes": [
+        "com.cesium.unity"
+      ],
+      "overrideBuiltIns": true
+    }
+  ]
 }
