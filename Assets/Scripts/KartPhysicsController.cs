@@ -6,444 +6,314 @@ public class KartPhysicsController : MonoBehaviour
 {
     [Header("Kart Components")]
     public Transform centerOfMass;
-    public List<WheelCollider> driveWheels;
-    public List<WheelCollider> steeringWheels;
-    public List<GameObject> wheelMeshes;
-
-    [Header("Engine Settings")]
-    public AnimationCurve powerCurve;
-    public float maxMotorTorque = 500f;
-    public float maxSpeed = 30f;
-    public float brakeTorque = 4000f;
-    public float idleRPM = 800f;
-    public float maxRPM = 6000f;
-    public float currentRPM;
-
+    public List<WheelCollider> driveWheels = new List<WheelCollider>();
+    public List<WheelCollider> steeringWheels = new List<WheelCollider>();
+    public List<GameObject> wheelMeshes = new List<GameObject>();
+    
+    [Header("Drive Settings")]
+    public float maxSpeed = 25f; // Maximum speed in m/s (multiply by 3.6 for km/h)
+    public float maxReverseSpeed = 10f;
+    public float acceleration = 8f; // Lower values = more gradual acceleration
+    public float brakeForce = 15f;
+    
     [Header("Steering Settings")]
     public float maxSteerAngle = 30f;
-    public float steerSpeed = 10f;
-    public float steerSensitivity = 1f;
-    public AnimationCurve steerCurve;
-
-    [Header("Suspension Settings")]
-    public float suspensionHeight = 0.2f;
-    public float suspensionSpring = 35000f;
-    public float suspensionDamper = 4500f;
-    public float suspensionDistance = 0.3f;
+    public float steerSpeed = 1f; // How quickly steering responds
+    public AnimationCurve steerCurve; // Steering angle adjustment based on speed
     
-    [Header("Drift Settings")]
-    public float minSpeedForDrift = 8f;
-    public float driftFactor = 0.7f;
-    public float lateralGripFactor = 0.9f;
+    [Header("Stability Settings")]
+    public float downforce = 1.5f; // Multiplier for downward force
+    public bool constrainRotation = true; // Should we use RigidBody constraints?
     
-    [Header("Physics Settings")]
-    public float downforce = 100f;
-    public float airDrag = 0.1f;
-    public float groundDrag = 3f;
-    public LayerMask groundLayer;
-    
-    // References and runtime variables
+    // Runtime variables
     private Rigidbody rb;
-    private float currentSteerAngle;
-    private float motorInput;
-    private float brakeInput;
-    private float steerInput;
-    private bool isDrifting;
-    private bool isGrounded;
     private float currentSpeed;
-    private float speedRatio;
-
-    // Audio (add your own AudioSource components)
-    public AudioSource engineSound;
-    public AudioSource skidSound;
-    private float enginePitch;
-
-    // Visual effects (add your own particle systems)
-    public ParticleSystem[] wheelSmoke;
-
-private void Start()
-{
-    rb = GetComponent<Rigidbody>();
+    private float currentSteerAngle;
+    private float throttleInput;
+    private float steerInput;
+    private float brakeInput;
+    private bool isGrounded;
+    private float speedRatio; // Current speed as ratio of max speed (0-1)
     
-    if (centerOfMass != null)
+    private void Start()
     {
-        // IMPORTANT: Make sure center of mass is very low
-        Vector3 comPosition = centerOfMass.localPosition;
-        // Override Y position to be very low
-        comPosition.y = -0.5f;  
-        rb.centerOfMass = comPosition;
+        rb = GetComponent<Rigidbody>();
         
-        // Visual feedback (optional)
-        centerOfMass.localPosition = comPosition;
-    }
-    else
-    {
-        Debug.LogWarning("No center of mass assigned to kart controller!");
-        // Set a default low center of mass
-        rb.centerOfMass = new Vector3(0, -0.5f, 0);
-    }
-    
-    // Configure wheel colliders
-    ConfigureWheelColliders();
-}
-
-    private void ConfigureWheelColliders()
-    {
-        JointSpring suspensionSpringSettings = new JointSpring();
-        suspensionSpringSettings.spring = suspensionSpring;
-        suspensionSpringSettings.damper = suspensionDamper;
-        suspensionSpringSettings.targetPosition = 0.5f;
-
-        foreach (WheelCollider wheel in driveWheels)
+        // Set center of mass low for stability
+        if (centerOfMass != null)
         {
-            wheel.suspensionDistance = suspensionDistance;
-            wheel.center = new Vector3(0, suspensionHeight, 0);
-            wheel.suspensionSpring = suspensionSpringSettings;
-            wheel.wheelDampingRate = 1f;
-        }
-
-        foreach (WheelCollider wheel in steeringWheels)
-        {
-            wheel.suspensionDistance = suspensionDistance;
-            wheel.center = new Vector3(0, suspensionHeight, 0);
-            wheel.suspensionSpring = suspensionSpringSettings;
-            wheel.wheelDampingRate = 1f;
-        }
-    }
-
-    private void Update()
-    {
-        // Get input
-        motorInput = Input.GetAxis("Vertical");
-        steerInput = Input.GetAxis("Horizontal");
-        brakeInput = Input.GetKey(KeyCode.Space) ? 1f : 0f;
-        
-        // Update visuals
-        UpdateWheelMeshes();
-        
-        // Update current speed (for UI and calculations)
-        currentSpeed = rb.linearVelocity.magnitude * 3.6f; // km/h
-        speedRatio = Mathf.Clamp01(currentSpeed / maxSpeed);
-        
-        // Update audio
-        if (engineSound != null)
-        {
-            UpdateEngineSound();
-        }
-        
-        // Update drift effects
-        UpdateDriftEffects();
-        
-        // Check if we're grounded
-        CheckGrounded();
-    }
-
-    private void FixedUpdate()
-    {
-        // Apply forces
-        ApplyMotorTorque();
-        ApplySteering();
-        ApplyDownforce();
-        ApplyDrag();
-        ApplyBraking();
-        
-        // Apply drift physics
-        if (ShouldDrift())
-        {
-            ApplyDrift();
-        }
-    }
-
-    private void ApplyMotorTorque()
-    {
-        // Use a much simpler model that's less likely to cause problems
-        float motorPower = motorInput * maxMotorTorque;
-    
-        // Only apply motor torque at very low values initially
-        float safeMotorPower = Mathf.Clamp(motorPower, -300f, 300f);
-    
-        // Apply torque to drive wheels
-        foreach (WheelCollider wheel in driveWheels)
-        {
-            wheel.motorTorque = safeMotorPower;
-        }
-    }
-    
-    private float EvaluatePowerCurve()
-    {
-        // Normalize RPM to 0-1 range for curve evaluation
-        float normalizedRPM = (currentRPM - idleRPM) / (maxRPM - idleRPM);
-        normalizedRPM = Mathf.Clamp01(normalizedRPM);
-        
-        // Use power curve or default to linear if not set
-        if (powerCurve != null && powerCurve.keys.Length > 0)
-        {
-            return powerCurve.Evaluate(normalizedRPM);
+            rb.centerOfMass = centerOfMass.localPosition;
         }
         else
         {
-            // Default power curve peaking at 80% of max RPM
-            return normalizedRPM * (1f - normalizedRPM * 0.2f) * 4f;
+            // Default to a low center of mass if none assigned
+            rb.centerOfMass = new Vector3(0, -0.5f, 0);
+        }
+        
+        // Apply constraints to prevent unwanted rotation
+        if (constrainRotation)
+        {
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        }
+        
+        // Configure wheel colliders
+        SetupWheels();
+    }
+    
+    private void SetupWheels()
+    {
+        // Configure wheel friction curves for better grip
+        ConfigureWheelFriction(driveWheels);
+        ConfigureWheelFriction(steeringWheels);
+    }
+    
+    private void ConfigureWheelFriction(List<WheelCollider> wheels)
+    {
+        foreach (WheelCollider wheel in wheels)
+        {
+            // Configure forward friction for drive force
+            WheelFrictionCurve forwardFriction = wheel.forwardFriction;
+            forwardFriction.extremumSlip = 0.4f;
+            forwardFriction.extremumValue = 1f;
+            forwardFriction.asymptoteSlip = 0.8f;
+            forwardFriction.asymptoteValue = 0.8f;
+            forwardFriction.stiffness = 1.0f;
+            wheel.forwardFriction = forwardFriction;
+            
+            // Configure sideways friction for better cornering
+            WheelFrictionCurve sidewaysFriction = wheel.sidewaysFriction;
+            sidewaysFriction.extremumSlip = 0.25f;
+            sidewaysFriction.extremumValue = 1f;
+            sidewaysFriction.asymptoteSlip = 0.5f;
+            sidewaysFriction.asymptoteValue = 0.8f;
+            sidewaysFriction.stiffness = 1.0f;
+            wheel.sidewaysFriction = sidewaysFriction;
         }
     }
     
-    private void CalculateEngineRPM()
+    private void Update()
     {
-        // Get average RPM from drive wheels
-        float avgWheelRPM = 0f;
-        int wheelCount = 0;
+        // Get input
+        throttleInput = Input.GetAxis("Vertical");
+        steerInput = Input.GetAxis("Horizontal");
+        brakeInput = Input.GetKey(KeyCode.Space) ? 1f : 0f;
         
-        foreach (WheelCollider wheel in driveWheels)
-        {
-            avgWheelRPM += wheel.rpm;
-            wheelCount++;
-        }
+        // Update wheel visuals
+        UpdateWheelMeshes();
         
-        if (wheelCount > 0)
-        {
-            avgWheelRPM /= wheelCount;
-        }
+        // Calculate current speed
+        currentSpeed = Vector3.Dot(rb.linearVelocity, transform.forward); // Only forward component
+        speedRatio = Mathf.Abs(currentSpeed) / maxSpeed;
         
-        // Calculate engine RPM
-        float wheelToEngineRatio = 5f; // Gear ratio
-        float targetRPM = Mathf.Abs(avgWheelRPM * wheelToEngineRatio) + idleRPM;
-        
-        // Add some RPM when accelerating but not moving yet
-        if (Mathf.Abs(avgWheelRPM) < 10f && Mathf.Abs(motorInput) > 0.1f)
-        {
-            targetRPM += maxRPM * 0.3f * Mathf.Abs(motorInput);
-        }
-        
-        // Smoothly adjust RPM
-        currentRPM = Mathf.Lerp(currentRPM, targetRPM, Time.fixedDeltaTime * 5f);
-        currentRPM = Mathf.Clamp(currentRPM, idleRPM, maxRPM);
+        // Check if grounded
+        CheckGrounded();
     }
-
+    
+    private void FixedUpdate()
+    {
+        // Apply driving force
+        ApplyDriveForce();
+        
+        // Apply steering
+        ApplySteering();
+        
+        // Apply braking
+        ApplyBraking();
+        
+        // Apply downforce for stability
+        ApplyDownforce();
+        
+        // Limit max speed
+        LimitSpeed();
+    }
+    
+    private void ApplyDriveForce()
+    {
+        // Skip if no input or braking
+        if (Mathf.Abs(throttleInput) < 0.1f || brakeInput > 0.1f)
+        {
+            foreach (WheelCollider wheel in driveWheels)
+            {
+                wheel.motorTorque = 0;
+            }
+            return;
+        }
+        
+        // Only apply drive force when at least one wheel is grounded
+        if (isGrounded)
+        {
+            // Calculate target speed based on input
+            float targetSpeed = throttleInput > 0 ? maxSpeed : -maxReverseSpeed;
+            
+            // Calculate speed difference
+            float speedDiff = targetSpeed - currentSpeed;
+            
+            // Calculate force based on how far we are from target speed
+            float force = speedDiff * acceleration;
+            
+            // Convert to motor torque for wheels (simplified approach)
+            float torquePerWheel = force * 50f / driveWheels.Count;
+            
+            // Apply torque to drive wheels
+            foreach (WheelCollider wheel in driveWheels)
+            {
+                wheel.motorTorque = torquePerWheel;
+            }
+            
+            // For very low speeds, apply a direct force to help get moving
+            if (Mathf.Abs(currentSpeed) < 2f && Mathf.Abs(throttleInput) > 0.5f)
+            {
+                float startingForce = throttleInput * 500f;
+                rb.AddForce(transform.forward * startingForce);
+            }
+        }
+        else
+        {
+            // When in air, don't apply any drive force
+            foreach (WheelCollider wheel in driveWheels)
+            {
+                wheel.motorTorque = 0;
+            }
+        }
+    }
+    
     private void ApplySteering()
     {
-        // Make steering less sensitive at high speeds
-        float speedFactor = steerCurve != null ? steerCurve.Evaluate(speedRatio) : 1f - (speedRatio * 0.7f);
-        float targetSteerAngle = steerInput * maxSteerAngle * speedFactor * steerSensitivity;
+        // Calculate steering angle based on speed
+        float speedFactor = steerCurve != null ? 
+            steerCurve.Evaluate(speedRatio) : 
+            1f - (speedRatio * 0.5f); // Default curve if none assigned
         
-        // Gradually adjust steering for smoother control
-        currentSteerAngle = Mathf.Lerp(currentSteerAngle, targetSteerAngle, Time.fixedDeltaTime * steerSpeed);
+        // Calculate target angle
+        float targetSteerAngle = steerInput * maxSteerAngle * speedFactor;
         
-        // Apply steering to steering wheels
+        // Gradually adjust current angle for smoother steering
+        currentSteerAngle = Mathf.Lerp(currentSteerAngle, targetSteerAngle, Time.fixedDeltaTime * steerSpeed * 10f);
+        
+        // Apply to steering wheels
         foreach (WheelCollider wheel in steeringWheels)
         {
             wheel.steerAngle = currentSteerAngle;
         }
     }
-
+    
     private void ApplyBraking()
     {
-        // Apply brake torque to all wheels
-        float brakingForce = brakeInput * brakeTorque;
+        // Calculate brake force
+        float brakeForceToApply = 0;
         
-        // Apply reverse braking when going forward but pressing backward
-        if (currentSpeed > 1f && motorInput < -0.1f)
+        // Apply active braking when brake key is pressed
+        if (brakeInput > 0.1f)
         {
-            brakingForce = Mathf.Abs(motorInput) * brakeTorque;
+            brakeForceToApply = brakeForce * 500f;
+        }
+        // Apply automatic braking when moving in opposite direction to input
+        else if (throttleInput != 0 && Mathf.Sign(throttleInput) != Mathf.Sign(currentSpeed) && Mathf.Abs(currentSpeed) > 1f)
+        {
+            brakeForceToApply = brakeForce * 300f;
         }
         
-        // Apply reverse braking when going backward but pressing forward
-        if (currentSpeed > 1f && rb.linearVelocity.z < -0.1f && motorInput > 0.1f)
-        {
-            brakingForce = Mathf.Abs(motorInput) * brakeTorque;
-        }
-        
+        // Apply brake force to all wheels
         foreach (WheelCollider wheel in driveWheels)
         {
-            wheel.brakeTorque = brakingForce;
+            wheel.brakeTorque = brakeForceToApply;
         }
         
         foreach (WheelCollider wheel in steeringWheels)
         {
-            wheel.brakeTorque = brakingForce * 0.5f; // Less braking on steering wheels
+            wheel.brakeTorque = brakeForceToApply;
         }
     }
-
+    
     private void ApplyDownforce()
     {
         if (isGrounded)
         {
-            // Apply downforce relative to speed
-            float force = downforce * Mathf.Clamp01(speedRatio * speedRatio);
-            rb.AddForce(-transform.up * force);
+            // Apply more downforce at higher speeds
+            float forceMagnitude = rb.mass * downforce * (1f + speedRatio);
+            rb.AddForce(-transform.up * forceMagnitude);
         }
     }
     
-    private void ApplyDrag()
+    private void LimitSpeed()
     {
-        // Apply air or ground drag based on grounded state
-        float dragFactor = isGrounded ? groundDrag : airDrag;
-        rb.linearDamping = Mathf.Lerp(rb.linearDamping, dragFactor, Time.fixedDeltaTime * 3f);
-    }
-    
-    private bool ShouldDrift()
-    {
-        // Check if conditions are right for drifting
-        bool hasSpeed = currentSpeed > minSpeedForDrift;
-        bool hasSteeringInput = Mathf.Abs(steerInput) > 0.5f;
-        bool isBraking = brakeInput > 0.1f;
-        
-        // Start drifting
-        if (hasSpeed && hasSteeringInput && isBraking)
+        // Only limit speed on ground
+        if (isGrounded)
         {
-            isDrifting = true;
-            return true;
-        }
-        
-        // Continue drifting
-        if (isDrifting && hasSpeed && hasSteeringInput)
-        {
-            return true;
-        }
-        
-        // Stop drifting
-        isDrifting = false;
-        return false;
-    }
-    
-    private void ApplyDrift()
-    {
-        // Reduce lateral friction on wheels
-        foreach (WheelCollider wheel in driveWheels)
-        {
-            WheelFrictionCurve sideFriction = wheel.sidewaysFriction;
-            sideFriction.stiffness = lateralGripFactor * driftFactor;
-            wheel.sidewaysFriction = sideFriction;
-        }
-        
-        // Add some side force to enhance the drift feel
-        float driftForce = steerInput * driftFactor * rb.mass * speedRatio;
-        rb.AddForce(transform.right * driftForce, ForceMode.Force);
-    }
-    
-    private void ResetWheelFriction()
-    {
-        // Reset wheel friction to normal when not drifting
-        foreach (WheelCollider wheel in driveWheels)
-        {
-            WheelFrictionCurve sideFriction = wheel.sidewaysFriction;
-            sideFriction.stiffness = lateralGripFactor;
-            wheel.sidewaysFriction = sideFriction;
+            // Get forward velocity
+            Vector3 forwardVelocity = transform.forward * currentSpeed;
+            
+            // Get lateral velocity (for drifting/sliding)
+            Vector3 lateralVelocity = rb.linearVelocity - forwardVelocity;
+            
+            // Check if exceeding max speed
+            if (currentSpeed > maxSpeed)
+            {
+                // Limit to max speed
+                forwardVelocity = transform.forward * maxSpeed;
+            }
+            else if (currentSpeed < -maxReverseSpeed)
+            {
+                // Limit to max reverse speed
+                forwardVelocity = transform.forward * -maxReverseSpeed;
+            }
+            
+            // Recombine velocities
+            rb.linearVelocity = forwardVelocity + lateralVelocity;
         }
     }
     
     private void UpdateWheelMeshes()
     {
-        // Make sure we have the right number of meshes
         if (wheelMeshes.Count != driveWheels.Count + steeringWheels.Count)
         {
-            Debug.LogWarning("Number of wheel meshes does not match wheel colliders!");
+            Debug.LogWarning("Number of wheel meshes doesn't match wheel colliders!");
             return;
         }
         
-        int wheelIndex = 0;
+        int index = 0;
         
         // Update drive wheel meshes
         foreach (WheelCollider wheel in driveWheels)
         {
-            UpdateWheelMesh(wheel, wheelMeshes[wheelIndex]);
-            wheelIndex++;
+            if (index < wheelMeshes.Count)
+            {
+                UpdateWheelMesh(wheel, wheelMeshes[index]);
+                index++;
+            }
         }
         
         // Update steering wheel meshes
         foreach (WheelCollider wheel in steeringWheels)
         {
-            UpdateWheelMesh(wheel, wheelMeshes[wheelIndex]);
-            wheelIndex++;
+            if (index < wheelMeshes.Count)
+            {
+                UpdateWheelMesh(wheel, wheelMeshes[index]);
+                index++;
+            }
         }
     }
     
     private void UpdateWheelMesh(WheelCollider collider, GameObject wheelMesh)
     {
-        // Position and rotate wheel mesh to match collider
-        if (collider && wheelMesh)
-        {
-            Vector3 position;
-            Quaternion rotation;
-            collider.GetWorldPose(out position, out rotation);
-            rotation *= Quaternion.Euler(0, 0, 90);
-            
-            wheelMesh.transform.position = position;
-            wheelMesh.transform.rotation = rotation;
-        }
-    }
-    
-    private void UpdateEngineSound()
-    {
-        if (engineSound != null)
-        {
-            // Map RPM to audio pitch
-            float minPitch = 0.3f;
-            float maxPitch = 1.5f;
-            enginePitch = minPitch + ((currentRPM - idleRPM) / (maxRPM - idleRPM)) * (maxPitch - minPitch);
-            
-            // Apply pitch to engine sound
-            engineSound.pitch = Mathf.Lerp(engineSound.pitch, enginePitch, Time.deltaTime * 2f);
-            
-            // Ensure the engine sound is playing
-            if (!engineSound.isPlaying)
-            {
-                engineSound.Play();
-            }
-        }
-    }
-    
-    private void UpdateDriftEffects()
-    {
-        if (isDrifting)
-        {
-            // Play skid sound
-            if (skidSound != null && !skidSound.isPlaying)
-            {
-                skidSound.Play();
-            }
-            
-            // Emit smoke particles
-            if (wheelSmoke != null)
-            {
-                foreach (ParticleSystem smoke in wheelSmoke)
-                {
-                    if (!smoke.isEmitting)
-                    {
-                        smoke.Play();
-                    }
-                }
-            }
-        }
-        else
-        {
-            // Stop skid sound
-            if (skidSound != null && skidSound.isPlaying)
-            {
-                skidSound.Stop();
-            }
-            
-            // Stop smoke particles
-            if (wheelSmoke != null)
-            {
-                foreach (ParticleSystem smoke in wheelSmoke)
-                {
-                    if (smoke.isEmitting)
-                    {
-                        smoke.Stop();
-                    }
-                }
-            }
-            
-            // Reset wheel friction
-            ResetWheelFriction();
-        }
+        if (collider == null || wheelMesh == null) return;
+        
+        // Get wheel position and rotation from the collider
+        Vector3 position;
+        Quaternion rotation;
+        collider.GetWorldPose(out position, out rotation);
+        rotation *= Quaternion.Euler(0, 0, 90);
+        
+        // Update mesh position and rotation
+        wheelMesh.transform.position = position;
+        wheelMesh.transform.rotation = rotation;
     }
     
     private void CheckGrounded()
     {
-        // Check if any wheel is touching the ground
         isGrounded = false;
         
+        // Check all wheels
         foreach (WheelCollider wheel in driveWheels)
         {
             if (wheel.isGrounded)
@@ -466,38 +336,34 @@ private void Start()
         }
     }
     
-    // Public methods that can be used for UI or other game systems
+    // Debug visualization
+    private void OnDrawGizmos()
+    {
+        // Draw center of mass
+        Gizmos.color = Color.red;
+        if (centerOfMass != null)
+        {
+            Gizmos.DrawSphere(transform.TransformPoint(centerOfMass.localPosition), 0.1f);
+        }
+        else if (Application.isPlaying && rb != null)
+        {
+            Gizmos.DrawSphere(transform.TransformPoint(rb.centerOfMass), 0.1f);
+        }
+    }
     
+    // Helper methods for UI or external access
     public float GetSpeedKMH()
     {
-        return currentSpeed;
+        return currentSpeed * 3.6f; // Convert m/s to km/h
     }
     
     public float GetSpeedMPH()
     {
-        return currentSpeed * 0.621371f;
+        return currentSpeed * 2.237f; // Convert m/s to mph
     }
     
-    public float GetEngineRPM()
+    public bool IsGrounded()
     {
-        return currentRPM;
-    }
-    
-    public bool IsDrifting()
-    {
-        return isDrifting;
-    }
-
-    // Utility function to calculate the bank angle based on terrain
-    public float GetBankAngle()
-    {
-        RaycastHit hitInfo;
-        if (Physics.Raycast(transform.position, -Vector3.up, out hitInfo, 10f, groundLayer))
-        {
-            Vector3 normal = hitInfo.normal;
-            float bankAngle = Vector3.SignedAngle(Vector3.up, normal, transform.forward);
-            return bankAngle;
-        }
-        return 0f;
+        return isGrounded;
     }
 }
