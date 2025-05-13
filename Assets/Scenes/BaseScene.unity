@@ -169,7 +169,7 @@ MonoBehaviour:
   _ionAssetID: 0
   _ionAccessToken: 
   _ionServer: {fileID: 11400000, guid: 3bc99ce9a16d747e2a0e6624e36aa8fa, type: 2}
-  _maximumScreenSpaceError: 25
+  _maximumScreenSpaceError: 30
   _preloadAncestors: 1
   _preloadSiblings: 1
   _forbidHoles: 0
