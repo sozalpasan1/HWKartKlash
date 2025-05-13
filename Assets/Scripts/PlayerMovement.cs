@@ -1,36 +1,36 @@
-using System;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+[RequireComponent(typeof(CharacterController))]
+public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed = 7f;
-    [SerializeField] private float rotationSpeed = 500f;
+    [Header("Tuning")]
+    public float moveSpeed = 6f;
+    public float jumpHeight = 1.5f;
+    public float gravity = -9.81f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-    }
+    private CharacterController cc;
+    private Vector3 velocity;
 
-    // Update is called once per frame
+    void Awake() => cc = GetComponent<CharacterController>();
+
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        // Ground check
+        bool grounded = cc.isGrounded;
+        if (grounded && velocity.y < 0) velocity.y = -2f;
 
-        // create movement direction
-        Vector3 movementDirection = new Vector3 (horizontalInput, 0, verticalInput);
-        movementDirection.Normalize();
+        // WASD / arrow keys (uses the default “Horizontal” & “Vertical” axes)
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+        Vector3 move = transform.right * h + transform.forward * v;
+        cc.Move(move * moveSpeed * Time.deltaTime);
 
-        // move the player
-        transform.Translate(movementDirection * movementSpeed * Time.deltaTime, Space.World);
+        // Jump
+        if (grounded && Input.GetButtonDown("Jump"))
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
 
-        
-        // rotate the player to face the movement direction
-        if (movementDirection != Vector3.zero)
-        {
-            Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-        }
-
+        // Gravity
+        velocity.y += gravity * Time.deltaTime;
+        cc.Move(velocity * Time.deltaTime);
     }
 }
