@@ -4,13 +4,13 @@ using UnityEngine;
 public class KartController : MonoBehaviour
 {
    // Movement settings
-   public float maxSpeed = 20.0f;         
+   public float maxSpeed = 30.0f;         
    public float maxReverseSpeed = 10.0f;   
-   public float acceleration = 40.0f;       // Increased for better responsiveness
-   public float braking = 10.0f;           
-   public float turnSpeed = 80.0f;         
+   public float acceleration = 60.0f;       // Increased for better responsiveness
+   public float braking = 100.0f;           
+   public float turnSpeed = 200.0f;         
    public float turnSpeedReduction = 0.7f; 
-   public float gravity = 20.0f;           
+   public float gravity = 200.0f;           
   
    // Current motion state
    private float currentSpeed = 0.0f;
@@ -21,7 +21,7 @@ public class KartController : MonoBehaviour
 
    // Direction setting - change this to match your kart's orientation
    public enum KartForwardDirection { Forward, Right, Left, Back }
-   public KartForwardDirection kartForward = KartForwardDirection.Left; // Set this in the Inspector
+   public KartForwardDirection kartForward = KartForwardDirection.Forward; // Set this in the Inspector
   
    void Start()
    {
@@ -32,8 +32,8 @@ public class KartController : MonoBehaviour
        }
       
        rb.mass = 50;  // Lighter mass for better acceleration
-       rb.drag = 0;
-       rb.angularDrag = 1;
+       rb.linearDamping = 0;
+       rb.angularDamping = 1;
        rb.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX;
        rb.interpolation = RigidbodyInterpolation.Interpolate;
    }
@@ -89,7 +89,7 @@ public class KartController : MonoBehaviour
        // IMPORTANT: Get the correct movement direction based on kart orientation
        Vector3 movement = GetMovementDirection() * currentSpeed;
       
-       rb.velocity = new Vector3(movement.x, rb.velocity.y, movement.z);
+       rb.linearVelocity = new Vector3(movement.x, rb.linearVelocity.y, movement.z);
        rb.AddForce(Vector3.down * gravity);
       
        Debug.Log("Speed: " + currentSpeed + " | Movement Vector: " + movement);
