@@ -32,8 +32,8 @@ public class KartController : MonoBehaviour
        }
       
        rb.mass = 50;  // Lighter mass for better acceleration
-       rb.drag = 0;
-       rb.angularDrag = 1;
+       rb.linearDamping = 0;
+       rb.angularDamping = 1;
        rb.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX;
        rb.interpolation = RigidbodyInterpolation.Interpolate;
    }
@@ -89,7 +89,7 @@ public class KartController : MonoBehaviour
        // IMPORTANT: Get the correct movement direction based on kart orientation
        Vector3 movement = GetMovementDirection() * currentSpeed;
       
-       rb.velocity = new Vector3(movement.x, rb.velocity.y, movement.z);
+       rb.linearVelocity = new Vector3(movement.x, rb.linearVelocity.y, movement.z);
        rb.AddForce(Vector3.down * gravity);
       
        Debug.Log("Speed: " + currentSpeed + " | Movement Vector: " + movement);
