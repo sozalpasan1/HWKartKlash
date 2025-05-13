@@ -18,14 +18,14 @@ public class KartDriftController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 localVelocity = transform.InverseTransformDirection(rb.velocity);
+        Vector3 localVelocity = transform.InverseTransformDirection(rb.linearVelocity);
         float driftInput = Input.GetKey(driftKey) ? 1 : 0;
         isDrifting = driftInput > 0;
 
         // Reduce lateral grip while drifting
         float currentGrip = isDrifting ? driftGrip : normalGrip;
-        Vector3 sidewaysVelocity = transform.right * Vector3.Dot(rb.velocity, transform.right);
-        rb.velocity -= sidewaysVelocity * (1 - currentGrip);
+        Vector3 sidewaysVelocity = transform.right * Vector3.Dot(rb.linearVelocity, transform.right);
+        rb.linearVelocity -= sidewaysVelocity * (1 - currentGrip);
 
         // Optionally: Add visual tilt or skid effects here
     }
