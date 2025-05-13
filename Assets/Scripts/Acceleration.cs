@@ -66,9 +66,50 @@ public class Acceleration : MonoBehaviour
         return baseTurnRadius * GetTurnMultiplier();
     }
     
+    // Reference to the surface detector
+    private SurfaceDetector surfaceDetector;
+    
+    void Start()
+    {
+        // Get the surface detector component
+        surfaceDetector = GetComponent<SurfaceDetector>();
+        
+        // If no surface detector is found, add one
+        if (surfaceDetector == null)
+        {
+            surfaceDetector = gameObject.AddComponent<SurfaceDetector>();
+        }
+        
+        // Subscribe to the surface change event
+        surfaceDetector.OnSurfaceChange += OnSurfaceChanged;
+    }
+    
+    void OnDestroy()
+    {
+        // Unsubscribe from the event when this object is destroyed
+        if (surfaceDetector != null)
+        {
+            surfaceDetector.OnSurfaceChange -= OnSurfaceChanged;
+        }
+    }
+    
+    // Called when the surface changes
+    void OnSurfaceChanged(string newSurfaceTag)
+    {
+        currentSurfaceTag = newSurfaceTag;
+        // You could add more surface types here if needed
+    }
+    
     // Get the current surface tag
     public string GetCurrentSurfaceTag()
     {
+        // If we have a surface detector, use it
+        if (surfaceDetector != null)
+        {
+            return surfaceDetector.GetCurrentSurfaceTag();
+        }
+        
+        // Otherwise use the default
         return currentSurfaceTag;
     }
 }
