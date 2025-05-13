@@ -5,7 +5,7 @@ public class Checkpoint : MonoBehaviour
     [SerializeField] private bool activateOnce = true;
     [SerializeField] private ParticleSystem activationEffect;
     [SerializeField] private AudioSource activationSound;
-    [SerializeField] private Renderer checkpointRenderer;
+    [SerializeField] public Renderer checkpointRenderer; // Changed from private to public
     [SerializeField] private Color activatedColor = Color.green;
     [SerializeField] private Color deactivatedColor = Color.red;
     

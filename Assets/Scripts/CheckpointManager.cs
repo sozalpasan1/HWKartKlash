@@ -4,7 +4,7 @@ public class CheckpointManager : MonoBehaviour
 {
     public static CheckpointManager Instance { get; private set; }
     
-    [SerializeField] private Transform defaultSpawnPoint;
+    [SerializeField] public Transform defaultSpawnPoint; // Changed from private to public
     private Transform currentCheckpoint;
     
     private void Awake()

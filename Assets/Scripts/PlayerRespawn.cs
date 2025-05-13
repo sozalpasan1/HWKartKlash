@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerRespawn : MonoBehaviour
 {
-    [SerializeField] private float deathY = -10f; // Y position below which player is considered dead
+    [SerializeField] public float deathY = -10f; // Changed from private to public
     [SerializeField] private float respawnDelay = 1f;
     [SerializeField] private GameObject deathEffect;
     [SerializeField] private GameObject respawnEffect;
