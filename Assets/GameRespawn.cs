@@ -4,25 +4,40 @@ using UnityEngine;
 
 public class GameRespawn : MonoBehaviour
 {
-    public float threshold;
     public Vector3 playerPosition;
     [SerializeField] List<GameObject> checkpoints;
     [SerializeField] Vector3 vectorPoint;
 
-    void FixedUpdate()
+    void Start()
     {
-        if (transform.position.y < threshold) {
-            // transform.position = new Vector3(-0.3037853f, 2.1f, -10.92337f);
-            transform.position = new Vector3(playerPosition.x, playerPosition.y, playerPosition.z);
-        }
+        // Initialize the spawn position to the starting point of the player
+        playerPosition = transform.position;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Checkpoint"))
+        if (other.CompareTag("Checkpoint"))
         {
             vectorPoint = other.transform.position;
             playerPosition = vectorPoint;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Bounds")) // Your custom-shaped bounds should have this tag
+        {
+            Respawn();
+        }
+    }
+
+    private void Respawn()
+    {
+        transform.position = playerPosition;
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
         }
     }
 }

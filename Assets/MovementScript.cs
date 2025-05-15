@@ -1,57 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementScript : MonoBehaviour
+[RequireComponent(typeof(Rigidbody))]
+public class MinimalWalk : MonoBehaviour
 {
-    public float speed;
-    public float rotationSpeed;
-    public float jumpSpeed;
-    private float ySpeed;
-    private CharacterController controller;
-    public bool isGrounded;
+    public float speed = 2f;               // Walking speed (tweak for minimal feel)
+    public float rotationSpeed = 360f;     // How fast the player rotates toward movement
+
+    private Rigidbody rb;
 
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
+
+        // Lock rotation on X/Z so the player doesn't fall over
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        float horizontalMove = Input.GetAxis("Horizontal");
-        float verticalMove = Input.GetAxis("Vertical");
+        // Get input
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
 
-        Vector3 moveDirection = new Vector3(horizontalMove, 0, verticalMove);
-        moveDirection.Normalize();
-        float magnitude = moveDirection.magnitude;
-        magnitude = Mathf.Clamp01(magnitude);
-        // transform.Translate(moveDirection * speed * Time.deltaTime, Space.World);
-        controller.SimpleMove(moveDirection * magnitude * speed);
+        // Create move direction relative to world
+        Vector3 moveDirection = new Vector3(h, 0, v).normalized;
 
-        ySpeed += Physics.gravity.y * Time.deltaTime;
-        if (Input.GetButtonDown("Jump")) {
-            ySpeed = -0.5f;
-        }
+        // Move the rigidbody by directly setting velocity (preserve gravity)
+        Vector3 currentVelocity = rb.linearVelocity;
+        Vector3 targetVelocity = moveDirection * speed;
+        rb.linearVelocity = new Vector3(targetVelocity.x, currentVelocity.y, targetVelocity.z);
 
-        Vector3 vel = moveDirection * magnitude;
-        vel.y = ySpeed;
-        // transform.Translate(vel * Time.deltaTime);
-        controller.Move(vel * Time.deltaTime);
-
-        if (controller.isGrounded)
+        // Rotate player to face movement direction
+        if (moveDirection.sqrMagnitude > 0.001f)
         {
-            ySpeed = -0.5f;
-            isGrounded = true;
-            if (Input.GetButtonDown("Jump")) {
-                ySpeed = jumpSpeed;
-                isGrounded = false;
-            }
-        }
-
-        if (moveDirection != Vector3.zero) {
-            Quaternion toRotate = Quaternion.LookRotation(moveDirection, Vector3.up);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotate, rotationSpeed * Time.deltaTime);
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+            Quaternion newRotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            rb.MoveRotation(newRotation);
         }
     }
 }
