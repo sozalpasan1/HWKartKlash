@@ -51,4 +51,10 @@ public class NetworkTransportConfig : MonoBehaviour
         transport.ConnectionData.Port = basePort;
         #endif
     }
+    void Start()
+    {
+        // Test the file system access at startup
+        Debug.Log("[NetworkTransportConfig] Testing lobby file access...");
+        LobbySync.VerifyFileAccess();
+    }
 }
