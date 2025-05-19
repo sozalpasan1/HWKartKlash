@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2415464764
+  GlobalObjectIdHash: 4218846483
   InScenePlacedSourceGlobalObjectIdHash: 1425687732
   DeferredDespawnTick: 0
   Ownership: 1
@@ -531,7 +531,7 @@ GameObject:
   - component: {fileID: 4227248420171442006}
   - component: {fileID: 7163894571555120170}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
