@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NetworkTransportConfig : MonoBehaviour
 {
-    [SerializeField] private ushort hostPort = 7777;
+    [SerializeField] private ushort basePort = 7777;
     [SerializeField] private string connectAddress = "127.0.0.1"; // Default for local testing
     
     private void Awake()
@@ -15,25 +15,40 @@ public class NetworkTransportConfig : MonoBehaviour
         var transport = networkManager.GetComponent<UnityTransport>();
         if (transport == null) return;
         
-        // Basic configuration - always connect to localhost
         transport.ConnectionData.Address = connectAddress;
         
         #if UNITY_EDITOR
-        // Simple approach: use different ports for host and clones
+        // Use different ports for original and clone
         if (ParrelSync.ClonesManager.IsClone())
         {
-            // Clones always try to join the main project
-            transport.ConnectionData.Port = hostPort;
-            Debug.Log("Clone configured to connect to host on port: " + hostPort);
+            // Calculate a port offset for the clone
+            string projectPath = Application.dataPath;
+            int cloneOffset = 1;
+            
+            // Try to extract a number from the clone path if possible
+            if (projectPath.Contains("_clone"))
+            {
+                int lastUnderscore = projectPath.LastIndexOf('_');
+                string potentialNumber = projectPath.Substring(lastUnderscore + 1);
+                if (int.TryParse(potentialNumber, out int result))
+                {
+                    cloneOffset = result;
+                }
+            }
+            
+            // Set a different port for the clone
+            ushort clonePort = (ushort)(basePort + cloneOffset);
+            transport.ConnectionData.Port = basePort; // Connect to main project port
+            Debug.Log($"Clone using port: {clonePort}, connecting to: {basePort}");
         }
         else
         {
-            // Main project always hosts
-            transport.ConnectionData.Port = hostPort;
-            Debug.Log("Original project configured to host on port: " + hostPort);
+            // Original project uses the base port
+            transport.ConnectionData.Port = basePort;
+            Debug.Log($"Original project using port: {basePort}");
         }
         #else
-        transport.ConnectionData.Port = hostPort;
+        transport.ConnectionData.Port = basePort;
         #endif
     }
 }

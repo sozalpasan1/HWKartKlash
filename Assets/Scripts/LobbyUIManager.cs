@@ -120,30 +120,33 @@ public class LobbyUIManager : MonoBehaviour
     }
     
     private void RefreshLobbyList()
+{
+    // Force load from disk to share lobbies between instances
+    LobbySync.LoadLobbies();
+    
+    // Clear existing entries
+    foreach (var entry in lobbyEntries)
     {
-        // Clear existing entries
-        foreach (var entry in lobbyEntries)
-        {
-            Destroy(entry);
-        }
-        lobbyEntries.Clear();
-        
-        // Add all active lobbies
-        foreach (var lobbyInfo in LobbyManager.ActiveLobbies.Values)
-        {
-            GameObject entryObj = Instantiate(lobbyEntryPrefab, lobbyListContent);
-            lobbyEntries.Add(entryObj);
-            
-            // Set up the entry UI
-            TextMeshProUGUI lobbyNameText = entryObj.transform.Find("LobbyNameText").GetComponent<TextMeshProUGUI>();
-            TextMeshProUGUI playerCountText = entryObj.transform.Find("PlayerCountText").GetComponent<TextMeshProUGUI>();
-            Button joinButton = entryObj.transform.Find("JoinButton").GetComponent<Button>();
-            
-            lobbyNameText.text = lobbyInfo.lobbyName;
-            playerCountText.text = $"{lobbyInfo.currentPlayers}/{lobbyInfo.maxPlayers}";
-            
-            string lobbyId = lobbyInfo.lobbyId; // Capture for closure
-            joinButton.onClick.AddListener(() => JoinLobby(lobbyId));
-        }
+        Destroy(entry);
     }
+    lobbyEntries.Clear();
+    
+    // Add all active lobbies
+    foreach (var lobbyInfo in LobbyManager.ActiveLobbies.Values)
+    {
+        GameObject entryObj = Instantiate(lobbyEntryPrefab, lobbyListContent);
+        lobbyEntries.Add(entryObj);
+        
+        // Set up the entry UI
+        TextMeshProUGUI lobbyNameText = entryObj.transform.Find("LobbyNameText").GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI playerCountText = entryObj.transform.Find("PlayerCountText").GetComponent<TextMeshProUGUI>();
+        Button joinButton = entryObj.transform.Find("JoinButton").GetComponent<Button>();
+        
+        lobbyNameText.text = lobbyInfo.lobbyName;
+        playerCountText.text = $"{lobbyInfo.currentPlayers}/{lobbyInfo.maxPlayers}";
+        
+        string lobbyId = lobbyInfo.lobbyId; // Capture for closure
+        joinButton.onClick.AddListener(() => JoinLobby(lobbyId));
+    }
+}
 }
