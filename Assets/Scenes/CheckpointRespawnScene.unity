@@ -895,7 +895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6965420932696968813, guid: bf25f3545dccb5142bb9ce6a406667b7, type: 3}
       propertyPath: m_Name
-      value: Cart Follow Cam
+      value: ObjectFollowCamera
       objectReference: {fileID: 0}
     - target: {fileID: 6965420932696968813, guid: bf25f3545dccb5142bb9ce6a406667b7, type: 3}
       propertyPath: m_TagString
