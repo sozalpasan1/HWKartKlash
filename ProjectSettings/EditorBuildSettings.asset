@@ -18,17 +18,20 @@ EditorBuildSettings:
     path: Assets/Scenes/UI Scenes/Game End Screen.unity
     guid: c6e7e79a834fd4099a66e2e2a501efe5
   - enabled: 1
-    path: Assets/Scenes/UI Scenes/Host Screen.unity
+    path: Assets/Scenes/UI Scenes/Host screen.unity
     guid: 4f8067e12983c4a8cb206d8c15550b70
   - enabled: 1
-    path: Assets/Scenes/UI Scenes/Join Screen.unity
+    path: Assets/Scenes/UI Scenes/Join screen.unity
     guid: 65d656d9ee89c4b0b8995114190265b5
   - enabled: 1
-    path: Assets/Scenes/UI Scenes/Host Start Screen.unity
+    path: Assets/Scenes/UI Scenes/Host start screen.unity
     guid: e234fa76a8d9841bb90399eab1ec9d4a
   - enabled: 1
     path: Assets/Scenes/UI Scenes/Joiner Waiting Screen.unity
     guid: 6a5cac54379d24d8e88ba682d8b5732f
+  - enabled: 1
+    path: Assets/Scenes/UI Scenes/StartScreen.unity
+    guid: 34d8422c481e3457f801b8ac92d5a281
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
