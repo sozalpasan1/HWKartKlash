@@ -8,10 +8,23 @@ public class GameRespawn : MonoBehaviour
     [SerializeField] List<GameObject> checkpoints;
     [SerializeField] Vector3 vectorPoint;
 
+    [SerializeField] private float fallThreshold = -10f; // Customize this as needed
+
+    private Rigidbody rb;
+
     void Start()
     {
-        // Initialize the spawn position to the starting point of the player
         playerPosition = transform.position;
+        rb = GetComponent<Rigidbody>();
+    }
+
+    void Update()
+    {
+        // Check if player has fallen below threshold
+        if (transform.position.y < fallThreshold)
+        {
+            Respawn();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,21 +36,13 @@ public class GameRespawn : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Bounds")) // Your custom-shaped bounds should have this tag
-        {
-            Respawn();
-        }
-    }
-
     private void Respawn()
     {
         transform.position = playerPosition;
-        Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.linearVelocity = Vector3.zero;
+            rb.linearVelocity = Vector3.zero; // Reset velocity
+            rb.angularVelocity = Vector3.zero; // Optional: Reset spinning
         }
     }
 }
