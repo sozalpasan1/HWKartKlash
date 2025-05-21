@@ -10,10 +10,10 @@ public class AutoConnector : MonoBehaviour
 {
     // EDIT THIS LINE to change connection mode:
     // 0 = Client, 1 = Host (server+client), 2 = Server only
-    private const int CONNECTION_MODE = 1;
+    private const int CONNECTION_MODE = 0;
     
     [Header("Network Settings")]
-    [SerializeField] private string serverIP = "127.0.0.1";
+    [SerializeField] private string serverIP = "192.168.1.60";
     [SerializeField] private ushort serverPort = 7777;
     
     void Start()

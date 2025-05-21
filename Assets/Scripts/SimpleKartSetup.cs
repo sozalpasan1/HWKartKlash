@@ -1,6 +1,7 @@
 using UnityEngine;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
+using System;
 
 /// <summary>
 /// Simple component to setup a kart racing game
@@ -23,18 +24,30 @@ public class SimpleKartSetup : MonoBehaviour
     
     void Start()
     {
+        Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] SimpleKartSetup starting...");
         SetupNetworking();
     }
     
     private void SetupNetworking()
     {
-        // Register the player prefab with NetworkManager if needed
-        if (playerPrefab != null)
+        if (NetworkManager.Singleton == null)
         {
+            Debug.LogError($"[{DateTime.Now:HH:mm:ss.fff}] NetworkManager.Singleton is null!");
+            return;
+        }
+
+        // Validate player prefab
+        if (playerPrefab == null)
+        {
+            Debug.LogError($"[{DateTime.Now:HH:mm:ss.fff}] Player prefab is not assigned!");
+        }
+        else
+        {
+            // Register the player prefab
             if (!NetworkManager.Singleton.NetworkConfig.Prefabs.Contains(playerPrefab))
             {
                 NetworkManager.Singleton.NetworkConfig.Prefabs.Add(new NetworkPrefab { Prefab = playerPrefab });
-                Debug.Log("Registered player prefab with NetworkManager");
+                Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Registered player prefab: {playerPrefab.name}");
             }
         }
         
@@ -44,13 +57,24 @@ public class SimpleKartSetup : MonoBehaviour
         {
             transport.ConnectionData.Address = serverIP;
             transport.ConnectionData.Port = serverPort;
-            Debug.Log($"Configured transport to connect to {serverIP}:{serverPort}");
+            Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Configured transport - Address: {serverIP}, Port: {serverPort}");
+        }
+        else
+        {
+            Debug.LogError($"[{DateTime.Now:HH:mm:ss.fff}] UnityTransport component not found on NetworkManager!");
         }
         
         // Register connection/disconnection events
         NetworkManager.Singleton.OnClientConnectedCallback += OnClientConnected;
         NetworkManager.Singleton.OnClientDisconnectCallback += OnClientDisconnected;
+        NetworkManager.Singleton.OnServerStarted += OnServerStarted;
+        NetworkManager.Singleton.OnClientStopped += OnClientStopped;
         
+        Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Network events registered");
+        
+        // Log network configuration
+        Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Network Configuration - StartAsHost: {startAsHost}, AutoConnectAsClient: {autoConnectAsClient}");
+
         // Auto start client or host
         if (startAsHost)
         {
@@ -62,59 +86,111 @@ public class SimpleKartSetup : MonoBehaviour
         }
     }
     
+    private void OnServerStarted()
+    {
+        Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Server started successfully");
+    }
+
+    private void OnClientStopped(bool isHost)
+    {
+        Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Client stopped. IsHost: {isHost}");
+    }
+
     private void OnClientConnected(ulong clientId)
     {
-        Debug.Log($"Client connected with ID: {clientId}");
+        Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Client connected with ID: {clientId}, IsServer: {NetworkManager.Singleton.IsServer}, IsHost: {NetworkManager.Singleton.IsHost}");
         
-        // If we're the server, spawn a kart for this player
         if (NetworkManager.Singleton.IsServer && playerPrefab != null)
         {
-            // Get a random position within spawn radius
             Vector3 spawnPos = GetRandomSpawnPosition();
+            Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Preparing to spawn kart for client {clientId} at {spawnPos}");
             
-            // Spawn the player's kart
-            GameObject playerKart = Instantiate(playerPrefab, spawnPos, Quaternion.identity);
-            NetworkObject networkObject = playerKart.GetComponent<NetworkObject>();
-            
-            if (networkObject != null)
+            try
             {
-                networkObject.SpawnAsPlayerObject(clientId);
-                Debug.Log($"Spawned kart for client {clientId} at {spawnPos}");
+                GameObject playerKart = Instantiate(playerPrefab, spawnPos, Quaternion.identity);
+                NetworkObject networkObject = playerKart.GetComponent<NetworkObject>();
+                
+                if (networkObject != null)
+                {
+                    networkObject.SpawnAsPlayerObject(clientId);
+                    Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Successfully spawned kart for client {clientId} at {spawnPos}");
+                }
+                else
+                {
+                    Debug.LogError($"[{DateTime.Now:HH:mm:ss.fff}] Player prefab {playerPrefab.name} has no NetworkObject component!");
+                    Destroy(playerKart);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"[{DateTime.Now:HH:mm:ss.fff}] Failed to spawn kart for client {clientId}: {ex.Message}");
             }
         }
     }
     
     private void OnClientDisconnected(ulong clientId)
     {
-        Debug.Log($"Client disconnected with ID: {clientId}");
+        Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Client disconnected with ID: {clientId}");
     }
     
     private Vector3 GetRandomSpawnPosition()
     {
-        // Get a random position in a circle
-        Vector2 randomCircle = Random.insideUnitCircle * spawnRadius;
-        return new Vector3(randomCircle.x, spawnHeight, randomCircle.y);
+        // Use UnityEngine.Random to resolve ambiguity
+        Vector2 randomCircle = UnityEngine.Random.insideUnitCircle * spawnRadius;
+        Vector3 spawnPos = new Vector3(randomCircle.x, spawnHeight, randomCircle.y);
+        Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Generated random spawn position: {spawnPos}");
+        return spawnPos;
     }
     
     public void StartHost()
     {
-        NetworkManager.Singleton.StartHost();
-        Debug.Log("Started as host (server + client)");
+        if (NetworkManager.Singleton != null)
+        {
+            try
+            {
+                NetworkManager.Singleton.StartHost();
+                Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Started as host. Local Client ID: {NetworkManager.Singleton.LocalClientId}");
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"[{DateTime.Now:HH:mm:ss.fff}] Failed to start host: {ex.Message}");
+            }
+        }
+        else
+        {
+            Debug.LogError($"[{DateTime.Now:HH:mm:ss.fff}] Cannot start host: NetworkManager is null");
+        }
     }
     
     public void StartClient()
     {
-        NetworkManager.Singleton.StartClient();
-        Debug.Log("Started as client, connecting to server...");
+        if (NetworkManager.Singleton != null)
+        {
+            try
+            {
+                NetworkManager.Singleton.StartClient();
+                Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Started as client. Connecting to {serverIP}:{serverPort}");
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"[{DateTime.Now:HH:mm:ss.fff}] Failed to start client: {ex.Message}");
+            }
+        }
+        else
+        {
+            Debug.LogError($"[{DateTime.Now:HH:mm:ss.fff}] Cannot start client: NetworkManager is null");
+        }
     }
     
     private void OnDestroy()
     {
-        // Unregister callbacks
         if (NetworkManager.Singleton != null)
         {
             NetworkManager.Singleton.OnClientConnectedCallback -= OnClientConnected;
             NetworkManager.Singleton.OnClientDisconnectCallback -= OnClientDisconnected;
+            NetworkManager.Singleton.OnServerStarted -= OnServerStarted;
+            NetworkManager.Singleton.OnClientStopped -= OnClientStopped;
+            Debug.Log($"[{DateTime.Now:HH:mm:ss.fff}] Network events unregistered in OnDestroy");
         }
     }
 }

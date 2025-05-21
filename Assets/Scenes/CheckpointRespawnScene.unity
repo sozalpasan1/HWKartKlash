@@ -679,9 +679,9 @@ MonoBehaviour:
   m_MaxConnectAttempts: 60
   m_DisconnectTimeoutMS: 30000
   ConnectionData:
-    Address: 127.0.0.1
+    Address: 192.168.1.60
     Port: 7777
-    ServerListenAddress: 127.0.0.1
+    ServerListenAddress: 0.0.0.0
   DebugSimulator:
     PacketDelayMS: 0
     PacketJitterMS: 0
@@ -2266,9 +2266,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 8045757828278592702, guid: 604b6d4e715dd2647be014f88d37bd9f, type: 3}
-  startAsHost: 1
+  startAsHost: 0
   autoConnectAsClient: 1
-  serverIP: 127.0.0.1
+  serverIP: 192.168.1.60
   serverPort: 7777
   spawnHeight: 0.5
   spawnRadius: 10
