@@ -6,8 +6,8 @@ public class OutOfBounds : MonoBehaviour
     private Vector3 respawnPoint;
     private Rigidbody rb;
 
-    // Track how many bounds the player is inside
-    private int boundsCount = 0;
+    // Use HashSet to track which Bounds colliders we're inside
+    private HashSet<Collider> currentBounds = new HashSet<Collider>();
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class OutOfBounds : MonoBehaviour
 
         if (other.CompareTag("Bounds"))
         {
-            boundsCount++;
+            currentBounds.Add(other);
         }
     }
 
@@ -32,10 +32,10 @@ public class OutOfBounds : MonoBehaviour
     {
         if (other.CompareTag("Bounds"))
         {
-            boundsCount--;
+            currentBounds.Remove(other);
 
-            // Only respawn if player is no longer in any Bounds colliders
-            if (boundsCount <= 0)
+            // Only respawn if we're no longer inside ANY bounds
+            if (currentBounds.Count == 0)
             {
                 Respawn();
             }
@@ -48,6 +48,7 @@ public class OutOfBounds : MonoBehaviour
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
 
-        boundsCount = 0; // Reset in case something weird happens
+        // Clear and reset bounds to be safe
+        currentBounds.Clear();
     }
 }
