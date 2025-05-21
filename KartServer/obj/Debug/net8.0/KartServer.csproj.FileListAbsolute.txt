@@ -1,0 +1,15 @@
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net8.0/KartServer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net8.0/KartServer.AssemblyInfoInputs.cache
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net8.0/KartServer.AssemblyInfo.cs
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net8.0/KartServer.csproj.CoreCompileInputs.cache
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net8.0/KartServer.sourcelink.json
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/bin/Debug/net8.0/KartServer
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/bin/Debug/net8.0/KartServer.deps.json
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/bin/Debug/net8.0/KartServer.runtimeconfig.json
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/bin/Debug/net8.0/KartServer.dll
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/bin/Debug/net8.0/KartServer.pdb
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net8.0/KartServer.dll
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net8.0/refint/KartServer.dll
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net8.0/KartServer.pdb
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net8.0/KartServer.genruntimeconfig.cache
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net8.0/ref/KartServer.dll

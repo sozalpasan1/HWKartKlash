@@ -1,0 +1,5 @@
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net6.0/KartServer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net6.0/KartServer.AssemblyInfoInputs.cache
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net6.0/KartServer.AssemblyInfo.cs
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net6.0/KartServer.csproj.CoreCompileInputs.cache
+/Users/michaelbarr/Documents/Code/hw-topics-kartklash/KartServer/obj/Debug/net6.0/KartServer.sourcelink.json
