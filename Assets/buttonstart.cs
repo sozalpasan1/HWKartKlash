@@ -6,6 +6,6 @@ public class buttonstart : MonoBehaviour
     // This function can be called by a UI Button's OnClick event
     public void OnStartButtonPressed()
     {
-        SceneManager.LoadScene("AccountScene");
+        SceneManager.LoadScene("Multiplayer Screen");
     }
 }
