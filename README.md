@@ -12,3 +12,5 @@ Running the game (client)
 ```zsh
 ./KartKlash.app/Contents/MacOS/My\ project -client -ip 192.168.1.x -port 7777
 ```
+
+Do not use WSL
