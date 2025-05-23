@@ -2282,7 +2282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ed120eb80c34d648221684ac5ed8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 8045757828278592702, guid: 604b6d4e715dd2647be014f88d37bd9f, type: 3}
+  playerPrefab: {fileID: 8804947925466183206, guid: c1dd1a55a71d4d74e84ddab5ca040c69, type: 3}
   startAsHost: 1
   autoConnectAsClient: 1
   serverIP: 127.0.0.1
