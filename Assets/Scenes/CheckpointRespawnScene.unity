@@ -650,6 +650,7 @@ GameObject:
   - component: {fileID: 723867518}
   - component: {fileID: 723867517}
   - component: {fileID: 723867516}
+  - component: {fileID: 723867519}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -681,7 +682,7 @@ MonoBehaviour:
   ConnectionData:
     Address: 127.0.0.1
     Port: 7777
-    ServerListenAddress: 127.0.0.1
+    ServerListenAddress: 0.0.0.0
   DebugSimulator:
     PacketDelayMS: 0
     PacketJitterMS: 0
@@ -744,6 +745,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &723867519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723867515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6ef86e3f5514158aacf7c88d3d928c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectionTimeout: 10
+  editorNetworkMode: 0
+  editorServerIP: 127.0.0.1
+  editorServerPort: 7777
 --- !u!1001 &781485479
 PrefabInstance:
   m_ObjectHideFlags: 0
