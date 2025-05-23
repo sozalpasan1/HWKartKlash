@@ -13,4 +13,4 @@ Running the game (client)
 ./KartKlash.app/Contents/MacOS/My\ project -client -ip 192.168.1.x -port 7777
 ```
 
-Do not use WSL
+IF you use windows figure it out idk
