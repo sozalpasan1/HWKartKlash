@@ -38,27 +38,24 @@ public class SimpleKartSetup : MonoBehaviour
             }
         }
         
-        // Configure transport
-        var transport = NetworkManager.Singleton.GetComponent<UnityTransport>();
-        if (transport != null)
-        {
-            transport.ConnectionData.Address = serverIP;
-            transport.ConnectionData.Port = serverPort;
-            Debug.Log($"Configured transport to connect to {serverIP}:{serverPort}");
-        }
+        // Note: IP configuration is now handled by CommandLineArgs
+        // We keep the serialized fields for inspector/debugging purposes only
         
         // Register connection/disconnection events
         NetworkManager.Singleton.OnClientConnectedCallback += OnClientConnected;
         NetworkManager.Singleton.OnClientDisconnectCallback += OnClientDisconnected;
         
-        // Auto start client or host
-        if (startAsHost)
+        // Auto start client or host if not started by CommandLineArgs
+        if (!NetworkManager.Singleton.IsListening)
         {
-            StartHost();
-        }
-        else if (autoConnectAsClient)
-        {
-            StartClient();
+            if (startAsHost)
+            {
+                StartHost();
+            }
+            else if (autoConnectAsClient)
+            {
+                StartClient();
+            }
         }
     }
     
