@@ -13,4 +13,6 @@ Running the game (client)
 ./KartKlash.app/Contents/MacOS/My\ project -client -ip 192.168.1.x -port 7777
 ```
 
-IF you use windows figure it out idk
+If you use windows figure it out idk
+
+To run a full test on your machine on macos do `zsh test.sh`
